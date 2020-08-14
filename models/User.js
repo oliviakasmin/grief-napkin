@@ -62,10 +62,12 @@ const datesObj = {
 
 const User = mongoose.model('User', user);
 
-// const olivia = new User({
-//   first: 'Olivia',
-//   last: 'Kasmin',
-// email: 'oliviakasmin@gmail.com'
-// });
+const olivia = new User({
+  first: 'Olivia',
+  last: 'Kasmin',
+  email: 'oliviakasmin@gmail.com',
+});
+
+console.log(olivia);
 
 module.exports = { User };
