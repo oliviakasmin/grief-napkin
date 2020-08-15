@@ -402,7 +402,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Journal = function Journal() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "feel free to use this page to keep you writing and thoughts")));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "you can use this page to keep your writing and thoughts")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Journal);
@@ -572,7 +572,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var appReducer = Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({
-  users: _users__WEBPACK_IMPORTED_MODULE_1__["default"]
+  user: _users__WEBPACK_IMPORTED_MODULE_1__["default"]
 });
 /* harmony default export */ __webpack_exports__["default"] = (appReducer);
 
@@ -582,21 +582,10 @@ var appReducer = Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({
 /*!****************************!*\
   !*** ./app/redux/users.js ***!
   \****************************/
-/*! exports provided: setUsers, fetchUsers, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! exports provided: getUser, updateUser, fetchGetUser, default */
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setUsers", function() { return setUsers; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchUsers", function() { return fetchUsers; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return userReducer; });
-var setUsers = function setUsers() {};
-var fetchUsers = function fetchUsers() {}; // Take a look at app/redux/index.js to see where this reducer is
-// added to the Redux store with combineReducers
-
-function userReducer() {
-  return null;
-}
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/oliviakasmin/Coding/Senior/stackathon-grief-napkin/app/redux/users.js: Identifier 'fetchGetUser' has already been declared (30:13)\n\n\u001b[0m \u001b[90m 28 | \u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 29 | \u001b[39m\u001b[90m//req.body = filter{email: 'email'} , update {name: Olivia}\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 30 | \u001b[39m\u001b[36mexport\u001b[39m \u001b[36mconst\u001b[39m fetchGetUser \u001b[33m=\u001b[39m (emailObj\u001b[33m,\u001b[39m updateObj) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 31 | \u001b[39m  \u001b[36mreturn\u001b[39m async (dispatch) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 32 | \u001b[39m    \u001b[36mtry\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 33 | \u001b[39m      \u001b[36mconst\u001b[39m newUser \u001b[33m=\u001b[39m await axios\u001b[33m.\u001b[39mpost(\u001b[32m'api/users/'\u001b[39m)\u001b[0m\n    at Object._raise (/Users/oliviakasmin/Coding/Senior/stackathon-grief-napkin/node_modules/@babel/parser/lib/index.js:764:17)\n    at Object.raiseWithData (/Users/oliviakasmin/Coding/Senior/stackathon-grief-napkin/node_modules/@babel/parser/lib/index.js:757:17)\n    at Object.raise (/Users/oliviakasmin/Coding/Senior/stackathon-grief-napkin/node_modules/@babel/parser/lib/index.js:751:17)\n    at ScopeHandler.checkRedeclarationInScope (/Users/oliviakasmin/Coding/Senior/stackathon-grief-napkin/node_modules/@babel/parser/lib/index.js:4841:12)\n    at ScopeHandler.declareName (/Users/oliviakasmin/Coding/Senior/stackathon-grief-napkin/node_modules/@babel/parser/lib/index.js:4807:12)\n    at Object.checkLVal (/Users/oliviakasmin/Coding/Senior/stackathon-grief-napkin/node_modules/@babel/parser/lib/index.js:9383:22)\n    at Object.parseVarId (/Users/oliviakasmin/Coding/Senior/stackathon-grief-napkin/node_modules/@babel/parser/lib/index.js:12019:10)\n    at Object.parseVar (/Users/oliviakasmin/Coding/Senior/stackathon-grief-napkin/node_modules/@babel/parser/lib/index.js:11994:12)\n    at Object.parseVarStatement (/Users/oliviakasmin/Coding/Senior/stackathon-grief-napkin/node_modules/@babel/parser/lib/index.js:11806:10)\n    at Object.parseStatementContent (/Users/oliviakasmin/Coding/Senior/stackathon-grief-napkin/node_modules/@babel/parser/lib/index.js:11398:21)\n    at Object.parseStatement (/Users/oliviakasmin/Coding/Senior/stackathon-grief-napkin/node_modules/@babel/parser/lib/index.js:11331:17)\n    at Object.parseExportDeclaration (/Users/oliviakasmin/Coding/Senior/stackathon-grief-napkin/node_modules/@babel/parser/lib/index.js:12543:17)\n    at Object.maybeParseExportDeclaration (/Users/oliviakasmin/Coding/Senior/stackathon-grief-napkin/node_modules/@babel/parser/lib/index.js:12499:31)\n    at Object.parseExport (/Users/oliviakasmin/Coding/Senior/stackathon-grief-napkin/node_modules/@babel/parser/lib/index.js:12429:29)\n    at Object.parseStatementContent (/Users/oliviakasmin/Coding/Senior/stackathon-grief-napkin/node_modules/@babel/parser/lib/index.js:11437:27)\n    at Object.parseStatement (/Users/oliviakasmin/Coding/Senior/stackathon-grief-napkin/node_modules/@babel/parser/lib/index.js:11331:17)\n    at Object.parseBlockOrModuleBlockBody (/Users/oliviakasmin/Coding/Senior/stackathon-grief-napkin/node_modules/@babel/parser/lib/index.js:11913:25)\n    at Object.parseBlockBody (/Users/oliviakasmin/Coding/Senior/stackathon-grief-napkin/node_modules/@babel/parser/lib/index.js:11899:10)\n    at Object.parseTopLevel (/Users/oliviakasmin/Coding/Senior/stackathon-grief-napkin/node_modules/@babel/parser/lib/index.js:11262:10)\n    at Object.parse (/Users/oliviakasmin/Coding/Senior/stackathon-grief-napkin/node_modules/@babel/parser/lib/index.js:12967:10)\n    at parse (/Users/oliviakasmin/Coding/Senior/stackathon-grief-napkin/node_modules/@babel/parser/lib/index.js:13020:38)\n    at parser (/Users/oliviakasmin/Coding/Senior/stackathon-grief-napkin/node_modules/@babel/core/lib/parser/index.js:54:34)\n    at parser.next (<anonymous>)\n    at normalizeFile (/Users/oliviakasmin/Coding/Senior/stackathon-grief-napkin/node_modules/@babel/core/lib/transformation/normalize-file.js:99:38)\n    at normalizeFile.next (<anonymous>)\n    at run (/Users/oliviakasmin/Coding/Senior/stackathon-grief-napkin/node_modules/@babel/core/lib/transformation/index.js:31:50)\n    at run.next (<anonymous>)\n    at Function.transform (/Users/oliviakasmin/Coding/Senior/stackathon-grief-napkin/node_modules/@babel/core/lib/transform.js:27:41)\n    at transform.next (<anonymous>)\n    at step (/Users/oliviakasmin/Coding/Senior/stackathon-grief-napkin/node_modules/gensync/index.js:254:32)");
 
 /***/ }),
 

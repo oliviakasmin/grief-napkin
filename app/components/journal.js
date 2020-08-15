@@ -5,7 +5,7 @@ const Journal = () => {
   return (
     <Container>
       <main>
-        <h5>feel free to use this page to keep you writing and thoughts</h5>
+        <h5>you can use this page to keep your writing and thoughts</h5>
       </main>
     </Container>
   )
