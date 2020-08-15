@@ -1,11 +1,13 @@
 const router = require('express').Router()
-const activityRoutes = require('./activities')
-const path = require('path')
-
-router.use('/api/activities', activityRoutes)
-
-router.use(function (req, res) {
-  res.sendFile(path.join(__dirname, './public/index.html'))
-})
-
 module.exports = router
+const userController = require('../controllers/userController')
+
+router.use('/users', require('./users'))
+// router.use('/activities', './activities')
+// router.use('/users', require('./users'))
+
+router.use((req, res, next) => {
+  const error = new Error('Not Found')
+  error.status = 404
+  next(error)
+})

@@ -1,31 +1,52 @@
 const path = require('path')
 const express = require('express')
 const app = express()
-
+const morgan = require('morgan')
+const compression = require('compression')
+const db = require('./db.js')
 const routes = require('./routes')
-
 const PORT = process.env.PORT || 3000
-
+module.exports = app
 // require db connection
-require('./models')
+// require('./db.js')
 
-// configure body parser for AJAX requests
+// logging middleware
+app.use(morgan('dev'))
+
+// body parsing middleware
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 
-// static middleware
-app.use(express.static(path.join(__dirname, './public')))
+// compression middleware
+app.use(compression())
 
+// api routes
 app.use('/api', require('./routes'))
 
-app.get('*', (req, res) => {
+// static file-serving middleware
+app.use(express.static(path.join(__dirname, './public')))
+
+// any remaining requests with an extension (.js, .css, etc.) send 404
+app.use((req, res, next) => {
+  if (path.extname(req.path).length) {
+    const err = new Error('Not found')
+    err.status = 404
+    next(err)
+  } else {
+    next()
+  }
+})
+
+// sends index.html
+app.use('*', (req, res) => {
   res.sendFile(path.join(__dirname, './public/index.html'))
 }) // Send index.html for any other requests
 
-// error handling middleware
+// error handling endware
 app.use((err, req, res, next) => {
-  if (process.env.NODE_ENV !== 'test') console.error(err.stack)
-  res.status(err.status || 500).send(err.message || 'Internal server error')
+  console.error(err)
+  console.error(err.stack)
+  res.status(err.status || 500).send(err.message || 'Internal server error.')
 })
 
 // Bootstrap server
