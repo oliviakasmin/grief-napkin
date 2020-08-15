@@ -10,9 +10,9 @@
     "server": "nodemon server.js",
     "build": "webpack --config webpack.config.js",
     "build-watch": "webpack -w",
-    "start1": "echo 'Running server for production - developers, use npm run start-dev for development' && node main",
+    "start": "echo 'Running server for production - developers, use npm run start-dev for development' && node main",
     "seed": "node seed.js",
-    "start": "node server.js"
+    "start1": "node server.js"
   },
   "keywords": [
     "react",
