@@ -1,4 +1,6 @@
-if (process.env.NODE_ENV !== 'production') require('../secrets')
+if (process.env.NODE_ENV !== 'production')
+  require(path.join(__dirname, '../secrets.js'))
+
 // const { mongoDbUsername, mongoDbPassword } = require('../secrets');
 
 const mongoDbUsername = process.env.MONGO_DB_USERNAME
