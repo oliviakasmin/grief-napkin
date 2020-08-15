@@ -14,7 +14,7 @@ const user = new Schema({
     connection: {
       type: String,
       enum: [
-        'parner',
+        'partner',
         'friend',
         'parent',
         'grandparent',
@@ -22,7 +22,7 @@ const user = new Schema({
         'twin',
         'someone I loved',
         'acquantaince',
-        'skip',
+        'prefer not to answer',
       ],
     },
     reason: {
@@ -36,7 +36,7 @@ const user = new Schema({
         'murder',
         'suicide',
         'a different shitty reason',
-        'skip',
+        'prefer not to answer',
       ],
     },
   },
@@ -69,18 +69,4 @@ const user = new Schema({
 
 const User = mongoose.model('User', user)
 
-const olivia = new User({
-  first: 'Olivia',
-  last: 'Kasmin',
-  email: 'oliviakasmin@gmail.com',
-  lost: {connection: 'partner', name: 'Andrea', reason: 'cancer'},
-  dates: {
-    birthday: '1992-4-21',
-    deathiversary: '2019-3-9',
-    specialOccasion: {description: 'anniversary', date: '2011-11-19'},
-  },
-})
-
-console.log(olivia)
-
-module.exports = {User}
+module.exports = User

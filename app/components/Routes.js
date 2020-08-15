@@ -1,21 +1,24 @@
 import React from 'react'
 // import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
 import {withRouter, Route, Switch} from 'react-router-dom'
+import {
+  Resources,
+  HomeNavbar,
+  Homepage,
+  Signup,
+  Journal,
+  Welcome,
+} from './index.js'
 
 const Routes = () => {
-  console.log('my routes page')
   return (
-    <Route>
-      <div>
-        <nav>
-          <p>Welcome!</p>
-        </nav>
-        <main>
-          <h2>hey party people</h2>
-          <p>Check out the navigation bar above to move between pages</p>
-        </main>
-      </div>
-    </Route>
+    <div>
+      <Route exact path="/" component={Homepage} />
+      <Route exact path="/resources" component={Resources} />
+      <Route exact path="/signup" component={Signup} />
+      <Route exact path="/journal" component={Journal} />
+      <Route exact path="/welcome" component={Welcome} />
+    </div>
   )
 }
 
