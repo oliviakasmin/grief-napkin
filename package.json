@@ -11,7 +11,8 @@
     "build": "webpack --config webpack.config.js",
     "build-watch": "webpack -w",
     "start": "echo 'Running server for production - developers, use npm run start-dev for development' && node main",
-    "seed": "node seed.js"
+    "seed": "node seed.js",
+    "start1": "node server.js"
   },
   "keywords": [
     "react",
@@ -23,6 +24,7 @@
   "dependencies": {
     "add": "^2.0.6",
     "axios": "^0.19.2",
+    "bootstrap": "^4.5.2",
     "create-react-app": "^3.4.1",
     "express": "^4.17.1",
     "mongoose": "^5.9.29",
