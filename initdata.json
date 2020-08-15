@@ -10,5 +10,14 @@
       "deathiversary": "2019-3-9",
       "specialOccasion": {"description": "anniversary", "date": "2011-11-19"}
     }
+  },
+  "sister": {
+    "first": "sister",
+    "last": "Kasmin",
+    "email": "chkasmin@gmail.com",
+    "lost": {"connection": "father", "name": "paul", "reason": "cancer"},
+    "dates": {
+      "birthday": "1960-2-19"
+    }
   }
 }

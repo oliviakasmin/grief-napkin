@@ -14,7 +14,7 @@ const user = new Schema({
     connection: {
       type: String,
       enum: [
-        'parner',
+        'partner',
         'friend',
         'parent',
         'grandparent',
@@ -22,7 +22,7 @@ const user = new Schema({
         'twin',
         'someone I loved',
         'acquantaince',
-        'skip',
+        'prefer not to answer',
       ],
     },
     reason: {
@@ -36,7 +36,7 @@ const user = new Schema({
         'murder',
         'suicide',
         'a different shitty reason',
-        'skip',
+        'prefer not to answer',
       ],
     },
   },
