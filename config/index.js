@@ -1,5 +1,11 @@
-const { mongoDbUsername, mongoDbPassword } = require('../secrets');
+if (process.env.NODE_ENV !== 'production') require('../secrets')
+// const { mongoDbUsername, mongoDbPassword } = require('../secrets');
 
-const MONGODB_URI = `mongodb+srv://${mongoDbUsername}:${mongoDbPassword}@cluster0.ts2fv.mongodb.net/test?retryWrites=true&w=majority`;
+const mongoDbUsername = process.env.MONGO_DB_USERNAME
+const mongoDbPassword = process.env.MONGO_DB_PASSWORD
 
-module.exports = MONGODB_URI;
+const MONGODB_URI = `mongodb+srv://${mongoDbUsername}:${mongoDbPassword}@cluster0.ts2fv.mongodb.net/test?retryWrites=true&w=majority`
+
+// const MONGODB_URI = `mongodb+srv://${mongoDbUsername}:${mongoDbPassword}@cluster0.ts2fv.mongodb.net/test?retryWrites=true&w=majority`;
+
+module.exports = MONGODB_URI
