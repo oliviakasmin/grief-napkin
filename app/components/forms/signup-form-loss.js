@@ -1,20 +1,13 @@
 import React from 'react'
-import {
-  Form,
-  Button,
-  Container,
-  Row,
-  Col,
-  ToggleButton,
-  ButtonGroup,
-} from 'react-bootstrap'
+import {Form, Button, Container, Col} from 'react-bootstrap'
+import {Link} from 'react-router-dom'
 
 export default function LossInfo(props) {
   return (
     <Container>
       <h5>
-        if this next part feels hard you can fill out as much or as little as
-        you want and edit your profile later
+        if this next part feels hard, fill out as much or as little as you want
+        and edit your profile later
       </h5>
       <Form>
         <Form.Group as={Col}>
@@ -77,9 +70,16 @@ export default function LossInfo(props) {
             <Form.Control type="test" placeholder="enter date" />
           </Form.Group>
         </Form.Group>
-        <Button variant="outline-info" type="submit" className="btn">
-          Next
-        </Button>
+        <Link to="/signup/">
+          <Button variant="outline-info" type="submit" className="btn">
+            back
+          </Button>
+        </Link>
+        <Link to="/signup/activities">
+          <Button variant="outline-info" type="submit" className="btn">
+            let's move on from these shitty questions
+          </Button>
+        </Link>
       </Form>
     </Container>
   )
