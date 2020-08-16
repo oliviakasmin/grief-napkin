@@ -27,7 +27,7 @@ export const fetchGetUser = (userId) => {
 }
 
 //req.body = filter{email: 'email'} , update {name: Olivia}
-export const fetchGetUser = (emailObj, updateObj) => {
+export const fetchUpdateUser = (emailObj, updateObj) => {
   return async (dispatch) => {
     try {
       const newUser = await axios.post('api/users/')

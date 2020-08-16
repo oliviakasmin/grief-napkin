@@ -20,6 +20,9 @@ const HomeNavbar = () => {
         <Nav.Link href="/welcome" className="nav-link">
           welcome
         </Nav.Link>
+        <Nav.Link href="/friends" className="nav-link">
+          my friends
+        </Nav.Link>
       </Nav>
     </Navbar>
   )
