@@ -11,6 +11,10 @@ import {
   Friends,
   LossInfo,
   ActivitiesForm,
+  Login,
+  Need,
+  UserProfile,
+  Stuck,
 } from './index.js'
 
 const Routes = () => {
@@ -24,6 +28,10 @@ const Routes = () => {
       <Route exact path="/journal" component={Journal} />
       <Route exact path="/welcome" component={Welcome} />
       <Route exact path="/friends" component={Friends} />
+      <Route exact path="/login" component={Login} />
+      <Route exact path="/need" component={Need} />
+      <Route exact path="/stuck" component={Stuck} />
+      <Route exact path="/:username" component={UserProfile} />
     </div>
   )
 }

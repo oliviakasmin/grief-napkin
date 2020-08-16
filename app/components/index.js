@@ -5,6 +5,12 @@ export {default as Signup} from './signup.js'
 export {default as Journal} from './journal.js'
 export {default as Welcome} from './welcome.js'
 export {default as Friends} from './friends.js'
+export {default as Login} from './login.js'
+export {default as Need} from './need.js'
+export {default as Stuck} from './stuck.js'
+export {default as UserProfile} from './profile.js'
+
+// signup form components
 export {default as LossInfo} from './forms/signup-form-loss'
 export {default as ActivitiesForm} from './forms/signup-form-activities.js'
 export {default as DailyCheckForm} from './forms/daily-check-form'

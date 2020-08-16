@@ -4,12 +4,19 @@ import {Container} from 'react-bootstrap'
 const Friends = () => {
   return (
     <Container>
-      <main>
-        <h5>want to message someone in your core crew?</h5>
-        <CoreCrew />
-        <h5>want to message someone in your larger cirlce of friends?</h5>
-        <LargerCircle />
-      </main>
+      <h5>your friends and people</h5>
+      <ul>
+        <li>
+          <CoreCrew />
+        </li>
+        <li>
+          <LargerCircle />
+        </li>
+      </ul>
+      <br />
+      <br />
+      <br />
+      <p>invite a friend to join</p>
     </Container>
   )
 }

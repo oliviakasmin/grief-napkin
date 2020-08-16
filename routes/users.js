@@ -4,17 +4,16 @@ module.exports = router
 
 router.get('/', async (req, res, next) => {
   try {
-    const users = await User.find({})
-    console.log('all my users', users)
+    const users = await User.find()
     res.json(users)
   } catch (err) {
     next(err)
   }
 })
 
-router.get('/:id', async (req, res, next) => {
+router.get('/:username', async (req, res, next) => {
   try {
-    const user = await User.findById(req.params.id)
+    const user = await User.findOne({username: req.params.username})
     res.json(user)
   } catch (err) {
     next(err)

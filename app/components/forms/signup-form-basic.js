@@ -32,11 +32,6 @@ export default function BasicInfo(props) {
         <Form.Control type="password" size="sm" placeholder="enter password" />
       </Form.Group>
       <p>(these fields are required)</p>
-      <Link to="/signup/loss-info">
-        <Button variant="outline-info" type="submit" className="btn">
-          Next
-        </Button>
-      </Link>
     </Form>
   )
 }

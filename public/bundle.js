@@ -187,6 +187,22 @@ var Routes = function Routes() {
     exact: true,
     path: "/friends",
     component: _index_js__WEBPACK_IMPORTED_MODULE_2__["Friends"]
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    exact: true,
+    path: "/login",
+    component: _index_js__WEBPACK_IMPORTED_MODULE_2__["Login"]
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    exact: true,
+    path: "/need",
+    component: _index_js__WEBPACK_IMPORTED_MODULE_2__["Need"]
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    exact: true,
+    path: "/stuck",
+    component: _index_js__WEBPACK_IMPORTED_MODULE_2__["Stuck"]
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    exact: true,
+    path: "/:username",
+    component: _index_js__WEBPACK_IMPORTED_MODULE_2__["UserProfile"]
   }));
 };
 
@@ -293,7 +309,13 @@ function ActivitiesForm(props) {
     variant: "outline-info",
     type: "submit",
     className: "btn"
-  }, "back"))));
+  }, "back")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: "/welcome"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+    variant: "outline-info",
+    type: "submit",
+    className: "btn"
+  }, "finish"))));
 }
 
 /***/ }),
@@ -336,13 +358,7 @@ function BasicInfo(props) {
     type: "password",
     size: "sm",
     placeholder: "enter password"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "(these fields are required)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-    to: "/signup/loss-info"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
-    variant: "outline-info",
-    type: "submit",
-    className: "btn"
-  }, "Next")));
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "(these fields are required)"));
 }
 
 /***/ }),
@@ -365,7 +381,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function LossInfo(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "if this next part feels hard, fill out as much or as little as you want and edit your profile later"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Group, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Group, {
     as: react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"]
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Label, {
     row: "true",
@@ -492,7 +508,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Friends = function Friends() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "want to message someone in your core crew?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CoreCrew, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "want to message someone in your larger cirlce of friends?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LargerCircle, null)));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "your friends and people"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CoreCrew, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LargerCircle, null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "invite a friend to join"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Friends);
@@ -523,7 +539,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Homepage = function Homepage() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "losing your person sucks."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "we hope we can make yours days just a little bit easier")));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "losing your person sucks."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "we hope this can make your days just a little bit easier")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Homepage);
@@ -534,7 +550,7 @@ var Homepage = function Homepage() {
 /*!*********************************!*\
   !*** ./app/components/index.js ***!
   \*********************************/
-/*! exports provided: Resources, HomeNavbar, Homepage, Signup, Journal, Welcome, Friends, LossInfo, ActivitiesForm, DailyCheckForm */
+/*! exports provided: Resources, HomeNavbar, Homepage, Signup, Journal, Welcome, Friends, Login, Need, Stuck, UserProfile, LossInfo, ActivitiesForm, DailyCheckForm */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -560,14 +576,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _friends_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./friends.js */ "./app/components/friends.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Friends", function() { return _friends_js__WEBPACK_IMPORTED_MODULE_6__["default"]; });
 
-/* harmony import */ var _forms_signup_form_loss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./forms/signup-form-loss */ "./app/components/forms/signup-form-loss.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "LossInfo", function() { return _forms_signup_form_loss__WEBPACK_IMPORTED_MODULE_7__["default"]; });
+/* harmony import */ var _login_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./login.js */ "./app/components/login.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Login", function() { return _login_js__WEBPACK_IMPORTED_MODULE_7__["default"]; });
 
-/* harmony import */ var _forms_signup_form_activities_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./forms/signup-form-activities.js */ "./app/components/forms/signup-form-activities.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ActivitiesForm", function() { return _forms_signup_form_activities_js__WEBPACK_IMPORTED_MODULE_8__["default"]; });
+/* harmony import */ var _need_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./need.js */ "./app/components/need.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Need", function() { return _need_js__WEBPACK_IMPORTED_MODULE_8__["default"]; });
 
-/* harmony import */ var _forms_daily_check_form__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./forms/daily-check-form */ "./app/components/forms/daily-check-form.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "DailyCheckForm", function() { return _forms_daily_check_form__WEBPACK_IMPORTED_MODULE_9__["default"]; });
+/* harmony import */ var _stuck_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./stuck.js */ "./app/components/stuck.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Stuck", function() { return _stuck_js__WEBPACK_IMPORTED_MODULE_9__["default"]; });
+
+/* harmony import */ var _profile_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./profile.js */ "./app/components/profile.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "UserProfile", function() { return _profile_js__WEBPACK_IMPORTED_MODULE_10__["default"]; });
+
+/* harmony import */ var _forms_signup_form_loss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./forms/signup-form-loss */ "./app/components/forms/signup-form-loss.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "LossInfo", function() { return _forms_signup_form_loss__WEBPACK_IMPORTED_MODULE_11__["default"]; });
+
+/* harmony import */ var _forms_signup_form_activities_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./forms/signup-form-activities.js */ "./app/components/forms/signup-form-activities.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ActivitiesForm", function() { return _forms_signup_form_activities_js__WEBPACK_IMPORTED_MODULE_12__["default"]; });
+
+/* harmony import */ var _forms_daily_check_form__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./forms/daily-check-form */ "./app/components/forms/daily-check-form.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "DailyCheckForm", function() { return _forms_daily_check_form__WEBPACK_IMPORTED_MODULE_13__["default"]; });
 
 
 
@@ -575,6 +603,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+ // signup form components
 
 
 
@@ -605,6 +638,45 @@ var Journal = function Journal() {
 
 /***/ }),
 
+/***/ "./app/components/login.js":
+/*!*********************************!*\
+  !*** ./app/components/login.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Login; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+
+
+
+function Login(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"], {
+    className: "form"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Group, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Label, null, "email"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Control, {
+    type: "email",
+    size: "sm",
+    placeholder: "enter email"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Group, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Label, null, "password"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Control, {
+    type: "password",
+    size: "sm",
+    placeholder: "enter password"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: "/welcome"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+    variant: "outline-info",
+    type: "submit",
+    className: "btn"
+  }, "login")));
+}
+
+/***/ }),
+
 /***/ "./app/components/navbar.js":
 /*!**********************************!*\
   !*** ./app/components/navbar.js ***!
@@ -629,24 +701,139 @@ var HomeNavbar = function HomeNavbar() {
     href: "/",
     className: "home-nav"
   }, "grief napkin"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"].Link, {
-    href: "/resources",
+    href: "/stuck",
     className: "nav-link"
-  }, "resources"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"].Link, {
+  }, "i'm stuck"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["NavDropdown"], {
+    title: "my stuff",
+    id: "basic-nav-dropdown"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["NavDropdown"].Item, {
+    href: "/friends"
+  }, "friends"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["NavDropdown"].Item, {
+    href: "/journal"
+  }, "journal"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["NavDropdown"].Item, {
+    href: "/resources"
+  }, "resources"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["NavDropdown"].Divider, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["NavDropdown"].Item, {
+    href: "/:username"
+  }, "my profile")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"].Link, {
+    href: "/login",
+    className: "nav-link"
+  }, "login"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"].Link, {
     href: "/signup",
     className: "nav-link"
-  }, "signup"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"].Link, {
-    href: "/journal",
-    className: "nav-link"
-  }, "journal"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"].Link, {
-    href: "/welcome",
-    className: "nav-link"
-  }, "welcome"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"].Link, {
-    href: "/friends",
-    className: "nav-link"
-  }, "my friends")));
+  }, "signup")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (HomeNavbar);
+
+/***/ }),
+
+/***/ "./app/components/need.js":
+/*!********************************!*\
+  !*** ./app/components/need.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
+
+
+
+var Need = function Need() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "I need ..."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "I want ..."));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Need);
+
+/***/ }),
+
+/***/ "./app/components/profile.js":
+/*!***********************************!*\
+  !*** ./app/components/profile.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _redux_users_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../redux/users.js */ "./app/redux/users.js");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+
+var UserProfile = /*#__PURE__*/function (_Component) {
+  _inherits(UserProfile, _Component);
+
+  var _super = _createSuper(UserProfile);
+
+  function UserProfile() {
+    _classCallCheck(this, UserProfile);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(UserProfile, [{
+    key: "componentDidMount",
+    // constructor (props) {
+    //   super(props)
+    // }
+    value: function componentDidMount() {
+      var username = this.props.match.params.username;
+      this.props.getUser(username);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null);
+    }
+  }]);
+
+  return UserProfile;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+var mapState = function mapState(state) {
+  return {
+    user: state.userReducer
+  };
+};
+
+var mapDispatch = function mapDispatch(dispatch) {
+  return {
+    getUser: function getUser(username) {
+      return dispatch(Object(_redux_users_js__WEBPACK_IMPORTED_MODULE_2__["fetchGetUser"])(username));
+    }
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(mapState, mapDispatch)(UserProfile));
 
 /***/ }),
 
@@ -663,15 +850,46 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _forms_signup_form_basic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./forms/signup-form-basic */ "./app/components/forms/signup-form-basic.js");
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+
 
 
 
 
 var Signup = function Signup() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "please answer some questions to get your profile set up")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_forms_signup_form_basic__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "please answer some questions to get your profile set up")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_forms_signup_form_basic__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
+    to: "/signup/loss-info"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+    variant: "outline-info",
+    type: "submit",
+    className: "btn"
+  }, "Next")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "the next part includes 4 quick questions that might be hard, you can skip as much as you want and finish your profile later"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Signup);
+
+/***/ }),
+
+/***/ "./app/components/stuck.js":
+/*!*********************************!*\
+  !*** ./app/components/stuck.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
+
+
+
+var Stuck = function Stuck() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "here's some stuff that could help"));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Stuck);
 
 /***/ }),
 
@@ -704,10 +922,35 @@ var Welcome = function Welcome() {
 /* harmony default export */ __webpack_exports__["default"] = (Welcome);
 
 var ContactFriend = function ContactFriend() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "want to ping a friend?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yeah, okay"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
-    className: "nav-link",
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "want to share how you're feeling with your core crew today?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
+    to: "/"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+    size: "sm",
+    variant: "outline-info",
+    type: "submit",
+    className: "btn"
+  }, "yeah, okay")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
+    to: "/"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+    size: "sm",
+    variant: "outline-info",
+    type: "submit",
+    className: "btn"
+  }, "nah")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "want to ping a friend?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
     to: "/friends"
-  }, "click here for your friends"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "nah"));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+    size: "sm",
+    variant: "outline-info",
+    type: "submit",
+    className: "btn"
+  }, "yeah, okay")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
+    to: "/"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+    size: "sm",
+    variant: "outline-info",
+    type: "submit",
+    className: "btn"
+  }, "nah")));
 };
 
 /***/ }),
@@ -827,7 +1070,7 @@ var updateUser = function updateUser(user) {
     user: user
   };
 };
-var fetchGetUser = function fetchGetUser(userId) {
+var fetchGetUser = function fetchGetUser(username) {
   return /*#__PURE__*/function () {
     var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(dispatch) {
       var foundUser;
@@ -837,10 +1080,11 @@ var fetchGetUser = function fetchGetUser(userId) {
             case 0:
               _context.prev = 0;
               _context.next = 3;
-              return axios__WEBPACK_IMPORTED_MODULE_0___default.a.get("api/users/".concat(userId));
+              return axios__WEBPACK_IMPORTED_MODULE_0___default.a.get("api/users/".concat(username));
 
             case 3:
               foundUser = _context.sent;
+              // console.log(foundUser.data, 'in thunk')
               dispatch(getUser(foundUser.data));
               _context.next = 10;
               break;

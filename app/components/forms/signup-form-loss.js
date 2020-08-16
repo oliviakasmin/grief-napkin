@@ -5,10 +5,6 @@ import {Link} from 'react-router-dom'
 export default function LossInfo(props) {
   return (
     <Container>
-      <h5>
-        if this next part feels hard, fill out as much or as little as you want
-        and edit your profile later
-      </h5>
       <Form>
         <Form.Group as={Col}>
           <Form.Label row="true" sm={2}>

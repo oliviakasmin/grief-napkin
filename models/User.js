@@ -9,6 +9,7 @@ const user = new Schema({
   first: {type: String, required: true, lowercase: true},
   last: {type: String, required: true, lowercase: true},
   email: {type: String, required: true, unique: true},
+  username: {type: String, required: true, unique: true},
   lost: {
     name: {type: String, lowercase: true},
     connection: {

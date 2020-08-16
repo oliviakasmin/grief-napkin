@@ -6,7 +6,7 @@ const Homepage = () => {
     <Container>
       <main>
         <h3>losing your person sucks.</h3>
-        <p>we hope we can make yours days just a little bit easier</p>
+        <p>we hope this can make your days just a little bit easier</p>
       </main>
     </Container>
   )

@@ -15,10 +15,11 @@ export const updateUser = (user) => ({
   user,
 })
 
-export const fetchGetUser = (userId) => {
+export const fetchGetUser = (username) => {
   return async (dispatch) => {
     try {
-      const foundUser = await axios.get(`api/users/${userId}`)
+      const foundUser = await axios.get(`api/users/${username}`)
+      // console.log(foundUser.data, 'in thunk')
       dispatch(getUser(foundUser.data))
     } catch (err) {
       console.error(err)

@@ -29,6 +29,11 @@ export default function ActivitiesForm(props) {
             back
           </Button>
         </Link>
+        <Link to="/welcome">
+          <Button variant="outline-info" type="submit" className="btn">
+            finish
+          </Button>
+        </Link>
       </Form>
     </Container>
   )
