@@ -169,12 +169,24 @@ var Routes = function Routes() {
     component: _index_js__WEBPACK_IMPORTED_MODULE_2__["Signup"]
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
+    path: "/signup/loss-info",
+    component: _index_js__WEBPACK_IMPORTED_MODULE_2__["LossInfo"]
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    exact: true,
+    path: "/signup/activities",
+    component: _index_js__WEBPACK_IMPORTED_MODULE_2__["ActivitiesForm"]
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    exact: true,
     path: "/journal",
     component: _index_js__WEBPACK_IMPORTED_MODULE_2__["Journal"]
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
     path: "/welcome",
     component: _index_js__WEBPACK_IMPORTED_MODULE_2__["Welcome"]
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    exact: true,
+    path: "/friends",
+    component: _index_js__WEBPACK_IMPORTED_MODULE_2__["Friends"]
   }));
 };
 
@@ -182,57 +194,183 @@ var Routes = function Routes() {
 
 /***/ }),
 
-/***/ "./app/components/forms/signup-form.js":
-/*!*********************************************!*\
-  !*** ./app/components/forms/signup-form.js ***!
-  \*********************************************/
+/***/ "./app/components/forms/daily-check-form.js":
+/*!**************************************************!*\
+  !*** ./app/components/forms/daily-check-form.js ***!
+  \**************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return SignupForm; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
+/* harmony import */ var react_emoji_render__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-emoji-render */ "./node_modules/react-emoji-render/lib/index.js");
+/* harmony import */ var react_emoji_render__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_emoji_render__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 
 
-function SignupForm(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "required"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BasicInfo, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "if this part feels too hard you can always edit your profile later"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LossInfo, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
-    variant: "outline-primary",
+
+
+
+var DailyCheckForm = function DailyCheckForm() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Accordion"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Card"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Accordion"].Toggle, {
+    as: react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Card"].Header,
+    eventKey: "0"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_emoji_render__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    text: ":upside_down_face:"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Accordion"].Collapse, {
+    eventKey: "0"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Card"].Body, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Smile, null)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Card"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Accordion"].Toggle, {
+    as: react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Card"].Header,
+    eventKey: "1"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_emoji_render__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    text: ":neutral_face: "
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Accordion"].Collapse, {
+    eventKey: "1"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Card"].Body, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Eh, null)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Card"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Accordion"].Toggle, {
+    as: react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Card"].Header,
+    eventKey: "2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_emoji_render__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    text: ":expressionless: "
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Accordion"].Collapse, {
+    eventKey: "2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Card"].Body, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Bad, null))))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (DailyCheckForm);
+
+var Smile = function Smile() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "I'm thriving (all things considered...)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "today is a pretty good day"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "I got this"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "I'm a hot mess and I'm rolling with it"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Feeling great and ready for some fun"));
+};
+
+var Eh = function Eh() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "okay, just want to be alone"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "oh you know, trudging on"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "life sucks, but I'm \"ok\""), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "this is hard, but I got dressed!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "okay, and I could really use some company"));
+};
+
+var Bad = function Bad() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "this feels like too much"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "don't want to get out of bed"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "I have to do something super shitty today"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "what's even the point"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "could really use some suport right about now"));
+};
+
+/***/ }),
+
+/***/ "./app/components/forms/signup-form-activities.js":
+/*!********************************************************!*\
+  !*** ./app/components/forms/signup-form-activities.js ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ActivitiesForm; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+
+
+
+var sampleActivities = ['reading', 'watching movies', 'exercising', 'making art', 'going to restaurants', 'hanging with friends', 'outdoor activities'];
+function ActivitiesForm(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"], {
+    className: "form"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Group, {
+    as: react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Label, {
+    row: "true",
+    sm: 2
+  }, "when I still enjoyed doing things, I liked..."), sampleActivities.map(function (activity) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Check, {
+      key: activity,
+      type: "checkbox",
+      label: activity
+    });
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: "/signup/loss-info"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+    variant: "outline-info",
     type: "submit",
     className: "btn"
-  }, "Submit"));
+  }, "back"))));
 }
+
+/***/ }),
+
+/***/ "./app/components/forms/signup-form-basic.js":
+/*!***************************************************!*\
+  !*** ./app/components/forms/signup-form-basic.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return BasicInfo; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+
+
 
 function BasicInfo(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"], {
     className: "form"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Group, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Label, null, "first name "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Control, {
+    size: "sm",
     name: "firstname",
     type: "text",
     placeholder: "enter first name"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Group, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Label, null, "last name "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Control, {
+    size: "sm",
     name: "lastname",
     type: "text",
     placeholder: "enter last name"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Group, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Label, null, "email"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Control, {
     type: "email",
+    size: "sm",
     placeholder: "enter email"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Group, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Label, null, "password"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Control, {
     type: "password",
+    size: "sm",
     placeholder: "enter password"
-  })));
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "(these fields are required)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: "/signup/loss-info"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+    variant: "outline-info",
+    type: "submit",
+    className: "btn"
+  }, "Next")));
 }
 
+/***/ }),
+
+/***/ "./app/components/forms/signup-form-loss.js":
+/*!**************************************************!*\
+  !*** ./app/components/forms/signup-form-loss.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return LossInfo; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+
+
+
 function LossInfo(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Group, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "if this next part feels hard, fill out as much or as little as you want and edit your profile later"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Group, {
     as: react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"]
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Label, {
-    as: "legend",
-    column: true,
+    row: "true",
     sm: 2
-  }, "I lost my..."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Check, {
+  }, "I lost my..."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "(select as many as applicable, dealing with multiple losses is f***ing real)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Check, {
     type: "checkbox",
     label: "partner"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Check, {
@@ -262,12 +400,11 @@ function LossInfo(props) {
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Group, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Label, null, "their name is..."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Control, {
     name: "lost-name",
     type: "text",
-    placeholder: ""
+    placeholder: "enter name"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Group, {
     as: react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"]
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Label, {
-    as: "legend",
-    column: true,
+    row: "true",
     sm: 2
   }, "they died from..."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Check, {
     type: "checkbox",
@@ -322,8 +459,51 @@ function LossInfo(props) {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Form"].Control, {
     type: "test",
     placeholder: "enter date"
-  }))));
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: "/signup/"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+    variant: "outline-info",
+    type: "submit",
+    className: "btn"
+  }, "back")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: "/signup/activities"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+    variant: "outline-info",
+    type: "submit",
+    className: "btn"
+  }, "let's move on from these shitty questions"))));
 }
+
+/***/ }),
+
+/***/ "./app/components/friends.js":
+/*!***********************************!*\
+  !*** ./app/components/friends.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
+
+
+
+var Friends = function Friends() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "want to message someone in your core crew?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CoreCrew, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "want to message someone in your larger cirlce of friends?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LargerCircle, null)));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Friends);
+
+var CoreCrew = function CoreCrew() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "list of your core crew friends here"));
+};
+
+var LargerCircle = function LargerCircle() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "list of your larger cirlce of friends here"));
+};
 
 /***/ }),
 
@@ -354,7 +534,7 @@ var Homepage = function Homepage() {
 /*!*********************************!*\
   !*** ./app/components/index.js ***!
   \*********************************/
-/*! exports provided: Resources, HomeNavbar, Homepage, Signup, Journal, Welcome */
+/*! exports provided: Resources, HomeNavbar, Homepage, Signup, Journal, Welcome, Friends, LossInfo, ActivitiesForm, DailyCheckForm */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -376,6 +556,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony import */ var _welcome_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./welcome.js */ "./app/components/welcome.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Welcome", function() { return _welcome_js__WEBPACK_IMPORTED_MODULE_5__["default"]; });
+
+/* harmony import */ var _friends_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./friends.js */ "./app/components/friends.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Friends", function() { return _friends_js__WEBPACK_IMPORTED_MODULE_6__["default"]; });
+
+/* harmony import */ var _forms_signup_form_loss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./forms/signup-form-loss */ "./app/components/forms/signup-form-loss.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "LossInfo", function() { return _forms_signup_form_loss__WEBPACK_IMPORTED_MODULE_7__["default"]; });
+
+/* harmony import */ var _forms_signup_form_activities_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./forms/signup-form-activities.js */ "./app/components/forms/signup-form-activities.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ActivitiesForm", function() { return _forms_signup_form_activities_js__WEBPACK_IMPORTED_MODULE_8__["default"]; });
+
+/* harmony import */ var _forms_daily_check_form__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./forms/daily-check-form */ "./app/components/forms/daily-check-form.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "DailyCheckForm", function() { return _forms_daily_check_form__WEBPACK_IMPORTED_MODULE_9__["default"]; });
+
+
+
+
 
 
 
@@ -402,7 +598,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Journal = function Journal() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "feel free to use this page to keep you writing and thoughts")));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "you can use this page to keep your writing and thoughts")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Journal);
@@ -444,7 +640,10 @@ var HomeNavbar = function HomeNavbar() {
   }, "journal"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"].Link, {
     href: "/welcome",
     className: "nav-link"
-  }, "welcome")));
+  }, "welcome"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"].Link, {
+    href: "/friends",
+    className: "nav-link"
+  }, "my friends")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (HomeNavbar);
@@ -462,14 +661,14 @@ var HomeNavbar = function HomeNavbar() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _forms_signup_form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./forms/signup-form */ "./app/components/forms/signup-form.js");
+/* harmony import */ var _forms_signup_form_basic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./forms/signup-form-basic */ "./app/components/forms/signup-form-basic.js");
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
 
 
 
 
 var Signup = function Signup() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "please answer some questions to get your profile set up")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_forms_signup_form__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "please answer some questions to get your profile set up")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_forms_signup_form_basic__WEBPACK_IMPORTED_MODULE_1__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Signup);
@@ -488,14 +687,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
+/* harmony import */ var react_emoji_render__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-emoji-render */ "./node_modules/react-emoji-render/lib/index.js");
+/* harmony import */ var react_emoji_render__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_emoji_render__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./index.js */ "./app/components/index.js");
+
+
+
 
 
 
 var Welcome = function Welcome() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "how are you today?")));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "how are you today?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_index_js__WEBPACK_IMPORTED_MODULE_4__["DailyCheckForm"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ContactFriend, null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Welcome);
+
+var ContactFriend = function ContactFriend() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "want to ping a friend?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yeah, okay"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
+    className: "nav-link",
+    to: "/friends"
+  }, "click here for your friends"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "nah"));
+};
 
 /***/ }),
 
@@ -572,7 +785,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var appReducer = Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({
-  users: _users__WEBPACK_IMPORTED_MODULE_1__["default"]
+  user: _users__WEBPACK_IMPORTED_MODULE_1__["default"]
 });
 /* harmony default export */ __webpack_exports__["default"] = (appReducer);
 
@@ -582,20 +795,125 @@ var appReducer = Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({
 /*!****************************!*\
   !*** ./app/redux/users.js ***!
   \****************************/
-/*! exports provided: setUsers, fetchUsers, default */
+/*! exports provided: getUser, updateUser, fetchGetUser, fetchUpdateUser, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setUsers", function() { return setUsers; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchUsers", function() { return fetchUsers; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getUser", function() { return getUser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "updateUser", function() { return updateUser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchGetUser", function() { return fetchGetUser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchUpdateUser", function() { return fetchUpdateUser; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return userReducer; });
-var setUsers = function setUsers() {};
-var fetchUsers = function fetchUsers() {}; // Take a look at app/redux/index.js to see where this reducer is
-// added to the Redux store with combineReducers
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+
+var initialState = {};
+var GET_USER = 'GET_USER';
+var UPDATE_USER = 'UPDATE_USER';
+var getUser = function getUser(user) {
+  return {
+    type: GET_USER,
+    user: user
+  };
+};
+var updateUser = function updateUser(user) {
+  return {
+    type: UPDATE_USER,
+    user: user
+  };
+};
+var fetchGetUser = function fetchGetUser(userId) {
+  return /*#__PURE__*/function () {
+    var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(dispatch) {
+      var foundUser;
+      return regeneratorRuntime.wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              _context.prev = 0;
+              _context.next = 3;
+              return axios__WEBPACK_IMPORTED_MODULE_0___default.a.get("api/users/".concat(userId));
+
+            case 3:
+              foundUser = _context.sent;
+              dispatch(getUser(foundUser.data));
+              _context.next = 10;
+              break;
+
+            case 7:
+              _context.prev = 7;
+              _context.t0 = _context["catch"](0);
+              console.error(_context.t0);
+
+            case 10:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee, null, [[0, 7]]);
+    }));
+
+    return function (_x) {
+      return _ref.apply(this, arguments);
+    };
+  }();
+}; //req.body = filter{email: 'email'} , update {name: Olivia}
+
+var fetchUpdateUser = function fetchUpdateUser(emailObj, updateObj) {
+  return /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2(dispatch) {
+      var newUser;
+      return regeneratorRuntime.wrap(function _callee2$(_context2) {
+        while (1) {
+          switch (_context2.prev = _context2.next) {
+            case 0:
+              _context2.prev = 0;
+              _context2.next = 3;
+              return axios__WEBPACK_IMPORTED_MODULE_0___default.a.post('api/users/');
+
+            case 3:
+              newUser = _context2.sent;
+              dispatch(updateUser(newUser.data));
+              _context2.next = 10;
+              break;
+
+            case 7:
+              _context2.prev = 7;
+              _context2.t0 = _context2["catch"](0);
+              console.error(_context2.t0);
+
+            case 10:
+            case "end":
+              return _context2.stop();
+          }
+        }
+      }, _callee2, null, [[0, 7]]);
+    }));
+
+    return function (_x2) {
+      return _ref2.apply(this, arguments);
+    };
+  }();
+};
 function userReducer() {
-  return null;
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+
+  switch (action.type) {
+    case GET_USER:
+      return action.user;
+
+    case UPDATE_USER:
+      return action.user;
+
+    default:
+      return state;
+  }
 }
 
 /***/ }),
@@ -18638,6 +18956,473 @@ var invariant = function(condition, format, a, b, c, d, e, f) {
 };
 
 module.exports = invariant;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash.flatten/index.js":
+/*!**********************************************!*\
+  !*** ./node_modules/lodash.flatten/index.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(global) {/**
+ * lodash (Custom Build) <https://lodash.com/>
+ * Build: `lodash modularize exports="npm" -o ./`
+ * Copyright jQuery Foundation and other contributors <https://jquery.org/>
+ * Released under MIT license <https://lodash.com/license>
+ * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
+ * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+ */
+
+/** Used as references for various `Number` constants. */
+var MAX_SAFE_INTEGER = 9007199254740991;
+
+/** `Object#toString` result references. */
+var argsTag = '[object Arguments]',
+    funcTag = '[object Function]',
+    genTag = '[object GeneratorFunction]';
+
+/** Detect free variable `global` from Node.js. */
+var freeGlobal = typeof global == 'object' && global && global.Object === Object && global;
+
+/** Detect free variable `self`. */
+var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
+
+/** Used as a reference to the global object. */
+var root = freeGlobal || freeSelf || Function('return this')();
+
+/**
+ * Appends the elements of `values` to `array`.
+ *
+ * @private
+ * @param {Array} array The array to modify.
+ * @param {Array} values The values to append.
+ * @returns {Array} Returns `array`.
+ */
+function arrayPush(array, values) {
+  var index = -1,
+      length = values.length,
+      offset = array.length;
+
+  while (++index < length) {
+    array[offset + index] = values[index];
+  }
+  return array;
+}
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
+
+/**
+ * Used to resolve the
+ * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+ * of values.
+ */
+var objectToString = objectProto.toString;
+
+/** Built-in value references. */
+var Symbol = root.Symbol,
+    propertyIsEnumerable = objectProto.propertyIsEnumerable,
+    spreadableSymbol = Symbol ? Symbol.isConcatSpreadable : undefined;
+
+/**
+ * The base implementation of `_.flatten` with support for restricting flattening.
+ *
+ * @private
+ * @param {Array} array The array to flatten.
+ * @param {number} depth The maximum recursion depth.
+ * @param {boolean} [predicate=isFlattenable] The function invoked per iteration.
+ * @param {boolean} [isStrict] Restrict to values that pass `predicate` checks.
+ * @param {Array} [result=[]] The initial result value.
+ * @returns {Array} Returns the new flattened array.
+ */
+function baseFlatten(array, depth, predicate, isStrict, result) {
+  var index = -1,
+      length = array.length;
+
+  predicate || (predicate = isFlattenable);
+  result || (result = []);
+
+  while (++index < length) {
+    var value = array[index];
+    if (depth > 0 && predicate(value)) {
+      if (depth > 1) {
+        // Recursively flatten arrays (susceptible to call stack limits).
+        baseFlatten(value, depth - 1, predicate, isStrict, result);
+      } else {
+        arrayPush(result, value);
+      }
+    } else if (!isStrict) {
+      result[result.length] = value;
+    }
+  }
+  return result;
+}
+
+/**
+ * Checks if `value` is a flattenable `arguments` object or array.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is flattenable, else `false`.
+ */
+function isFlattenable(value) {
+  return isArray(value) || isArguments(value) ||
+    !!(spreadableSymbol && value && value[spreadableSymbol]);
+}
+
+/**
+ * Flattens `array` a single level deep.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Array
+ * @param {Array} array The array to flatten.
+ * @returns {Array} Returns the new flattened array.
+ * @example
+ *
+ * _.flatten([1, [2, [3, [4]], 5]]);
+ * // => [1, 2, [3, [4]], 5]
+ */
+function flatten(array) {
+  var length = array ? array.length : 0;
+  return length ? baseFlatten(array, 1) : [];
+}
+
+/**
+ * Checks if `value` is likely an `arguments` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an `arguments` object,
+ *  else `false`.
+ * @example
+ *
+ * _.isArguments(function() { return arguments; }());
+ * // => true
+ *
+ * _.isArguments([1, 2, 3]);
+ * // => false
+ */
+function isArguments(value) {
+  // Safari 8.1 makes `arguments.callee` enumerable in strict mode.
+  return isArrayLikeObject(value) && hasOwnProperty.call(value, 'callee') &&
+    (!propertyIsEnumerable.call(value, 'callee') || objectToString.call(value) == argsTag);
+}
+
+/**
+ * Checks if `value` is classified as an `Array` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an array, else `false`.
+ * @example
+ *
+ * _.isArray([1, 2, 3]);
+ * // => true
+ *
+ * _.isArray(document.body.children);
+ * // => false
+ *
+ * _.isArray('abc');
+ * // => false
+ *
+ * _.isArray(_.noop);
+ * // => false
+ */
+var isArray = Array.isArray;
+
+/**
+ * Checks if `value` is array-like. A value is considered array-like if it's
+ * not a function and has a `value.length` that's an integer greater than or
+ * equal to `0` and less than or equal to `Number.MAX_SAFE_INTEGER`.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is array-like, else `false`.
+ * @example
+ *
+ * _.isArrayLike([1, 2, 3]);
+ * // => true
+ *
+ * _.isArrayLike(document.body.children);
+ * // => true
+ *
+ * _.isArrayLike('abc');
+ * // => true
+ *
+ * _.isArrayLike(_.noop);
+ * // => false
+ */
+function isArrayLike(value) {
+  return value != null && isLength(value.length) && !isFunction(value);
+}
+
+/**
+ * This method is like `_.isArrayLike` except that it also checks if `value`
+ * is an object.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an array-like object,
+ *  else `false`.
+ * @example
+ *
+ * _.isArrayLikeObject([1, 2, 3]);
+ * // => true
+ *
+ * _.isArrayLikeObject(document.body.children);
+ * // => true
+ *
+ * _.isArrayLikeObject('abc');
+ * // => false
+ *
+ * _.isArrayLikeObject(_.noop);
+ * // => false
+ */
+function isArrayLikeObject(value) {
+  return isObjectLike(value) && isArrayLike(value);
+}
+
+/**
+ * Checks if `value` is classified as a `Function` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a function, else `false`.
+ * @example
+ *
+ * _.isFunction(_);
+ * // => true
+ *
+ * _.isFunction(/abc/);
+ * // => false
+ */
+function isFunction(value) {
+  // The use of `Object#toString` avoids issues with the `typeof` operator
+  // in Safari 8-9 which returns 'object' for typed array and other constructors.
+  var tag = isObject(value) ? objectToString.call(value) : '';
+  return tag == funcTag || tag == genTag;
+}
+
+/**
+ * Checks if `value` is a valid array-like length.
+ *
+ * **Note:** This method is loosely based on
+ * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a valid length, else `false`.
+ * @example
+ *
+ * _.isLength(3);
+ * // => true
+ *
+ * _.isLength(Number.MIN_VALUE);
+ * // => false
+ *
+ * _.isLength(Infinity);
+ * // => false
+ *
+ * _.isLength('3');
+ * // => false
+ */
+function isLength(value) {
+  return typeof value == 'number' &&
+    value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
+}
+
+/**
+ * Checks if `value` is the
+ * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
+ * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an object, else `false`.
+ * @example
+ *
+ * _.isObject({});
+ * // => true
+ *
+ * _.isObject([1, 2, 3]);
+ * // => true
+ *
+ * _.isObject(_.noop);
+ * // => true
+ *
+ * _.isObject(null);
+ * // => false
+ */
+function isObject(value) {
+  var type = typeof value;
+  return !!value && (type == 'object' || type == 'function');
+}
+
+/**
+ * Checks if `value` is object-like. A value is object-like if it's not `null`
+ * and has a `typeof` result of "object".
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
+ * @example
+ *
+ * _.isObjectLike({});
+ * // => true
+ *
+ * _.isObjectLike([1, 2, 3]);
+ * // => true
+ *
+ * _.isObjectLike(_.noop);
+ * // => false
+ *
+ * _.isObjectLike(null);
+ * // => false
+ */
+function isObjectLike(value) {
+  return !!value && typeof value == 'object';
+}
+
+module.exports = flatten;
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
+/***/ "./node_modules/lodash.isstring/index.js":
+/*!***********************************************!*\
+  !*** ./node_modules/lodash.isstring/index.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * lodash 4.0.1 (Custom Build) <https://lodash.com/>
+ * Build: `lodash modularize exports="npm" -o ./`
+ * Copyright 2012-2016 The Dojo Foundation <http://dojofoundation.org/>
+ * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
+ * Copyright 2009-2016 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+ * Available under MIT license <https://lodash.com/license>
+ */
+
+/** `Object#toString` result references. */
+var stringTag = '[object String]';
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/**
+ * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+ * of values.
+ */
+var objectToString = objectProto.toString;
+
+/**
+ * Checks if `value` is classified as an `Array` object.
+ *
+ * @static
+ * @memberOf _
+ * @type Function
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is correctly classified, else `false`.
+ * @example
+ *
+ * _.isArray([1, 2, 3]);
+ * // => true
+ *
+ * _.isArray(document.body.children);
+ * // => false
+ *
+ * _.isArray('abc');
+ * // => false
+ *
+ * _.isArray(_.noop);
+ * // => false
+ */
+var isArray = Array.isArray;
+
+/**
+ * Checks if `value` is object-like. A value is object-like if it's not `null`
+ * and has a `typeof` result of "object".
+ *
+ * @static
+ * @memberOf _
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
+ * @example
+ *
+ * _.isObjectLike({});
+ * // => true
+ *
+ * _.isObjectLike([1, 2, 3]);
+ * // => true
+ *
+ * _.isObjectLike(_.noop);
+ * // => false
+ *
+ * _.isObjectLike(null);
+ * // => false
+ */
+function isObjectLike(value) {
+  return !!value && typeof value == 'object';
+}
+
+/**
+ * Checks if `value` is classified as a `String` primitive or object.
+ *
+ * @static
+ * @memberOf _
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is correctly classified, else `false`.
+ * @example
+ *
+ * _.isString('abc');
+ * // => true
+ *
+ * _.isString(1);
+ * // => false
+ */
+function isString(value) {
+  return typeof value == 'string' ||
+    (!isArray(value) && isObjectLike(value) && objectToString.call(value) == stringTag);
+}
+
+module.exports = isString;
 
 
 /***/ }),
@@ -52576,6 +53361,4653 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./node_modules/react-emoji-render/data/aliases.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/react-emoji-render/data/aliases.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+  "0": "0️⃣",
+  "1": "1️⃣",
+  "2": "2️⃣",
+  "3": "3️⃣",
+  "4": "4️⃣",
+  "5": "5️⃣",
+  "6": "6️⃣",
+  "7": "7️⃣",
+  "8": "8️⃣",
+  "9": "9️⃣",
+  "10": "🔟",
+  "100": "💯",
+  "1234": "🔢",
+  grinning_face: "😀",
+  grinning_face_with_big_eyes: "😃",
+  grinning_face_with_smiling_eyes: "😁",
+  beaming_face_with_smiling_eyes: "😁",
+  grinning_squinting_face: "😆",
+  grinning_face_with_sweat: "😅",
+  rolling_on_the_floor_laughing: "🤣",
+  face_with_tears_of_joy: "😂",
+  slightly_smiling_face: "🙂",
+  upside_down_face: "🙃",
+  winking_face: "😉",
+  smiling_face_with_smiling_eyes: "😊",
+  smiling_face_with_halo: "😇",
+  smiling_face_with_hearts: "🥰",
+  smiling_face_with_heart_eyes: "😍",
+  star_struck: "🤩",
+  face_blowing_a_kiss: "😘",
+  kissing_face: "😗",
+  smiling_face: "☺️",
+  kissing_face_with_closed_eyes: "😚",
+  kissing_face_with_smiling_eyes: "😙",
+  face_savoring_food: "😋",
+  face_with_tongue: "😛",
+  winking_face_with_tongue: "😜",
+  zany_face: "🤪",
+  squinting_face_with_tongue: "😝",
+  money_mouth_face: "🤑",
+  hugging_face: "🤗",
+  face_with_hand_over_mouth: "🤭",
+  shushing_face: "🤫",
+  thinking_face: "🤔",
+  zipper_mouth_face: "🤐",
+  face_with_raised_eyebrow: "🤨",
+  neutral_face: "😐",
+  expressionless_face: "😑",
+  face_without_mouth: "😶",
+  smirking_face: "😏",
+  unamused_face: "😒",
+  face_with_rolling_eyes: "🙄",
+  grimacing_face: "😬",
+  lying_face: "🤥",
+  relieved_face: "😌",
+  pensive_face: "😔",
+  sleepy_face: "😪",
+  drooling_face: "🤤",
+  sleeping_face: "😴",
+  face_with_medical_mask: "😷",
+  face_with_thermometer: "🤒",
+  face_with_head_bandage: "🤕",
+  nauseated_face: "🤢",
+  face_vomiting: "🤮",
+  sneezing_face: "🤧",
+  hot_face: "🥵",
+  cold_face: "🥶",
+  woozy_face: "🥴",
+  dizzy_face: "😵",
+  exploding_head: "🤯",
+  cowboy_hat_face: "🤠",
+  partying_face: "🥳",
+  smiling_face_with_sunglasses: "😎",
+  nerd_face: "🤓",
+  face_with_monocle: "🧐",
+  confused_face: "😕",
+  worried_face: "😟",
+  slightly_frowning_face: "🙁",
+  frowning_face: "☹",
+  face_with_open_mouth: "😮",
+  hushed_face: "😯",
+  astonished_face: "😲",
+  flushed_face: "😳",
+  pleading_face: "🥺",
+  frowning_face_with_open_mouth: "😦",
+  anguished_face: "😧",
+  fearful_face: "😨",
+  anxious_face_with_sweat: "😰",
+  sad_but_relieved_face: "😥",
+  crying_face: "😢",
+  loudly_crying_face: "😭",
+  face_screaming_in_fear: "😱",
+  confounded_face: "😖",
+  persevering_face: "😣",
+  disappointed_face: "😞",
+  downcast_face_with_sweat: "😓",
+  weary_face: "😩",
+  tired_face: "😫",
+  yawning_face: "🥱",
+  face_with_steam_from_nose: "😤",
+  pouting_face: "😡",
+  angry_face: "😠",
+  face_with_symbols_on_mouth: "🤬",
+  smiling_face_with_horns: "😈",
+  angry_face_with_horns: "👿",
+  skull: "💀",
+  skull_and_crossbones: "☠️",
+  pile_of_poo: "💩",
+  clown_face: "🤡",
+  ogre: "👹",
+  goblin: "👺",
+  ghost: "👻",
+  alien: "👽",
+  alien_monster: "👾",
+  robot: "🤖",
+  grinning_cat: "😺",
+  grinning_cat_with_smiling_eyes: "😸",
+  cat_with_tears_of_joy: "😹",
+  smiling_cat_with_heart_eyes: "😻",
+  cat_with_wry_smile: "😼",
+  kissing_cat: "😽",
+  weary_cat: "🙀",
+  crying_cat: "😿",
+  pouting_cat: "😾",
+  see_no_evil_monkey: "🙈",
+  hear_no_evil_monkey: "🙉",
+  speak_no_evil_monkey: "🙊",
+  kiss_mark: "💋",
+  love_letter: "💌",
+  heart_with_arrow: "💘",
+  heart_with_ribbon: "💝",
+  sparkling_heart: "💖",
+  growing_heart: "💗",
+  beating_heart: "💓",
+  revolving_hearts: "💞",
+  two_hearts: "💕",
+  heart_decoration: "💟",
+  heart_exclamation: "❣️",
+  broken_heart: "💔",
+  red_heart: "❤️",
+  orange_heart: "🧡",
+  yellow_heart: "💛",
+  green_heart: "💚",
+  blue_heart: "💙",
+  purple_heart: "💜",
+  brown_heart: "🤎",
+  black_heart: "🖤",
+  white_heart: "🤍",
+  hundred_points: "💯",
+  anger_symbol: "💢",
+  collision: "💥",
+  dizzy: "💫",
+  sweat_droplets: "💦",
+  dashing_away: "💨",
+  hole: "🕳️",
+  bomb: "💣",
+  speech_balloon: "💬",
+  eye_in_speech_bubble: "👁‍🗨",
+  left_speech_bubble: "🗨️",
+  right_anger_bubble: "🗯️",
+  thought_balloon: "💭",
+  zzz: "💤",
+  waving_hand: "👋",
+  raised_back_of_hand: "🤚",
+  hand_with_fingers_splayed: "🖐",
+  raised_hand: "✋",
+  vulcan_salute: "🖖",
+  ok_hand: "👌",
+  pinching_hand: "🤏",
+  victory_hand: "✌",
+  crossed_fingers: "🤞",
+  love_you_gesture: "🤟",
+  sign_of_the_horns: "🤘",
+  call_me_hand: "🤙",
+  backhand_index_pointing_left: "👈",
+  backhand_index_pointing_right: "👉",
+  backhand_index_pointing_up: "👆",
+  middle_finger: "🖕",
+  backhand_index_pointing_down: "👇",
+  index_pointing_up: "☝️",
+  thumbs_up: "👍",
+  thumbs_down: "👎",
+  raised_fist: "✊",
+  oncoming_fist: "👊",
+  left_facing_fist: "🤛",
+  right_facing_fist: "🤜",
+  clapping_hands: "👏",
+  raising_hands: "🙌",
+  open_hands: "👐",
+  palms_up_together: "🤲",
+  handshake: "🤝",
+  folded_hands: "🙏",
+  writing_hand: "✍️",
+  nail_polish: "💅",
+  selfie: "🤳",
+  flexed_biceps: "💪",
+  mechanical_arm: "🦾",
+  mechanical_leg: "🦿",
+  leg: "🦵",
+  foot: "🦶",
+  ear: "👂",
+  ear_with_hearing_aid: "🦻",
+  nose: "👃",
+  brain: "🧠",
+  tooth: "🦷",
+  bone: "🦴",
+  eyes: "👀",
+  eye: "👁️",
+  tongue: "👅",
+  mouth: "👄",
+  baby: "👶",
+  child: "🧒",
+  boy: "👦",
+  girl: "👧",
+  person: "🧑",
+  person_blond_hair: "👱",
+  man: "👨",
+  man_beard: "🧔",
+  man_red_hair: "👨‍🦰",
+  man_curly_hair: "👨‍🦱",
+  man_white_hair: "👨‍🦳",
+  man_bald: "👨‍🦲",
+  woman: "👩",
+  woman_red_hair: "👩‍🦰",
+  person_red_hair: "🧑‍🦰",
+  woman_curly_hair: "👩‍🦱",
+  person_curly_hair: "🧑‍🦱",
+  woman_white_hair: "👩‍🦳",
+  person_white_hair: "🧑‍🦳",
+  woman_bald: "👩‍🦲",
+  person_bald: "🧑‍🦲",
+  woman_blond_hair: "👱‍♀️",
+  man_blond_hair: "👱‍♂️",
+  older_person: "🧓",
+  old_man: "👴",
+  old_woman: "👵",
+  person_frowning: "🙍",
+  man_frowning: "🙍‍♂",
+  woman_frowning: "🙍‍♀",
+  person_pouting: "🙎",
+  man_pouting: "🙎‍♂",
+  woman_pouting: "🙎‍♀",
+  person_gesturing_no: "🙅",
+  man_gesturing_no: "🙅‍♂",
+  woman_gesturing_no: "🙅‍♀",
+  person_gesturing_ok: "🙆",
+  man_gesturing_ok: "🙆‍♂",
+  woman_gesturing_ok: "🙆‍♀",
+  person_tipping_hand: "💁",
+  man_tipping_hand: "💁‍♂",
+  woman_tipping_hand: "💁‍♀",
+  person_raising_hand: "🙋",
+  man_raising_hand: "🙋‍♂",
+  woman_raising_hand: "🙋‍♀",
+  deaf_person: "🧏",
+  deaf_man: "🧏‍♂",
+  deaf_woman: "🧏‍♀",
+  person_bowing: "🙇",
+  man_bowing: "🙇‍♂",
+  woman_bowing: "🙇‍♀",
+  person_facepalming: "🤦",
+  man_facepalming: "🤦‍♂",
+  woman_facepalming: "🤦‍♀",
+  person_shrugging: "🤷",
+  man_shrugging: "🤷‍♂",
+  woman_shrugging: "🤷‍♀",
+  health_worker: "🧑‍⚕️",
+  man_health_worker: "👨‍⚕️",
+  woman_health_worker: "👩‍⚕️",
+  student: "🧑‍🎓",
+  man_student: "👨‍🎓",
+  woman_student: "👩‍🎓",
+  teacher: "🧑‍🏫",
+  man_teacher: "👨‍🏫",
+  woman_teacher: "👩‍🏫",
+  judge: "🧑‍⚖️",
+  man_judge: "👨‍⚖️",
+  woman_judge: "👩‍⚖️",
+  farmer: "🧑‍🌾",
+  man_farmer: "👨‍🌾",
+  woman_farmer: "👩‍🌾",
+  cook: "🧑‍🍳",
+  man_cook: "👨‍🍳",
+  woman_cook: "👩‍🍳",
+  mechanic: "🧑‍🔧",
+  man_mechanic: "👨‍🔧",
+  woman_mechanic: "👩‍🔧",
+  factory_worker: "🧑‍🏭",
+  man_factory_worker: "👨‍🏭",
+  woman_factory_worker: "👩‍🏭",
+  office_worker: "🧑‍💼",
+  man_office_worker: "👨‍💼",
+  woman_office_worker: "👩‍💼",
+  scientist: "🧑‍🔬",
+  man_scientist: "👨‍🔬",
+  woman_scientist: "👩‍🔬",
+  technologist: "🧑‍💻",
+  man_technologist: "👨‍💻",
+  woman_technologist: "👩‍💻",
+  singer: "🧑‍🎤",
+  man_singer: "👨‍🎤",
+  woman_singer: "👩‍🎤",
+  artist: "🧑‍🎨",
+  man_artist: "👨‍🎨",
+  woman_artist: "👩‍🎨",
+  pilot: "🧑‍✈️",
+  man_pilot: "👨‍✈️",
+  woman_pilot: "👩‍✈️",
+  astronaut: "🧑‍🚀",
+  man_astronaut: "👨‍🚀",
+  woman_astronaut: "👩‍🚀",
+  firefighter: "🧑‍🚒",
+  man_firefighter: "👨‍🚒",
+  woman_firefighter: "👩‍🚒",
+  police_officer: "👮",
+  man_police_officer: "👮‍♂",
+  woman_police_officer: "👮‍♀",
+  detective: "🕵",
+  man_detective: "🕵️‍♂️",
+  woman_detective: "🕵️‍♀️",
+  guard: "💂",
+  man_guard: "💂‍♂",
+  woman_guard: "💂‍♀",
+  construction_worker: "👷",
+  man_construction_worker: "👷‍♂",
+  woman_construction_worker: "👷‍♀",
+  prince: "🤴",
+  princess: "👸",
+  person_wearing_turban: "👳",
+  man_wearing_turban: "👳‍♂",
+  woman_wearing_turban: "👳‍♀",
+  man_with_skullcap: "👲",
+  woman_with_headscarf: "🧕",
+  man_in_tuxedo: "🤵",
+  bride_with_veil: "👰",
+  pregnant_woman: "🤰",
+  breast_feeding: "🤱",
+  baby_angel: "👼",
+  santa_claus: "🎅",
+  mrs_claus: "🤶",
+  superhero: "🦸",
+  man_superhero: "🦸‍♂",
+  woman_superhero: "🦸‍♀",
+  supervillain: "🦹",
+  man_supervillain: "🦹‍♂",
+  woman_supervillain: "🦹‍♀",
+  mage: "🧙",
+  man_mage: "🧙‍♂",
+  woman_mage: "🧙‍♀",
+  fairy: "🧚",
+  man_fairy: "🧚‍♂",
+  woman_fairy: "🧚‍♀",
+  vampire: "🧛",
+  man_vampire: "🧛‍♂",
+  woman_vampire: "🧛‍♀",
+  merperson: "🧜",
+  merman: "🧜‍♂️",
+  mermaid: "🧜‍♀️",
+  elf: "🧝",
+  man_elf: "🧝‍♂",
+  woman_elf: "🧝‍♀",
+  genie: "🧞",
+  man_genie: "🧞‍♂",
+  woman_genie: "🧞‍♀",
+  zombie: "🧟",
+  man_zombie: "🧟‍♂",
+  woman_zombie: "🧟‍♀",
+  person_getting_massage: "💆",
+  man_getting_massage: "💆‍♂",
+  woman_getting_massage: "💆‍♀",
+  person_getting_haircut: "💇",
+  man_getting_haircut: "💇‍♂",
+  woman_getting_haircut: "💇‍♀",
+  person_walking: "🚶",
+  man_walking: "🚶‍♂",
+  woman_walking: "🚶‍♀",
+  person_standing: "🧍",
+  man_standing: "🧍‍♂",
+  woman_standing: "🧍‍♀",
+  person_kneeling: "🧎",
+  man_kneeling: "🧎‍♂",
+  woman_kneeling: "🧎‍♀",
+  person_with_probing_cane: "🧑‍🦯",
+  man_with_probing_cane: "👨‍🦯",
+  woman_with_probing_cane: "👩‍🦯",
+  person_in_motorized_wheelchair: "🧑‍🦼",
+  man_in_motorized_wheelchair: "👨‍🦼",
+  woman_in_motorized_wheelchair: "👩‍🦼",
+  person_in_manual_wheelchair: "🧑‍🦽",
+  man_in_manual_wheelchair: "👨‍🦽",
+  woman_in_manual_wheelchair: "👩‍🦽",
+  person_running: "🏃",
+  man_running: "🏃‍♂",
+  woman_running: "🏃‍♀",
+  woman_dancing: "💃",
+  man_dancing: "🕺",
+  man_in_suit_levitating: "🕴",
+  people_with_bunny_ears: "👯",
+  men_with_bunny_ears: "👯‍♂",
+  women_with_bunny_ears: "👯‍♀",
+  person_in_steamy_room: "🧖",
+  man_in_steamy_room: "🧖‍♂️",
+  woman_in_steamy_room: "🧖‍♀️",
+  person_climbing: "🧗",
+  man_climbing: "🧗‍♂️",
+  woman_climbing: "🧗‍♀️",
+  person_fencing: "🤺",
+  horse_racing: "🏇",
+  skier: "⛷️",
+  snowboarder: "🏂",
+  person_golfing: "🏌",
+  man_golfing: "🏌♂️",
+  woman_golfing: "🏌‍♀️",
+  person_surfing: "🏄",
+  man_surfing: "🏄‍♂",
+  woman_surfing: "🏄‍♀",
+  person_rowing_boat: "🚣",
+  man_rowing_boat: "🚣‍♂",
+  woman_rowing_boat: "🚣‍♀",
+  person_swimming: "🏊",
+  man_swimming: "🏊‍♂",
+  woman_swimming: "🏊‍♀",
+  person_bouncing_ball: "⛹",
+  man_bouncing_ball: "⛹️‍♂️",
+  woman_bouncing_ball: "⛹️‍♀️",
+  person_lifting_weights: "🏋",
+  man_lifting_weights: "🏋️‍♂️",
+  woman_lifting_weights: "🏋️‍♀️",
+  person_biking: "🚴",
+  man_biking: "🚴‍♂",
+  woman_biking: "🚴‍♀",
+  person_mountain_biking: "🚵",
+  man_mountain_biking: "🚵‍♂",
+  woman_mountain_biking: "🚵‍♀",
+  person_cartwheeling: "🤸",
+  man_cartwheeling: "🤸‍♂",
+  woman_cartwheeling: "🤸‍♀",
+  people_wrestling: "🤼",
+  men_wrestling: "🤼‍♂",
+  women_wrestling: "🤼‍♀",
+  person_playing_water_polo: "🤽",
+  man_playing_water_polo: "🤽‍♂",
+  woman_playing_water_polo: "🤽‍♀",
+  person_playing_handball: "🤾",
+  man_playing_handball: "🤾‍♂",
+  woman_playing_handball: "🤾‍♀",
+  person_juggling: "🤹",
+  man_juggling: "🤹‍♂️",
+  woman_juggling: "🤹‍♀️",
+  person_in_lotus_position: "🧘",
+  man_in_lotus_position: "🧘‍♂️",
+  woman_in_lotus_position: "🧘‍♀️",
+  person_taking_bath: "🛀",
+  person_in_bed: "🛌",
+  people_holding_hands: "🧑‍🤝‍🧑",
+  women_holding_hands: "👭",
+  woman_and_man_holding_hands: "👫",
+  men_holding_hands: "👬",
+  kiss: "💋",
+  kiss_woman_man: "👩‍❤️‍💋‍👨",
+  kiss_man_man: "👨‍❤️‍💋‍👨",
+  kiss_woman_woman: "👩‍❤️‍💋‍👩",
+  couple_with_heart: "💑",
+  couple_with_heart_woman_man: "👩‍❤️‍👨",
+  couple_with_heart_man_man: "👨‍❤‍👨",
+  couple_with_heart_woman_woman: "👩‍❤‍👩",
+  family: "👪",
+  family_man_woman_boy: "👨‍👩‍👦",
+  family_man_woman_girl: "👨‍👩‍👧",
+  family_man_woman_girl_boy: "👨‍👩‍👧‍👦",
+  family_man_woman_boy_boy: "👨‍👩‍👦‍👦",
+  family_man_woman_girl_girl: "👨‍👩‍👧‍👧",
+  family_man_man_boy: "👨‍👨‍👦",
+  family_man_man_girl: "👨‍👨‍👧",
+  family_man_man_girl_boy: "👨‍👨‍👧‍👦",
+  family_man_man_boy_boy: "👨‍👨‍👦‍👦",
+  family_man_man_girl_girl: "👨‍👨‍👧‍👧",
+  family_woman_woman_boy: "👩‍👩‍👦",
+  family_woman_woman_girl: "👩‍👩‍👧",
+  family_woman_woman_girl_boy: "👩‍👩‍👧‍👦",
+  family_woman_woman_boy_boy: "👩‍👩‍👦‍👦",
+  family_woman_woman_girl_girl: "👩‍👩‍👧‍👧",
+  family_man_boy: "👨‍👦",
+  family_man_boy_boy: "👨‍👦‍👦",
+  family_man_girl: "👨‍👧",
+  family_man_girl_boy: "👨‍👧‍👦",
+  family_man_girl_girl: "👨‍👧‍👧",
+  family_woman_boy: "👩‍👦",
+  family_woman_boy_boy: "👩‍👦‍👦",
+  family_woman_girl: "👩‍👧",
+  family_woman_girl_boy: "👩‍👧‍👦",
+  family_woman_girl_girl: "👩‍👧‍👧",
+  speaking_head: "🗣",
+  bust_in_silhouette: "👤",
+  busts_in_silhouette: "👥",
+  footprints: "👣",
+  monkey_face: "🐵",
+  monkey: "🐒",
+  gorilla: "🦍",
+  orangutan: "🦧",
+  dog_face: "🐶",
+  dog: "🐶",
+  guide_dog: "🦮",
+  service_dog: "🐕‍🦺",
+  poodle: "🐩",
+  wolf: "🐺",
+  fox: "🦊",
+  raccoon: "🦝",
+  cat_face: "🐱",
+  cat: "🐱",
+  lion: "🦁",
+  tiger_face: "🐯",
+  tiger: "🐯",
+  leopard: "🐆",
+  horse_face: "🐴",
+  horse: "🐴",
+  unicorn: "🦄",
+  zebra: "🦓",
+  deer: "🦌",
+  cow_face: "🐮",
+  ox: "🐂",
+  water_buffalo: "🐃",
+  cow: "🐮",
+  pig_face: "🐷",
+  pig: "🐷",
+  boar: "🐗",
+  pig_nose: "🐽",
+  ram: "🐏",
+  ewe: "🐑",
+  goat: "🐐",
+  camel: "🐫",
+  two_hump_camel: "🐫",
+  llama: "🦙",
+  giraffe: "🦒",
+  elephant: "🐘",
+  rhinoceros: "🦏",
+  hippopotamus: "🦛",
+  mouse_face: "🐭",
+  mouse: "🐭",
+  rat: "🐀",
+  hamster: "🐹",
+  rabbit_face: "🐰",
+  rabbit: "🐰",
+  chipmunk: "🐿️",
+  hedgehog: "🦔",
+  bat: "🦇",
+  bear: "🐻",
+  koala: "🐨",
+  panda: "🐼",
+  sloth: "🦥",
+  otter: "🦦",
+  skunk: "🦨",
+  kangaroo: "🦘",
+  badger: "🦡",
+  paw_prints: "🐾",
+  turkey: "🦃",
+  chicken: "🐔",
+  rooster: "🐓",
+  hatching_chick: "🐣",
+  baby_chick: "🐤",
+  front_facing_baby_chick: "🐥",
+  bird: "🐦",
+  penguin: "🐧",
+  dove: "🕊",
+  eagle: "🦅",
+  duck: "🦆",
+  swan: "🦢",
+  owl: "🦉",
+  flamingo: "🦩",
+  peacock: "🦚",
+  parrot: "🦜",
+  frog: "🐸",
+  crocodile: "🐊",
+  turtle: "🐢",
+  lizard: "🦎",
+  snake: "🐍",
+  dragon_face: "🐲",
+  dragon: "🐉",
+  sauropod: "🦕",
+  t_rex: "🦖",
+  spouting_whale: "🐳",
+  whale: "🐳",
+  dolphin: "🐬",
+  fish: "🐟",
+  tropical_fish: "🐠",
+  blowfish: "🐡",
+  shark: "🦈",
+  octopus: "🐙",
+  spiral_shell: "🐚",
+  snail: "🐌",
+  butterfly: "🦋",
+  bug: "🐛",
+  ant: "🐜",
+  honeybee: "🐝",
+  lady_beetle: "🐞",
+  cricket: "🦗",
+  spider: "🕷️",
+  spider_web: "🕸️",
+  scorpion: "🦂",
+  mosquito: "🦟",
+  microbe: "🦠",
+  bouquet: "💐",
+  cherry_blossom: "🌸",
+  white_flower: "💮",
+  rosette: "🏵️",
+  rose: "🌹",
+  wilted_flower: "🥀",
+  hibiscus: "🌺",
+  sunflower: "🌻",
+  blossom: "🌼",
+  tulip: "🌷",
+  seedling: "🌱",
+  evergreen_tree: "🌲",
+  deciduous_tree: "🌳",
+  palm_tree: "🌴",
+  cactus: "🌵",
+  sheaf_of_rice: "🌾",
+  herb: "🌿",
+  shamrock: "☘️",
+  four_leaf_clover: "🍀",
+  maple_leaf: "🍁",
+  fallen_leaf: "🍂",
+  leaf_fluttering_in_wind: "🍃",
+  grapes: "🍇",
+  melon: "🍈",
+  watermelon: "🍉",
+  tangerine: "🍊",
+  lemon: "🍋",
+  banana: "🍌",
+  pineapple: "🍍",
+  mango: "🥭",
+  red_apple: "🍎",
+  green_apple: "🍏",
+  pear: "🍐",
+  peach: "🍑",
+  cherries: "🍒",
+  strawberry: "🍓",
+  kiwi_fruit: "🥝",
+  tomato: "🍅",
+  coconut: "🥥",
+  avocado: "🥑",
+  eggplant: "🍆",
+  potato: "🥔",
+  carrot: "🥕",
+  ear_of_corn: "🌽",
+  hot_pepper: "🌶️",
+  cucumber: "🥒",
+  leafy_green: "🥬",
+  broccoli: "🥦",
+  garlic: "🧄",
+  onion: "🧅",
+  mushroom: "🍄",
+  peanuts: "🥜",
+  chestnut: "🌰",
+  bread: "🍞",
+  croissant: "🥐",
+  baguette_bread: "🥖",
+  pretzel: "🥨",
+  bagel: "🥯",
+  pancakes: "🥞",
+  waffle: "🧇",
+  cheese_wedge: "🧀",
+  meat_on_bone: "🍖",
+  poultry_leg: "🍗",
+  cut_of_meat: "🥩",
+  bacon: "🥓",
+  hamburger: "🍔",
+  french_fries: "🍟",
+  pizza: "🍕",
+  hot_dog: "🌭",
+  sandwich: "🥪",
+  taco: "🌮",
+  burrito: "🌯",
+  stuffed_flatbread: "🥙",
+  falafel: "🧆",
+  egg: "🥚",
+  cooking: "🍳",
+  shallow_pan_of_food: "🥘",
+  pot_of_food: "🍲",
+  bowl_with_spoon: "🥣",
+  green_salad: "🥗",
+  popcorn: "🍿",
+  butter: "🧈",
+  salt: "🧂",
+  canned_food: "🥫",
+  bento_box: "🍱",
+  rice_cracker: "🍘",
+  rice_ball: "🍙",
+  cooked_rice: "🍚",
+  curry_rice: "🍛",
+  steaming_bowl: "🍜",
+  spaghetti: "🍝",
+  roasted_sweet_potato: "🍠",
+  oden: "🍢",
+  sushi: "🍣",
+  fried_shrimp: "🍤",
+  fish_cake_with_swirl: "🍥",
+  moon_cake: "🥮",
+  dango: "🍡",
+  dumpling: "🥟",
+  fortune_cookie: "🥠",
+  takeout_box: "🥡",
+  crab: "🦀",
+  lobster: "🦞",
+  shrimp: "🦐",
+  squid: "🦑",
+  oyster: "🦪",
+  soft_ice_cream: "🍦",
+  shaved_ice: "🍧",
+  ice_cream: "🍨",
+  doughnut: "🍩",
+  cookie: "🍪",
+  birthday_cake: "🎂",
+  shortcake: "🍰",
+  cupcake: "🧁",
+  pie: "🥧",
+  chocolate_bar: "🍫",
+  candy: "🍬",
+  lollipop: "🍭",
+  custard: "🍮",
+  honey_pot: "🍯",
+  baby_bottle: "🍼",
+  glass_of_milk: "🥛",
+  hot_beverage: "☕",
+  teacup_without_handle: "🍵",
+  sake: "🍶",
+  bottle_with_popping_cork: "🍾",
+  wine_glass: "🍷",
+  cocktail_glass: "🍸",
+  tropical_drink: "🍹",
+  beer_mug: "🍺",
+  clinking_beer_mugs: "🍻",
+  clinking_glasses: "🥂",
+  tumbler_glass: "🥃",
+  cup_with_straw: "🥤",
+  beverage_box: "🧃",
+  mate: "🧉",
+  ice: "🧊",
+  chopsticks: "🥢",
+  fork_and_knife_with_plate: "🍽",
+  fork_and_knife: "🍴",
+  spoon: "🥄",
+  kitchen_knife: "🔪",
+  amphora: "🏺",
+  globe_showing_europe_africa: "🌍",
+  globe_showing_americas: "🌎",
+  globe_showing_asia_australia: "🌏",
+  globe_with_meridians: "🌐",
+  world_map: "🗺️",
+  map_of_japan: "🗾",
+  compass: "🧭",
+  snow_capped_mountain: "🏔️",
+  mountain: "⛰️",
+  volcano: "🌋",
+  mount_fuji: "🗻",
+  camping: "🏕️",
+  beach_with_umbrella: "🏖️",
+  desert: "🏜️",
+  desert_island: "🏝️",
+  national_park: "🏞️",
+  stadium: "🏟️",
+  classical_building: "🏛️",
+  building_construction: "🏗️",
+  brick: "🧱",
+  houses: "🏘",
+  derelict_house: "🏚",
+  house: "🏠",
+  house_with_garden: "🏡",
+  office_building: "🏢",
+  japanese_post_office: "🏣",
+  post_office: "🏣",
+  hospital: "🏥",
+  bank: "🏦",
+  hotel: "🏨",
+  love_hotel: "🏩",
+  convenience_store: "🏪",
+  school: "🏫",
+  department_store: "🏬",
+  factory: "🏭",
+  japanese_castle: "🏯",
+  castle: "🏰",
+  wedding: "💒",
+  tokyo_tower: "🗼",
+  statue_of_liberty: "🗽",
+  church: "⛪",
+  mosque: "🕌",
+  hindu_temple: "🛕",
+  synagogue: "🕍",
+  shinto_shrine: "⛩️",
+  kaaba: "🕋",
+  fountain: "⛲",
+  tent: "⛺",
+  foggy: "🌁",
+  night_with_stars: "🌃",
+  cityscape: "🏙️",
+  sunrise_over_mountains: "🌄",
+  sunrise: "🌅",
+  cityscape_at_dusk: "🌆",
+  sunset: "🌇",
+  bridge_at_night: "🌉",
+  hot_springs: "♨",
+  carousel_horse: "🎠",
+  ferris_wheel: "🎡",
+  roller_coaster: "🎢",
+  barber_pole: "💈",
+  circus_tent: "🎪",
+  locomotive: "🚂",
+  railway_car: "🚃",
+  high_speed_train: "🚄",
+  bullet_train: "🚅",
+  train: "🚋",
+  metro: "🚇",
+  light_rail: "🚈",
+  station: "🚉",
+  tram: "🚊",
+  monorail: "🚝",
+  mountain_railway: "🚞",
+  tram_car: "🚋",
+  bus: "🚌",
+  oncoming_bus: "🚍",
+  trolleybus: "🚎",
+  minibus: "🚐",
+  ambulance: "🚑",
+  fire_engine: "🚒",
+  police_car: "🚓",
+  oncoming_police_car: "🚔",
+  taxi: "🚕",
+  oncoming_taxi: "🚖",
+  automobile: "🚗",
+  oncoming_automobile: "🚘",
+  sport_utility_vehicle: "🚙",
+  delivery_truck: "🚚",
+  articulated_lorry: "🚛",
+  tractor: "🚜",
+  racing_car: "🏎️",
+  motorcycle: "🏍",
+  motor_scooter: "🛵",
+  manual_wheelchair: "🦽",
+  motorized_wheelchair: "🦼",
+  auto_rickshaw: "🛺",
+  bicycle: "🚲",
+  kick_scooter: "🛴",
+  skateboard: "🛹",
+  bus_stop: "🚏",
+  motorway: "🛣️",
+  railway_track: "🛤️",
+  oil_drum: "🛢️",
+  fuel_pump: "⛽",
+  police_car_light: "🚨",
+  horizontal_traffic_light: "🚥",
+  vertical_traffic_light: "🚦",
+  stop_sign: "🛑",
+  construction: "🚧",
+  anchor: "⚓",
+  sailboat: "⛵",
+  canoe: "🛶",
+  speedboat: "🚤",
+  passenger_ship: "🛳️",
+  ferry: "⛴️",
+  motor_boat: "🛥️",
+  ship: "🚢",
+  airplane: "✈️",
+  small_airplane: "🛩️",
+  airplane_departure: "🛫",
+  airplane_arrival: "🛬",
+  parachute: "🪂",
+  seat: "💺",
+  helicopter: "🚁",
+  suspension_railway: "🚟",
+  mountain_cableway: "🚠",
+  aerial_tramway: "🚡",
+  satellite: "🛰️",
+  rocket: "🚀",
+  flying_saucer: "🛸",
+  bellhop_bell: "🛎️",
+  luggage: "🧳",
+  hourglass_done: "⌛",
+  hourglass_not_done: "⏳",
+  watch: "⌚",
+  alarm_clock: "⏰",
+  stopwatch: "⏱️",
+  timer_clock: "⏲️",
+  mantelpiece_clock: "🕰️",
+  twelve_o_clock: "🕛",
+  twelve_thirty: "🕧",
+  one_o_clock: "🕐",
+  one_thirty: "🕜",
+  two_o_clock: "🕑",
+  two_thirty: "🕝",
+  three_o_clock: "🕒",
+  three_thirty: "🕞",
+  four_o_clock: "🕓",
+  four_thirty: "🕟",
+  five_o_clock: "🕔",
+  five_thirty: "🕠",
+  six_o_clock: "🕕",
+  six_thirty: "🕡",
+  seven_o_clock: "🕖",
+  seven_thirty: "🕢",
+  eight_o_clock: "🕗",
+  eight_thirty: "🕣",
+  nine_o_clock: "🕘",
+  nine_thirty: "🕤",
+  ten_o_clock: "🕙",
+  ten_thirty: "🕥",
+  eleven_o_clock: "🕚",
+  eleven_thirty: "🕦",
+  new_moon: "🌑",
+  waxing_crescent_moon: "🌒",
+  first_quarter_moon: "🌓",
+  waxing_gibbous_moon: "🌔",
+  full_moon: "🌕",
+  waning_gibbous_moon: "🌖",
+  last_quarter_moon: "🌗",
+  waning_crescent_moon: "🌘",
+  crescent_moon: "🌙",
+  new_moon_face: "🌚",
+  first_quarter_moon_face: "🌛",
+  last_quarter_moon_face: "🌜",
+  thermometer: "🌡️",
+  sun: "☀️",
+  full_moon_face: "🌝",
+  sun_with_face: "🌞",
+  ringed_planet: "🪐",
+  star: "⭐",
+  glowing_star: "🌟",
+  shooting_star: "🌠",
+  milky_way: "🌌",
+  cloud: "☁️",
+  sun_behind_cloud: "⛅",
+  cloud_with_lightning_and_rain: "⛈",
+  sun_behind_small_cloud: "🌤",
+  sun_behind_large_cloud: "🌥",
+  sun_behind_rain_cloud: "🌦",
+  cloud_with_rain: "🌧",
+  cloud_with_snow: "🌨",
+  cloud_with_lightning: "🌩",
+  tornado: "🌪️",
+  fog: "🌫️",
+  wind_face: "🌬",
+  cyclone: "🌀",
+  rainbow: "🌈",
+  closed_umbrella: "🌂",
+  umbrella: "☂️",
+  umbrella_with_rain_drops: "☔",
+  umbrella_on_ground: "⛱️",
+  high_voltage: "⚡",
+  snowflake: "❄️",
+  snowman: "☃️",
+  snowman_without_snow: "⛄",
+  comet: "☄️",
+  fire: "🔥",
+  droplet: "💧",
+  water_wave: "🌊",
+  jack_o_lantern: "🎃",
+  christmas_tree: "🎄",
+  fireworks: "🎆",
+  sparkler: "🎇",
+  firecracker: "🧨",
+  sparkles: "✨",
+  balloon: "🎈",
+  party_popper: "🎉",
+  confetti_ball: "🎊",
+  tanabata_tree: "🎋",
+  pine_decoration: "🎍",
+  japanese_dolls: "🎎",
+  carp_streamer: "🎏",
+  wind_chime: "🎐",
+  moon_viewing_ceremony: "🎑",
+  red_envelope: "🧧",
+  ribbon: "🎀",
+  wrapped_gift: "🎁",
+  reminder_ribbon: "🎗️",
+  admission_tickets: "🎟️",
+  ticket: "🎫",
+  military_medal: "🎖",
+  trophy: "🏆",
+  sports_medal: "🏅",
+  "1st_place_medal": "🥇",
+  "2nd_place_medal": "🥈",
+  "3rd_place_medal": "🥉",
+  soccer_ball: "⚽",
+  baseball: "⚾",
+  softball: "🥎",
+  basketball: "🏀",
+  volleyball: "🏐",
+  american_football: "🏈",
+  rugby_football: "🏉",
+  tennis: "🎾",
+  flying_disc: "🥏",
+  bowling: "🎳",
+  cricket_game: "🏏",
+  field_hockey: "🏑",
+  ice_hockey: "🏒",
+  lacrosse: "🥍",
+  ping_pong: "🏓",
+  badminton: "🏸",
+  boxing_glove: "🥊",
+  martial_arts_uniform: "🥋",
+  goal_net: "🥅",
+  flag_in_hole: "⛳",
+  ice_skate: "⛸️",
+  fishing_pole: "🎣",
+  diving_mask: "🤿",
+  running_shirt: "🎽",
+  skis: "🎿",
+  sled: "🛷",
+  curling_stone: "🥌",
+  direct_hit: "🎯",
+  yo_yo: "🪀",
+  kite: "🪁",
+  pool_8_ball: "🎱",
+  crystal_ball: "🔮",
+  nazar_amulet: "🧿",
+  video_game: "🎮",
+  joystick: "🕹️",
+  slot_machine: "🎰",
+  game_die: "🎲",
+  puzzle_piece: "🧩",
+  teddy_bear: "🧸",
+  spade_suit: "♠️",
+  heart_suit: "♥️",
+  diamond_suit: "♦️",
+  club_suit: "♣️",
+  chess_pawn: "♟",
+  joker: "🃏",
+  mahjong_red_dragon: "🀄",
+  flower_playing_cards: "🎴",
+  performing_arts: "🎭",
+  framed_picture: "🖼",
+  artist_palette: "🎨",
+  thread: "🧵",
+  yarn: "🧶",
+  glasses: "👓",
+  sunglasses: "😎",
+  goggles: "🥽",
+  lab_coat: "🥼",
+  safety_vest: "🦺",
+  necktie: "👔",
+  t_shirt: "👕",
+  jeans: "👖",
+  scarf: "🧣",
+  gloves: "🧤",
+  coat: "🧥",
+  socks: "🧦",
+  dress: "👗",
+  kimono: "👘",
+  sari: "🥻",
+  one_piece_swimsuit: "🩱",
+  briefs: "🩲",
+  shorts: "🩳",
+  bikini: "👙",
+  woman_s_clothes: "👚",
+  purse: "👛",
+  handbag: "👜",
+  clutch_bag: "👝",
+  shopping_bags: "🛍️",
+  backpack: "🎒",
+  man_s_shoe: "👞",
+  running_shoe: "👟",
+  hiking_boot: "🥾",
+  flat_shoe: "🥿",
+  high_heeled_shoe: "👠",
+  woman_s_sandal: "👡",
+  ballet_shoes: "🩰",
+  woman_s_boot: "👢",
+  crown: "👑",
+  woman_s_hat: "👒",
+  top_hat: "🎩",
+  graduation_cap: "🎓",
+  billed_cap: "🧢",
+  rescue_worker_s_helmet: "⛑️",
+  prayer_beads: "📿",
+  lipstick: "💄",
+  ring: "💍",
+  gem_stone: "💎",
+  muted_speaker: "🔇",
+  speaker_low_volume: "🔈",
+  speaker_medium_volume: "🔉",
+  speaker_high_volume: "🔊",
+  loudspeaker: "📢",
+  megaphone: "📣",
+  postal_horn: "📯",
+  bell: "🔔",
+  bell_with_slash: "🔕",
+  musical_score: "🎼",
+  musical_note: "🎵",
+  musical_notes: "🎶",
+  studio_microphone: "🎙️",
+  level_slider: "🎚️",
+  control_knobs: "🎛️",
+  microphone: "🎤",
+  headphone: "🎧",
+  radio: "📻",
+  saxophone: "🎷",
+  guitar: "🎸",
+  musical_keyboard: "🎹",
+  trumpet: "🎺",
+  violin: "🎻",
+  banjo: "🪕",
+  drum: "🥁",
+  mobile_phone: "📱",
+  mobile_phone_with_arrow: "📲",
+  telephone: "☎",
+  telephone_receiver: "📞",
+  pager: "📟",
+  fax_machine: "📠",
+  battery: "🔋",
+  electric_plug: "🔌",
+  laptop: "💻",
+  desktop_computer: "🖥️",
+  printer: "🖨️",
+  keyboard: "⌨️",
+  computer_mouse: "🖱",
+  trackball: "🖲️",
+  computer_disk: "💽",
+  floppy_disk: "💾",
+  optical_disk: "💿",
+  dvd: "📀",
+  abacus: "🧮",
+  movie_camera: "🎥",
+  film_frames: "🎞️",
+  film_projector: "📽️",
+  clapper_board: "🎬",
+  television: "📺",
+  camera: "📷",
+  camera_with_flash: "📸",
+  video_camera: "📹",
+  videocassette: "📼",
+  magnifying_glass_tilted_left: "🔍",
+  magnifying_glass_tilted_right: "🔎",
+  candle: "🕯️",
+  light_bulb: "💡",
+  flashlight: "🔦",
+  red_paper_lantern: "🏮",
+  diya_lamp: "🪔",
+  notebook_with_decorative_cover: "📔",
+  closed_book: "📕",
+  open_book: "📖",
+  green_book: "📗",
+  blue_book: "📘",
+  orange_book: "📙",
+  books: "📚",
+  notebook: "📓",
+  ledger: "📒",
+  page_with_curl: "📃",
+  scroll: "📜",
+  page_facing_up: "📄",
+  newspaper: "📰",
+  rolled_up_newspaper: "🗞️",
+  bookmark_tabs: "📑",
+  bookmark: "🔖",
+  label: "🏷️",
+  money_bag: "💰",
+  yen_banknote: "💴",
+  dollar_banknote: "💵",
+  euro_banknote: "💶",
+  pound_banknote: "💷",
+  money_with_wings: "💸",
+  credit_card: "💳",
+  receipt: "🧾",
+  chart_increasing_with_yen: "💹",
+  currency_exchange: "💱",
+  heavy_dollar_sign: "💲",
+  envelope: "✉",
+  e_mail: "📧",
+  incoming_envelope: "📨",
+  envelope_with_arrow: "📩",
+  outbox_tray: "📤",
+  inbox_tray: "📥",
+  package: "📦",
+  closed_mailbox_with_raised_flag: "📫",
+  closed_mailbox_with_lowered_flag: "📪",
+  open_mailbox_with_raised_flag: "📬",
+  open_mailbox_with_lowered_flag: "📭",
+  postbox: "📮",
+  ballot_box_with_ballot: "🗳️",
+  pencil: "📝",
+  black_nib: "✒️",
+  fountain_pen: "🖋",
+  pen: "🖊",
+  paintbrush: "🖌",
+  crayon: "🖍",
+  memo: "📝",
+  briefcase: "💼",
+  file_folder: "📁",
+  open_file_folder: "📂",
+  card_index_dividers: "🗂️",
+  calendar: "📆",
+  tear_off_calendar: "📆",
+  spiral_notepad: "🗒",
+  spiral_calendar: "🗓",
+  card_index: "📇",
+  chart_increasing: "📈",
+  chart_decreasing: "📉",
+  bar_chart: "📊",
+  clipboard: "📋",
+  pushpin: "📌",
+  round_pushpin: "📍",
+  paperclip: "📎",
+  linked_paperclips: "🖇️",
+  straight_ruler: "📏",
+  triangular_ruler: "📐",
+  scissors: "✂️",
+  card_file_box: "🗃️",
+  file_cabinet: "🗄️",
+  wastebasket: "🗑️",
+  locked: "🔒",
+  unlocked: "🔓",
+  locked_with_pen: "🔏",
+  locked_with_key: "🔐",
+  key: "🔑",
+  old_key: "🗝️",
+  hammer: "🔨",
+  axe: "🪓",
+  pick: "⛏️",
+  hammer_and_pick: "⚒️",
+  hammer_and_wrench: "🛠️",
+  dagger: "🗡",
+  crossed_swords: "⚔️",
+  pistol: "🔫",
+  bow_and_arrow: "🏹",
+  shield: "🛡️",
+  wrench: "🔧",
+  nut_and_bolt: "🔩",
+  gear: "⚙️",
+  clamp: "🗜",
+  balance_scale: "⚖",
+  probing_cane: "🦯",
+  link: "🔗",
+  chains: "⛓️",
+  toolbox: "🧰",
+  magnet: "🧲",
+  alembic: "⚗️",
+  test_tube: "🧪",
+  petri_dish: "🧫",
+  dna: "🧬",
+  microscope: "🔬",
+  telescope: "🔭",
+  satellite_antenna: "📡",
+  syringe: "💉",
+  drop_of_blood: "🩸",
+  pill: "💊",
+  adhesive_bandage: "🩹",
+  stethoscope: "🩺",
+  door: "🚪",
+  bed: "🛏️",
+  couch_and_lamp: "🛋️",
+  chair: "🪑",
+  toilet: "🚽",
+  shower: "🚿",
+  bathtub: "🛁",
+  razor: "🪒",
+  lotion_bottle: "🧴",
+  safety_pin: "🧷",
+  broom: "🧹",
+  basket: "🧺",
+  roll_of_paper: "🧻",
+  soap: "🧼",
+  sponge: "🧽",
+  fire_extinguisher: "🧯",
+  shopping_cart: "🛒",
+  cigarette: "🚬",
+  coffin: "⚰️",
+  funeral_urn: "⚱️",
+  moai: "🗿",
+  atm_sign: "🏧",
+  litter_in_bin_sign: "🚮",
+  potable_water: "🚰",
+  wheelchair_symbol: "♿",
+  men_s_room: "🚹",
+  women_s_room: "🚺",
+  restroom: "🚻",
+  baby_symbol: "🚼",
+  water_closet: "🚾",
+  passport_control: "🛂",
+  customs: "🛃",
+  baggage_claim: "🛄",
+  left_luggage: "🛅",
+  warning: "⚠️",
+  children_crossing: "🚸",
+  no_entry: "⛔",
+  prohibited: "🚫",
+  no_bicycles: "🚳",
+  no_smoking: "🚭",
+  no_littering: "🚯",
+  non_potable_water: "🚱",
+  no_pedestrians: "🚷",
+  no_mobile_phones: "📵",
+  no_one_under_eighteen: "🔞",
+  radioactive: "☢",
+  biohazard: "☣",
+  up_arrow: "⬆️",
+  up_right_arrow: "↗️",
+  right_arrow: "➡️",
+  down_right_arrow: "↘️",
+  down_arrow: "⬇️",
+  down_left_arrow: "↙️",
+  left_arrow: "⬅️",
+  up_left_arrow: "↖️",
+  up_down_arrow: "↕",
+  left_right_arrow: "↔️",
+  right_arrow_curving_left: "↩️",
+  left_arrow_curving_right: "↪️",
+  right_arrow_curving_up: "⤴️",
+  right_arrow_curving_down: "⤵️",
+  clockwise_vertical_arrows: "🔃",
+  counterclockwise_arrows_button: "🔄",
+  back_arrow: "🔙",
+  end_arrow: "🔚",
+  on_arrow: "🔛",
+  soon_arrow: "🔜",
+  top_arrow: "🔝",
+  place_of_worship: "🛐",
+  atom_symbol: "⚛️",
+  om: "🇴🇲",
+  star_of_david: "✡️",
+  wheel_of_dharma: "☸️",
+  yin_yang: "☯️",
+  latin_cross: "✝️",
+  orthodox_cross: "☦️",
+  star_and_crescent: "☪️",
+  peace_symbol: "☮️",
+  menorah: "🕎",
+  dotted_six_pointed_star: "🔯",
+  aries: "♈",
+  taurus: "♉",
+  gemini: "♊",
+  cancer: "♋",
+  leo: "♌",
+  virgo: "♍",
+  libra: "♎",
+  scorpio: "♏",
+  sagittarius: "♐",
+  capricorn: "♑",
+  aquarius: "♒",
+  pisces: "♓",
+  ophiuchus: "⛎",
+  shuffle_tracks_button: "🔀",
+  repeat_button: "🔁",
+  repeat_single_button: "🔂",
+  play_button: "▶️",
+  fast_forward_button: "⏩",
+  next_track_button: "⏭",
+  play_or_pause_button: "⏯",
+  reverse_button: "◀️",
+  fast_reverse_button: "⏪",
+  last_track_button: "⏮",
+  upwards_button: "🔼",
+  fast_up_button: "⏫",
+  downwards_button: "🔽",
+  fast_down_button: "⏬",
+  pause_button: "⏸",
+  stop_button: "⏹",
+  record_button: "⏺",
+  eject_button: "⏏️",
+  cinema: "🎦",
+  dim_button: "🔅",
+  bright_button: "🔆",
+  antenna_bars: "📶",
+  vibration_mode: "📳",
+  mobile_phone_off: "📴",
+  female_sign: "♀️",
+  male_sign: "♂️",
+  medical_symbol: "⚕️",
+  infinity: "♾",
+  recycling_symbol: "♻️",
+  fleur_de_lis: "⚜️",
+  trident_emblem: "🔱",
+  name_badge: "📛",
+  japanese_symbol_for_beginner: "🔰",
+  hollow_red_circle: "⭕",
+  check_mark_button: "✅",
+  check_box_with_check: "☑️",
+  check_mark: "✔️",
+  multiplication_sign: "✖️",
+  cross_mark: "❌",
+  cross_mark_button: "❎",
+  plus_sign: "➕",
+  minus_sign: "➖",
+  division_sign: "➗",
+  curly_loop: "➰",
+  double_curly_loop: "➿",
+  part_alternation_mark: "〽️",
+  eight_spoked_asterisk: "✳️",
+  eight_pointed_star: "✴️",
+  sparkle: "❇️",
+  double_exclamation_mark: "‼",
+  exclamation_question_mark: "⁉",
+  question_mark: "❓",
+  white_question_mark: "❔",
+  white_exclamation_mark: "❕",
+  exclamation_mark: "❗",
+  wavy_dash: "〰️",
+  copyright: "©️",
+  registered: "®️",
+  trade_mark: "™️",
+  keycap_: "*️⃣",
+  keycap_0: "0️⃣",
+  keycap_1: "1️⃣",
+  keycap_2: "2️⃣",
+  keycap_3: "3️⃣",
+  keycap_4: "4️⃣",
+  keycap_5: "5️⃣",
+  keycap_6: "6️⃣",
+  keycap_7: "7️⃣",
+  keycap_8: "8️⃣",
+  keycap_9: "9️⃣",
+  keycap_10: "🔟",
+  input_latin_uppercase: "🔠",
+  input_latin_lowercase: "🔡",
+  input_numbers: "🔢",
+  input_symbols: "🔣",
+  input_latin_letters: "🔤",
+  a_button: "🅰️",
+  ab_button: "🆎",
+  b_button: "🅱️",
+  cl_button: "🆑",
+  cool_button: "🆒",
+  free_button: "🆓",
+  information: "ℹ️",
+  id_button: "🆔",
+  circled_m: "Ⓜ️",
+  new_button: "🆕",
+  ng_button: "🆖",
+  o_button: "🅾️",
+  ok_button: "🆗",
+  p_button: "🅿️",
+  sos_button: "🆘",
+  up_button: "🆙",
+  vs_button: "🆚",
+  japanese_here_button: "🈁",
+  japanese_service_charge_button: "🈂️",
+  japanese_monthly_amount_button: "🈷️",
+  japanese_not_free_of_charge_button: "🈶",
+  japanese_reserved_button: "🈯",
+  japanese_bargain_button: "🉐",
+  japanese_discount_button: "🈹",
+  japanese_free_of_charge_button: "🈚",
+  japanese_prohibited_button: "🈲",
+  japanese_acceptable_button: "🉑",
+  japanese_application_button: "🈸",
+  japanese_passing_grade_button: "🈴",
+  japanese_vacancy_button: "🈳",
+  japanese_congratulations_button: "㊗️",
+  japanese_secret_button: "㊙️",
+  japanese_open_for_business_button: "🈺",
+  japanese_no_vacancy_button: "🈵",
+  red_circle: "🔴",
+  orange_circle: "🟠",
+  yellow_circle: "🟡",
+  green_circle: "🟢",
+  blue_circle: "🔵",
+  purple_circle: "🟣",
+  brown_circle: "🟤",
+  black_circle: "⚫",
+  white_circle: "⚪",
+  red_square: "🟥",
+  orange_square: "🟧",
+  yellow_square: "🟨",
+  green_square: "🟩",
+  blue_square: "🟦",
+  purple_square: "🟪",
+  brown_square: "🟫",
+  black_large_square: "⬛",
+  white_large_square: "⬜",
+  black_medium_square: "◼️",
+  white_medium_square: "◻️",
+  black_medium_small_square: "◾",
+  white_medium_small_square: "◽",
+  black_small_square: "▪️",
+  white_small_square: "▫️",
+  large_orange_diamond: "🔶",
+  large_blue_diamond: "🔷",
+  small_orange_diamond: "🔸",
+  small_blue_diamond: "🔹",
+  red_triangle_pointed_up: "🔺",
+  red_triangle_pointed_down: "🔻",
+  diamond_with_a_dot: "💠",
+  radio_button: "🔘",
+  white_square_button: "🔳",
+  black_square_button: "🔲",
+  chequered_flag: "🏁",
+  triangular_flag: "🚩",
+  crossed_flags: "🎌",
+  black_flag: "🏴",
+  white_flag: "🏳",
+  rainbow_flag: "🏳️‍🌈",
+  pirate_flag: "🏴‍☠",
+  flag_ascension_island: "🇦🇨",
+  flag_andorra: "🇦🇩",
+  flag_united_arab_emirates: "🇦🇪",
+  flag_afghanistan: "🇦🇫",
+  flag_antigua_barbuda: "🇦🇬",
+  flag_anguilla: "🇦🇮",
+  flag_albania: "🇦🇱",
+  flag_armenia: "🇦🇲",
+  flag_angola: "🇦🇴",
+  flag_antarctica: "🇦🇶",
+  flag_argentina: "🇦🇷",
+  flag_american_samoa: "🇦🇸",
+  flag_austria: "🇦🇹",
+  flag_australia: "🇦🇺",
+  flag_aruba: "🇦🇼",
+  flag_land_islands: "🇦🇽",
+  flag_azerbaijan: "🇦🇿",
+  flag_bosnia_herzegovina: "🇧🇦",
+  flag_barbados: "🇧🇧",
+  flag_bangladesh: "🇧🇩",
+  flag_belgium: "🇧🇪",
+  flag_burkina_faso: "🇧🇫",
+  flag_bulgaria: "🇧🇬",
+  flag_bahrain: "🇧🇭",
+  flag_burundi: "🇧🇮",
+  flag_benin: "🇧🇯",
+  flag_st_barth_lemy: "🇧🇱",
+  flag_bermuda: "🇧🇲",
+  flag_brunei: "🇧🇳",
+  flag_bolivia: "🇧🇴",
+  flag_caribbean_netherlands: "🇧🇶",
+  flag_brazil: "🇧🇷",
+  flag_bahamas: "🇧🇸",
+  flag_bhutan: "🇧🇹",
+  flag_bouvet_island: "🇧🇻",
+  flag_botswana: "🇧🇼",
+  flag_belarus: "🇧🇾",
+  flag_belize: "🇧🇿",
+  flag_canada: "🇨🇦",
+  flag_cocos_islands: "🇨🇨",
+  flag_congo_kinshasa: "🇨🇩",
+  flag_central_african_republic: "🇨🇫",
+  flag_congo_brazzaville: "🇨🇬",
+  flag_switzerland: "🇨🇭",
+  flag_c_te_d_ivoire: "🇨🇮",
+  flag_cook_islands: "🇨🇰",
+  flag_chile: "🇨🇱",
+  flag_cameroon: "🇨🇲",
+  flag_china: "🇨🇳",
+  flag_colombia: "🇨🇴",
+  flag_clipperton_island: "🇨🇵",
+  flag_costa_rica: "🇨🇷",
+  flag_cuba: "🇨🇺",
+  flag_cape_verde: "🇨🇻",
+  flag_cura_ao: "🇨🇼",
+  flag_christmas_island: "🇨🇽",
+  flag_cyprus: "🇨🇾",
+  flag_czechia: "🇨🇿",
+  flag_germany: "🇩🇪",
+  flag_diego_garcia: "🇩🇬",
+  flag_djibouti: "🇩🇯",
+  flag_denmark: "🇩🇰",
+  flag_dominica: "🇩🇲",
+  flag_dominican_republic: "🇩🇴",
+  flag_algeria: "🇩🇿",
+  flag_ceuta_melilla: "🇪🇦",
+  flag_ecuador: "🇪🇨",
+  flag_estonia: "🇪🇪",
+  flag_egypt: "🇪🇬",
+  flag_western_sahara: "🇪🇭",
+  flag_eritrea: "🇪🇷",
+  flag_spain: "🇪🇸",
+  flag_ethiopia: "🇪🇹",
+  flag_european_union: "🇪🇺",
+  flag_finland: "🇫🇮",
+  flag_fiji: "🇫🇯",
+  flag_falkland_islands: "🇫🇰",
+  flag_micronesia: "🇫🇲",
+  flag_faroe_islands: "🇫🇴",
+  flag_france: "🇫🇷",
+  flag_gabon: "🇬🇦",
+  flag_united_kingdom: "🇬🇧",
+  flag_grenada: "🇬🇩",
+  flag_georgia: "🇬🇪",
+  flag_french_guiana: "🇬🇫",
+  flag_guernsey: "🇬🇬",
+  flag_ghana: "🇬🇭",
+  flag_gibraltar: "🇬🇮",
+  flag_greenland: "🇬🇱",
+  flag_gambia: "🇬🇲",
+  flag_guinea: "🇬🇳",
+  flag_guadeloupe: "🇬🇵",
+  flag_equatorial_guinea: "🇬🇶",
+  flag_greece: "🇬🇷",
+  flag_south_georgia_south_sandwich_islands: "🇬🇸",
+  flag_guatemala: "🇬🇹",
+  flag_guam: "🇬🇺",
+  flag_guinea_bissau: "🇬🇼",
+  flag_guyana: "🇬🇾",
+  flag_hong_kong_sar_china: "🇭🇰",
+  flag_heard_mcdonald_islands: "🇭🇲",
+  flag_honduras: "🇭🇳",
+  flag_croatia: "🇭🇷",
+  flag_haiti: "🇭🇹",
+  flag_hungary: "🇭🇺",
+  flag_canary_islands: "🇮🇨",
+  flag_indonesia: "🇮🇩",
+  flag_ireland: "🇮🇪",
+  flag_israel: "🇮🇱",
+  flag_isle_of_man: "🇮🇲",
+  flag_india: "🇮🇳",
+  flag_british_indian_ocean_territory: "🇮🇴",
+  flag_iraq: "🇮🇶",
+  flag_iran: "🇮🇷",
+  flag_iceland: "🇮🇸",
+  flag_italy: "🇮🇹",
+  flag_jersey: "🇯🇪",
+  flag_jamaica: "🇯🇲",
+  flag_jordan: "🇯🇴",
+  flag_japan: "🇯🇵",
+  flag_kenya: "🇰🇪",
+  flag_kyrgyzstan: "🇰🇬",
+  flag_cambodia: "🇰🇭",
+  flag_kiribati: "🇰🇮",
+  flag_comoros: "🇰🇲",
+  flag_st_kitts_nevis: "🇰🇳",
+  flag_north_korea: "🇰🇵",
+  flag_south_korea: "🇰🇷",
+  flag_kuwait: "🇰🇼",
+  flag_cayman_islands: "🇰🇾",
+  flag_kazakhstan: "🇰🇿",
+  flag_laos: "🇱🇦",
+  flag_lebanon: "🇱🇧",
+  flag_st_lucia: "🇱🇨",
+  flag_liechtenstein: "🇱🇮",
+  flag_sri_lanka: "🇱🇰",
+  flag_liberia: "🇱🇷",
+  flag_lesotho: "🇱🇸",
+  flag_lithuania: "🇱🇹",
+  flag_luxembourg: "🇱🇺",
+  flag_latvia: "🇱🇻",
+  flag_libya: "🇱🇾",
+  flag_morocco: "🇲🇦",
+  flag_monaco: "🇲🇨",
+  flag_moldova: "🇲🇩",
+  flag_montenegro: "🇲🇪",
+  flag_st_martin: "🇲🇫",
+  flag_madagascar: "🇲🇬",
+  flag_marshall_islands: "🇲🇭",
+  flag_north_macedonia: "🇲🇰",
+  flag_mali: "🇲🇱",
+  flag_myanmar: "🇲🇲",
+  flag_mongolia: "🇲🇳",
+  flag_macao_sar_china: "🇲🇴",
+  flag_northern_mariana_islands: "🇲🇵",
+  flag_martinique: "🇲🇶",
+  flag_mauritania: "🇲🇷",
+  flag_montserrat: "🇲🇸",
+  flag_malta: "🇲🇹",
+  flag_mauritius: "🇲🇺",
+  flag_maldives: "🇲🇻",
+  flag_malawi: "🇲🇼",
+  flag_mexico: "🇲🇽",
+  flag_malaysia: "🇲🇾",
+  flag_mozambique: "🇲🇿",
+  flag_namibia: "🇳🇦",
+  flag_new_caledonia: "🇳🇨",
+  flag_niger: "🇳🇪",
+  flag_norfolk_island: "🇳🇫",
+  flag_nigeria: "🇳🇬",
+  flag_nicaragua: "🇳🇮",
+  flag_netherlands: "🇳🇱",
+  flag_norway: "🇳🇴",
+  flag_nepal: "🇳🇵",
+  flag_nauru: "🇳🇷",
+  flag_niue: "🇳🇺",
+  flag_new_zealand: "🇳🇿",
+  flag_oman: "🇴🇲",
+  flag_panama: "🇵🇦",
+  flag_peru: "🇵🇪",
+  flag_french_polynesia: "🇵🇫",
+  flag_papua_new_guinea: "🇵🇬",
+  flag_philippines: "🇵🇭",
+  flag_pakistan: "🇵🇰",
+  flag_poland: "🇵🇱",
+  flag_st_pierre_miquelon: "🇵🇲",
+  flag_pitcairn_islands: "🇵🇳",
+  flag_puerto_rico: "🇵🇷",
+  flag_palestinian_territories: "🇵🇸",
+  flag_portugal: "🇵🇹",
+  flag_palau: "🇵🇼",
+  flag_paraguay: "🇵🇾",
+  flag_qatar: "🇶🇦",
+  flag_r_union: "🇷🇪",
+  flag_romania: "🇷🇴",
+  flag_serbia: "🇷🇸",
+  flag_russia: "🇷🇺",
+  flag_rwanda: "🇷🇼",
+  flag_saudi_arabia: "🇸🇦",
+  flag_solomon_islands: "🇸🇧",
+  flag_seychelles: "🇸🇨",
+  flag_sudan: "🇸🇩",
+  flag_sweden: "🇸🇪",
+  flag_singapore: "🇸🇬",
+  flag_st_helena: "🇸🇭",
+  flag_slovenia: "🇸🇮",
+  flag_svalbard_jan_mayen: "🇸🇯",
+  flag_slovakia: "🇸🇰",
+  flag_sierra_leone: "🇸🇱",
+  flag_san_marino: "🇸🇲",
+  flag_senegal: "🇸🇳",
+  flag_somalia: "🇸🇴",
+  flag_suriname: "🇸🇷",
+  flag_south_sudan: "🇸🇸",
+  flag_s_o_tom_pr_ncipe: "🇸🇹",
+  flag_el_salvador: "🇸🇻",
+  flag_sint_maarten: "🇸🇽",
+  flag_syria: "🇸🇾",
+  flag_eswatini: "🇸🇿",
+  flag_tristan_da_cunha: "🇹🇦",
+  flag_turks_caicos_islands: "🇹🇨",
+  flag_chad: "🇹🇩",
+  flag_french_southern_territories: "🇹🇫",
+  flag_togo: "🇹🇬",
+  flag_thailand: "🇹🇭",
+  flag_tajikistan: "🇹🇯",
+  flag_tokelau: "🇹🇰",
+  flag_timor_leste: "🇹🇱",
+  flag_turkmenistan: "🇹🇲",
+  flag_tunisia: "🇹🇳",
+  flag_tonga: "🇹🇴",
+  flag_turkey: "🇹🇷",
+  flag_trinidad_tobago: "🇹🇹",
+  flag_tuvalu: "🇹🇻",
+  flag_taiwan: "🇹🇼",
+  flag_tanzania: "🇹🇿",
+  flag_ukraine: "🇺🇦",
+  flag_uganda: "🇺🇬",
+  flag_u_s_outlying_islands: "🇺🇲",
+  flag_united_nations: "🇺🇳",
+  flag_united_states: "🇺🇸",
+  flag_uruguay: "🇺🇾",
+  flag_uzbekistan: "🇺🇿",
+  flag_vatican_city: "🇻🇦",
+  flag_st_vincent_grenadines: "🇻🇨",
+  flag_venezuela: "🇻🇪",
+  flag_british_virgin_islands: "🇻🇬",
+  flag_u_s_virgin_islands: "🇻🇮",
+  flag_vietnam: "🇻🇳",
+  flag_vanuatu: "🇻🇺",
+  flag_wallis_futuna: "🇼🇫",
+  flag_samoa: "🇼🇸",
+  flag_kosovo: "🇽🇰",
+  flag_yemen: "🇾🇪",
+  flag_mayotte: "🇾🇹",
+  flag_south_africa: "🇿🇦",
+  flag_zambia: "🇿🇲",
+  flag_zimbabwe: "🇿🇼",
+  flag_england: "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+  flag_scotland: "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+  flag_wales: "🏴󠁧󠁢󠁷󠁬󠁳󠁿",
+  grinning: "😀",
+  smiley: "😃",
+  smile: "😄",
+  grin: "😁",
+  laughing: "😆",
+  satisfied: "😆",
+  sweat_smile: "😅",
+  rofl: "🤣",
+  joy: "😂",
+  wink: "😉",
+  blush: "😊",
+  innocent: "😇",
+  smiling_face_with_three_hearts: "🥰",
+  heart_eyes: "😍",
+  kissing_heart: "😘",
+  kissing: "😗",
+  relaxed: "☺️",
+  kissing_closed_eyes: "😚",
+  kissing_smiling_eyes: "😙",
+  yum: "😋",
+  stuck_out_tongue: "😛",
+  stuck_out_tongue_winking_eye: "😜",
+  stuck_out_tongue_closed_eyes: "😝",
+  hugs: "🤗",
+  hand_over_mouth: "🤭",
+  thinking: "🤔",
+  raised_eyebrow: "🤨",
+  expressionless: "😑",
+  no_mouth: "😶",
+  smirk: "😏",
+  unamused: "😒",
+  roll_eyes: "🙄",
+  grimacing: "😬",
+  relieved: "😌",
+  pensive: "😔",
+  sleepy: "😪",
+  sleeping: "😴",
+  mask: "😷",
+  vomiting_face: "🤮",
+  monocle_face: "🧐",
+  confused: "😕",
+  worried: "😟",
+  open_mouth: "😮",
+  hushed: "😯",
+  astonished: "😲",
+  flushed: "😳",
+  frowning: "😦",
+  anguished: "😧",
+  fearful: "😨",
+  cold_sweat: "😰",
+  disappointed_relieved: "😥",
+  cry: "😢",
+  sob: "😭",
+  scream: "😱",
+  confounded: "😖",
+  persevere: "😣",
+  disappointed: "😞",
+  sweat: "😓",
+  weary: "😩",
+  triumph: "😤",
+  rage: "😡",
+  pout: "😡",
+  angry: "😠",
+  cursing_face: "🤬",
+  smiling_imp: "😈",
+  imp: "👿",
+  hankey: "💩",
+  poop: "💩",
+  shit: "💩",
+  japanese_ogre: "👹",
+  japanese_goblin: "👺",
+  space_invader: "👾",
+  smiley_cat: "😺",
+  smile_cat: "😸",
+  joy_cat: "😹",
+  heart_eyes_cat: "😻",
+  smirk_cat: "😼",
+  scream_cat: "🙀",
+  crying_cat_face: "😿",
+  see_no_evil: "🙈",
+  hear_no_evil: "🙉",
+  speak_no_evil: "🙊",
+  cupid: "💘",
+  gift_heart: "💝",
+  heartpulse: "💗",
+  heartbeat: "💓",
+  heavy_heart_exclamation: "❣️",
+  heart: "❤️",
+  anger: "💢",
+  boom: "💥",
+  sweat_drops: "💦",
+  dash: "💨",
+  eye_speech_bubble: "👁️‍🗨️",
+  wave: "👋",
+  raised_hand_with_fingers_splayed: "🖐️",
+  hand: "✋",
+  v: "✌️",
+  metal: "🤘",
+  point_left: "👈",
+  point_right: "👉",
+  point_up_2: "👆",
+  fu: "🖕",
+  point_down: "👇",
+  point_up: "☝️",
+  "+1": "👍",
+  thumbsup: "👍",
+  "-1": "👎",
+  thumbsdown: "👎",
+  fist_raised: "✊",
+  fist: "✊",
+  fist_oncoming: "👊",
+  facepunch: "👊",
+  punch: "👊",
+  fist_left: "🤛",
+  fist_right: "🤜",
+  clap: "👏",
+  raised_hands: "🙌",
+  pray: "🙏",
+  nail_care: "💅",
+  muscle: "💪",
+  lips: "👄",
+  adult: "🧑",
+  blond_haired_person: "👱",
+  bearded_person: "🧔",
+  red_haired_man: "👨‍🦰",
+  curly_haired_man: "👨‍🦱",
+  white_haired_man: "👨‍🦳",
+  bald_man: "👨‍🦲",
+  red_haired_woman: "👩‍🦰",
+  curly_haired_woman: "👩‍🦱",
+  white_haired_woman: "👩‍🦳",
+  bald_woman: "👩‍🦲",
+  blond_haired_woman: "👱‍♀",
+  blonde_woman: "👱‍♀",
+  blond_haired_man: "👱‍♂",
+  older_adult: "🧓",
+  older_man: "👴",
+  older_woman: "👵",
+  frowning_person: "🙍",
+  frowning_man: "🙍‍♂",
+  frowning_woman: "🙍‍♀",
+  pouting_man: "🙎‍♂",
+  pouting_woman: "🙎‍♀",
+  no_good: "🙅",
+  no_good_man: "🙅‍♂",
+  ng_man: "🙅‍♂",
+  no_good_woman: "🙅‍♀",
+  ng_woman: "🙅‍♀",
+  ok_person: "🙆",
+  ok_man: "🙆‍♂",
+  ok_woman: "🙆",
+  tipping_hand_person: "💁",
+  information_desk_person: "💁",
+  tipping_hand_man: "💁‍♂",
+  sassy_man: "💁‍♂",
+  tipping_hand_woman: "💁‍♀",
+  sassy_woman: "💁‍♀",
+  raising_hand: "🙋",
+  raising_hand_man: "🙋‍♂",
+  raising_hand_woman: "🙋‍♀",
+  bow: "🙇",
+  bowing_man: "🙇‍♂",
+  bowing_woman: "🙇‍♀",
+  facepalm: "🤦",
+  shrug: "🤷",
+  cop: "👮",
+  policeman: "👮‍♂",
+  policewoman: "👮‍♀",
+  male_detective: "🕵️‍♂️",
+  female_detective: "🕵️‍♀️",
+  guardsman: "💂",
+  guardswoman: "💂‍♀",
+  construction_worker_man: "👷‍♂",
+  construction_worker_woman: "👷‍♀",
+  person_with_turban: "👳",
+  man_with_turban: "👳",
+  woman_with_turban: "👳‍♀",
+  man_with_gua_pi_mao: "👲",
+  angel: "👼",
+  santa: "🎅",
+  superhero_man: "🦸‍♂",
+  superhero_woman: "🦸‍♀",
+  supervillain_man: "🦹‍♂",
+  supervillain_woman: "🦹‍♀",
+  mage_man: "🧙‍♂",
+  mage_woman: "🧙‍♀",
+  fairy_man: "🧚‍♂",
+  fairy_woman: "🧚‍♀",
+  vampire_man: "🧛‍♂",
+  vampire_woman: "🧛‍♀",
+  elf_man: "🧝‍♂",
+  elf_woman: "🧝‍♀",
+  genie_man: "🧞‍♂",
+  genie_woman: "🧞‍♀",
+  zombie_man: "🧟‍♂",
+  zombie_woman: "🧟‍♀",
+  massage: "💆",
+  massage_man: "💆‍♂",
+  massage_woman: "💆‍♀",
+  haircut: "💇",
+  haircut_man: "💇‍♂",
+  haircut_woman: "💇‍♀",
+  walking: "🚶",
+  walking_man: "🚶‍♂",
+  walking_woman: "🚶‍♀",
+  standing_person: "🧍",
+  standing_man: "🧍‍♂",
+  standing_woman: "🧍‍♀",
+  kneeling_person: "🧎",
+  kneeling_man: "🧎‍♂",
+  kneeling_woman: "🧎‍♀",
+  runner: "🏃",
+  running: "🏃",
+  running_man: "🏃‍♂",
+  running_woman: "🏃‍♀",
+  dancer: "💃",
+  business_suit_levitating: "🕴",
+  dancers: "👯",
+  dancing_men: "👯‍♂",
+  dancing_women: "👯‍♀",
+  sauna_person: "🧖",
+  sauna_man: "🧖‍♂",
+  sauna_woman: "🧖‍♀",
+  climbing: "🧗",
+  climbing_man: "🧗‍♂",
+  climbing_woman: "🧗‍♀",
+  golfing: "🏌",
+  golfing_man: "🏌️‍♂️",
+  golfing_woman: "🏌️‍♀️",
+  surfer: "🏄",
+  surfing_man: "🏄‍♂",
+  surfing_woman: "🏄‍♀",
+  rowboat: "🚣",
+  rowing_man: "🚣‍♂",
+  rowing_woman: "🚣‍♀",
+  swimmer: "🏊",
+  swimming_man: "🏊‍♂",
+  swimming_woman: "🏊‍♀",
+  bouncing_ball_person: "⛹",
+  bouncing_ball_man: "⛹️‍♂️",
+  basketball_man: "⛹️‍♂️",
+  bouncing_ball_woman: "⛹️‍♀️",
+  basketball_woman: "⛹️‍♀️",
+  weight_lifting: "🏋",
+  weight_lifting_man: "🏋️‍♂️",
+  weight_lifting_woman: "🏋️‍♀️",
+  bicyclist: "🚴",
+  biking_man: "🚴‍♂",
+  biking_woman: "🚴‍♀",
+  mountain_bicyclist: "🚵",
+  mountain_biking_man: "🚵‍♂",
+  mountain_biking_woman: "🚵‍♀",
+  cartwheeling: "🤸",
+  wrestling: "🤼",
+  water_polo: "🤽",
+  handball_person: "🤾",
+  juggling_person: "🤹",
+  lotus_position: "🧘",
+  lotus_position_man: "🧘‍♂",
+  lotus_position_woman: "🧘‍♀",
+  bath: "🛀",
+  sleeping_bed: "🛌",
+  two_women_holding_hands: "👭",
+  couple: "👫",
+  two_men_holding_hands: "👬",
+  couplekiss: "💏",
+  couplekiss_man_woman: "👩‍❤️‍💋‍👨",
+  couplekiss_man_man: "‍👨❤️💋‍👨",
+  couplekiss_woman_woman: "👩‍❤️‍💋‍👩",
+  dog2: "🐕",
+  fox_face: "🦊",
+  cat2: "🐈",
+  tiger2: "🐅",
+  racehorse: "🐎",
+  cow2: "🐄",
+  pig2: "🐖",
+  sheep: "🐑",
+  dromedary_camel: "🐪",
+  mouse2: "🐁",
+  rabbit2: "🐇",
+  panda_face: "🐼",
+  feet: "🐾",
+  hatched_chick: "🐥",
+  "t-rex": "🦖",
+  whale2: "🐋",
+  flipper: "🐬",
+  shell: "🐚",
+  bee: "🐝",
+  beetle: "🐞",
+  ear_of_rice: "🌾",
+  leaves: "🍃",
+  orange: "🍊",
+  mandarin: "🍊",
+  apple: "🍎",
+  corn: "🌽",
+  cheese: "🧀",
+  fries: "🍟",
+  hotdog: "🌭",
+  fried_egg: "🍳",
+  stew: "🍲",
+  bento: "🍱",
+  rice: "🍚",
+  curry: "🍛",
+  ramen: "🍜",
+  sweet_potato: "🍠",
+  fish_cake: "🍥",
+  icecream: "🍦",
+  birthday: "🎂",
+  cake: "🍰",
+  milk_glass: "🥛",
+  coffee: "☕",
+  tea: "🍵",
+  champagne: "🍾",
+  cocktail: "🍸",
+  beer: "🍺",
+  beers: "🍻",
+  ice_cube: "🧊",
+  plate_with_cutlery: "🍽",
+  hocho: "🔪",
+  knife: "🔪",
+  earth_africa: "🌍",
+  earth_americas: "🌎",
+  earth_asia: "🌏",
+  japan: "🗾",
+  mountain_snow: "🏔",
+  beach_umbrella: "🏖",
+  bricks: "🧱",
+  office: "🏢",
+  european_post_office: "🏤",
+  european_castle: "🏰",
+  city_sunset: "🌆",
+  city_sunrise: "🌇",
+  hotsprings: "♨️",
+  barber: "💈",
+  steam_locomotive: "🚂",
+  bullettrain_side: "🚄",
+  bullettrain_front: "🚅",
+  train2: "🚆",
+  car: "🚗",
+  red_car: "🚗",
+  blue_car: "🚙",
+  truck: "🚚",
+  bike: "🚲",
+  busstop: "🚏",
+  fuelpump: "⛽",
+  rotating_light: "🚨",
+  traffic_light: "🚥",
+  boat: "⛵",
+  flight_departure: "🛫",
+  flight_arrival: "🛬",
+  artificial_satellite: "🛰",
+  hourglass: "⌛",
+  hourglass_flowing_sand: "⏳",
+  clock12: "🕛",
+  clock1230: "🕧",
+  clock1: "🕐",
+  clock130: "🕜",
+  clock2: "🕑",
+  clock230: "🕝",
+  clock3: "🕒",
+  clock330: "🕞",
+  clock4: "🕓",
+  clock430: "🕟",
+  clock5: "🕔",
+  clock530: "🕠",
+  clock6: "🕕",
+  clock630: "🕡",
+  clock7: "🕖",
+  clock730: "🕢",
+  clock8: "🕗",
+  clock830: "🕣",
+  clock9: "🕘",
+  clock930: "🕤",
+  clock10: "🕙",
+  clock1030: "🕥",
+  clock11: "🕚",
+  clock1130: "🕦",
+  moon: "🌔",
+  new_moon_with_face: "🌚",
+  first_quarter_moon_with_face: "🌛",
+  last_quarter_moon_with_face: "🌜",
+  sunny: "☀️",
+  full_moon_with_face: "🌝",
+  star2: "🌟",
+  stars: "🌠",
+  partly_sunny: "⛅",
+  open_umbrella: "☂",
+  parasol_on_ground: "⛱",
+  zap: "⚡",
+  snowman_with_snow: "☃",
+  ocean: "🌊",
+  tada: "🎉",
+  bamboo: "🎍",
+  dolls: "🎎",
+  flags: "🎏",
+  rice_scene: "🎑",
+  gift: "🎁",
+  tickets: "🎟",
+  medal_military: "🎖",
+  medal_sports: "🏅",
+  soccer: "⚽",
+  football: "🏈",
+  golf: "⛳",
+  fishing_pole_and_fish: "🎣",
+  running_shirt_with_sash: "🎽",
+  ski: "🎿",
+  dart: "🎯",
+  "8ball": "🎱",
+  jigsaw: "🧩",
+  spades: "♠️",
+  hearts: "♥️",
+  diamonds: "♦️",
+  clubs: "♣️",
+  black_joker: "🃏",
+  mahjong: "🀄",
+  art: "🎨",
+  eyeglasses: "👓",
+  dark_sunglasses: "🕶️",
+  shirt: "👕",
+  tshirt: "👕",
+  swim_brief: "🩲",
+  womans_clothes: "👚",
+  pouch: "👝",
+  shopping: "🛍",
+  school_satchel: "🎒",
+  mans_shoe: "👞",
+  shoe: "👞",
+  athletic_shoe: "👟",
+  high_heel: "👠",
+  sandal: "👡",
+  boot: "👢",
+  womans_hat: "👒",
+  tophat: "🎩",
+  mortar_board: "🎓",
+  rescue_worker_helmet: "⛑",
+  gem: "💎",
+  mute: "🔇",
+  speaker: "🔈",
+  sound: "🔉",
+  loud_sound: "🔊",
+  mega: "📣",
+  no_bell: "🔕",
+  notes: "🎶",
+  headphones: "🎧",
+  iphone: "📱",
+  calling: "📲",
+  phone: "☎️",
+  fax: "📠",
+  computer: "💻",
+  minidisc: "💽",
+  cd: "💿",
+  film_strip: "🎞",
+  clapper: "🎬",
+  tv: "📺",
+  camera_flash: "📸",
+  vhs: "📼",
+  mag: "🔍",
+  mag_right: "🔎",
+  bulb: "💡",
+  izakaya_lantern: "🏮",
+  lantern: "🏮",
+  book: "📖",
+  newspaper_roll: "🗞",
+  moneybag: "💰",
+  yen: "💴",
+  dollar: "💵",
+  euro: "💶",
+  pound: "💷",
+  chart: "💹",
+  email: "✉️",
+  "e-mail": "📧",
+  mailbox: "📫",
+  mailbox_closed: "📪",
+  mailbox_with_mail: "📬",
+  mailbox_with_no_mail: "📭",
+  ballot_box: "🗳",
+  pencil2: "✏️",
+  date: "📅",
+  chart_with_upwards_trend: "📈",
+  chart_with_downwards_trend: "📉",
+  paperclips: "🖇",
+  lock: "🔒",
+  unlock: "🔓",
+  lock_with_ink_pen: "🔏",
+  closed_lock_with_key: "🔐",
+  gun: "🔫",
+  smoking: "🚬",
+  moyai: "🗿",
+  atm: "🏧",
+  put_litter_in_its_place: "🚮",
+  wheelchair: "♿",
+  mens: "🚹",
+  womens: "🚺",
+  wc: "🚾",
+  no_entry_sign: "🚫",
+  do_not_litter: "🚯",
+  "non-potable_water": "🚱",
+  underage: "🔞",
+  arrow_up: "⬆️",
+  arrow_upper_right: "↗️",
+  arrow_right: "➡️",
+  arrow_lower_right: "↘️",
+  arrow_down: "⬇️",
+  arrow_lower_left: "↙️",
+  arrow_left: "⬅️",
+  arrow_upper_left: "↖️",
+  arrow_up_down: "↕️",
+  leftwards_arrow_with_hook: "↩️",
+  arrow_right_hook: "↪️",
+  arrow_heading_up: "⤴️",
+  arrow_heading_down: "⤵️",
+  arrows_clockwise: "🔃",
+  arrows_counterclockwise: "🔄",
+  back: "🔙",
+  end: "🔚",
+  on: "🔛",
+  soon: "🔜",
+  top: "🔝",
+  six_pointed_star: "🔯",
+  scorpius: "♏",
+  twisted_rightwards_arrows: "🔀",
+  repeat: "🔁",
+  repeat_one: "🔂",
+  arrow_forward: "▶️",
+  fast_forward: "⏩",
+  arrow_backward: "◀️",
+  rewind: "⏪",
+  previous_track_button: "⏮",
+  arrow_up_small: "🔼",
+  arrow_double_up: "⏫",
+  arrow_down_small: "🔽",
+  arrow_double_down: "⏬",
+  low_brightness: "🔅",
+  high_brightness: "🔆",
+  signal_strength: "📶",
+  recycle: "♻️",
+  trident: "🔱",
+  beginner: "🔰",
+  o: "⭕",
+  white_check_mark: "✅",
+  ballot_box_with_check: "☑️",
+  heavy_check_mark: "✔️",
+  heavy_multiplication_x: "✖️",
+  x: "❌",
+  negative_squared_cross_mark: "❎",
+  heavy_plus_sign: "➕",
+  heavy_minus_sign: "➖",
+  heavy_division_sign: "➗",
+  loop: "➿",
+  eight_pointed_black_star: "✴️",
+  bangbang: "‼️",
+  interrobang: "⁉️",
+  question: "❓",
+  grey_question: "❔",
+  grey_exclamation: "❕",
+  exclamation: "❗",
+  heavy_exclamation_mark: "❗",
+  tm: "™️",
+  hash: "#️⃣",
+  asterisk: "*️⃣",
+  zero: "0️⃣",
+  one: "1️⃣",
+  two: "2️⃣",
+  three: "3️⃣",
+  four: "4️⃣",
+  five: "5️⃣",
+  six: "6️⃣",
+  seven: "7️⃣",
+  eight: "8️⃣",
+  nine: "9️⃣",
+  keycap_ten: "🔟",
+  capital_abcd: "🔠",
+  abcd: "🔡",
+  symbols: "🔣",
+  abc: "🔤",
+  a: "🅰️",
+  ab: "🆎",
+  b: "🅱️",
+  cl: "🆑",
+  cool: "🆒",
+  free: "🆓",
+  information_source: "ℹ️",
+  id: "🆔",
+  m: "Ⓜ️",
+  new: "🆕",
+  ng: "🆖",
+  o2: "🅾️",
+  ok: "🆗",
+  parking: "🅿️",
+  sos: "🆘",
+  up: "🆙",
+  vs: "🆚",
+  koko: "🈁",
+  sa: "🈂️",
+  u6708: "🈷️",
+  u6709: "🈶",
+  u6307: "🈯",
+  ideograph_advantage: "🉐",
+  u5272: "🈹",
+  u7121: "🈚",
+  u7981: "🈲",
+  accept: "🉑",
+  u7533: "🈸",
+  u5408: "🈴",
+  u7a7a: "🈳",
+  congratulations: "㊗️",
+  secret: "㊙️",
+  u55b6: "🈺",
+  u6e80: "🈵",
+  large_blue_circle: "🔵",
+  small_red_triangle: "🔺",
+  small_red_triangle_down: "🔻",
+  diamond_shape_with_a_dot_inside: "💠",
+  checkered_flag: "🏁",
+  triangular_flag_on_post: "🚩",
+  ascension_island: "🇦🇨",
+  andorra: "🇦🇩",
+  united_arab_emirates: "🇦🇪",
+  afghanistan: "🇦🇫",
+  antigua_barbuda: "🇦🇬",
+  anguilla: "🇦🇮",
+  albania: "🇦🇱",
+  armenia: "🇦🇲",
+  angola: "🇦🇴",
+  antarctica: "🇦🇶",
+  argentina: "🇦🇷",
+  american_samoa: "🇦🇸",
+  austria: "🇦🇹",
+  australia: "🇦🇺",
+  aruba: "🇦🇼",
+  aland_islands: "🇦🇽",
+  azerbaijan: "🇦🇿",
+  bosnia_herzegovina: "🇧🇦",
+  barbados: "🇧🇧",
+  bangladesh: "🇧🇩",
+  belgium: "🇧🇪",
+  burkina_faso: "🇧🇫",
+  bulgaria: "🇧🇬",
+  bahrain: "🇧🇭",
+  burundi: "🇧🇮",
+  benin: "🇧🇯",
+  st_barthelemy: "🇧🇱",
+  bermuda: "🇧🇲",
+  brunei: "🇧🇳",
+  bolivia: "🇧🇴",
+  caribbean_netherlands: "🇧🇶",
+  brazil: "🇧🇷",
+  bahamas: "🇧🇸",
+  bhutan: "🇧🇹",
+  bouvet_island: "🇧🇻",
+  botswana: "🇧🇼",
+  belarus: "🇧🇾",
+  belize: "🇧🇿",
+  canada: "🇨🇦",
+  cocos_islands: "🇨🇨",
+  congo_kinshasa: "🇨🇩",
+  central_african_republic: "🇨🇫",
+  congo_brazzaville: "🇨🇬",
+  switzerland: "🇨🇭",
+  cote_divoire: "🇨🇮",
+  cook_islands: "🇨🇰",
+  chile: "🇨🇱",
+  cameroon: "🇨🇲",
+  cn: "🇨🇳",
+  colombia: "🇨🇴",
+  clipperton_island: "🇨🇵",
+  costa_rica: "🇨🇷",
+  cuba: "🇨🇺",
+  cape_verde: "🇨🇻",
+  curacao: "🇨🇼",
+  christmas_island: "🇨🇽",
+  cyprus: "🇨🇾",
+  czech_republic: "🇨🇿",
+  de: "🇩🇪",
+  diego_garcia: "🇩🇬",
+  djibouti: "🇩🇯",
+  denmark: "🇩🇰",
+  dominica: "🇩🇲",
+  dominican_republic: "🇩🇴",
+  algeria: "🇩🇿",
+  ceuta_melilla: "🇪🇦",
+  ecuador: "🇪🇨",
+  estonia: "🇪🇪",
+  egypt: "🇪🇬",
+  western_sahara: "🇪🇭",
+  eritrea: "🇪🇷",
+  es: "🇪🇸",
+  ethiopia: "🇪🇹",
+  eu: "🇪🇺",
+  european_union: "🇪🇺",
+  finland: "🇫🇮",
+  fiji: "🇫🇯",
+  falkland_islands: "🇫🇰",
+  micronesia: "🇫🇲",
+  faroe_islands: "🇫🇴",
+  fr: "🇫🇷",
+  gabon: "🇬🇦",
+  gb: "🇬🇧",
+  uk: "🇬🇧",
+  grenada: "🇬🇩",
+  georgia: "🇬🇪",
+  french_guiana: "🇬🇫",
+  guernsey: "🇬🇬",
+  ghana: "🇬🇭",
+  gibraltar: "🇬🇮",
+  greenland: "🇬🇱",
+  gambia: "🇬🇲",
+  guinea: "🇬🇳",
+  guadeloupe: "🇬🇵",
+  equatorial_guinea: "🇬🇶",
+  greece: "🇬🇷",
+  south_georgia_south_sandwich_islands: "🇬🇸",
+  guatemala: "🇬🇹",
+  guam: "🇬🇺",
+  guinea_bissau: "🇬🇼",
+  guyana: "🇬🇾",
+  hong_kong: "🇭🇰",
+  heard_mcdonald_islands: "🇭🇲",
+  honduras: "🇭🇳",
+  croatia: "🇭🇷",
+  haiti: "🇭🇹",
+  hungary: "🇭🇺",
+  canary_islands: "🇮🇨",
+  indonesia: "🇮🇩",
+  ireland: "🇮🇪",
+  israel: "🇮🇱",
+  isle_of_man: "🇮🇲",
+  india: "🇮🇳",
+  british_indian_ocean_territory: "🇮🇴",
+  iraq: "🇮🇶",
+  iran: "🇮🇷",
+  iceland: "🇮🇸",
+  it: "🇮🇹",
+  jersey: "🇯🇪",
+  jamaica: "🇯🇲",
+  jordan: "🇯🇴",
+  jp: "🇯🇵",
+  kenya: "🇰🇪",
+  kyrgyzstan: "🇰🇬",
+  cambodia: "🇰🇭",
+  kiribati: "🇰🇮",
+  comoros: "🇰🇲",
+  st_kitts_nevis: "🇰🇳",
+  north_korea: "🇰🇵",
+  kr: "🇰🇷",
+  kuwait: "🇰🇼",
+  cayman_islands: "🇰🇾",
+  kazakhstan: "🇰🇿",
+  laos: "🇱🇦",
+  lebanon: "🇱🇧",
+  st_lucia: "🇱🇨",
+  liechtenstein: "🇱🇮",
+  sri_lanka: "🇱🇰",
+  liberia: "🇱🇷",
+  lesotho: "🇱🇸",
+  lithuania: "🇱🇹",
+  luxembourg: "🇱🇺",
+  latvia: "🇱🇻",
+  libya: "🇱🇾",
+  morocco: "🇲🇦",
+  monaco: "🇲🇨",
+  moldova: "🇲🇩",
+  montenegro: "🇲🇪",
+  st_martin: "🇲🇫",
+  madagascar: "🇲🇬",
+  marshall_islands: "🇲🇭",
+  macedonia: "🇲🇰",
+  mali: "🇲🇱",
+  myanmar: "🇲🇲",
+  mongolia: "🇲🇳",
+  macau: "🇲🇴",
+  northern_mariana_islands: "🇲🇵",
+  martinique: "🇲🇶",
+  mauritania: "🇲🇷",
+  montserrat: "🇲🇸",
+  malta: "🇲🇹",
+  mauritius: "🇲🇺",
+  maldives: "🇲🇻",
+  malawi: "🇲🇼",
+  mexico: "🇲🇽",
+  malaysia: "🇲🇾",
+  mozambique: "🇲🇿",
+  namibia: "🇳🇦",
+  new_caledonia: "🇳🇨",
+  niger: "🇳🇪",
+  norfolk_island: "🇳🇫",
+  nigeria: "🇳🇬",
+  nicaragua: "🇳🇮",
+  netherlands: "🇳🇱",
+  norway: "🇳🇴",
+  nepal: "🇳🇵",
+  nauru: "🇳🇷",
+  niue: "🇳🇺",
+  new_zealand: "🇳🇿",
+  oman: "🇴🇲",
+  panama: "🇵🇦",
+  peru: "🇵🇪",
+  french_polynesia: "🇵🇫",
+  papua_new_guinea: "🇵🇬",
+  philippines: "🇵🇭",
+  pakistan: "🇵🇰",
+  poland: "🇵🇱",
+  st_pierre_miquelon: "🇵🇲",
+  pitcairn_islands: "🇵🇳",
+  puerto_rico: "🇵🇷",
+  palestinian_territories: "🇵🇸",
+  portugal: "🇵🇹",
+  palau: "🇵🇼",
+  paraguay: "🇵🇾",
+  qatar: "🇶🇦",
+  reunion: "🇷🇪",
+  romania: "🇷🇴",
+  serbia: "🇷🇸",
+  ru: "🇷🇺",
+  rwanda: "🇷🇼",
+  saudi_arabia: "🇸🇦",
+  solomon_islands: "🇸🇧",
+  seychelles: "🇸🇨",
+  sudan: "🇸🇩",
+  sweden: "🇸🇪",
+  singapore: "🇸🇬",
+  st_helena: "🇸🇭",
+  slovenia: "🇸🇮",
+  svalbard_jan_mayen: "🇸🇯",
+  slovakia: "🇸🇰",
+  sierra_leone: "🇸🇱",
+  san_marino: "🇸🇲",
+  senegal: "🇸🇳",
+  somalia: "🇸🇴",
+  suriname: "🇸🇷",
+  south_sudan: "🇸🇸",
+  sao_tome_principe: "🇸🇹",
+  el_salvador: "🇸🇻",
+  sint_maarten: "🇸🇽",
+  syria: "🇸🇾",
+  swaziland: "🇸🇿",
+  tristan_da_cunha: "🇹🇦",
+  turks_caicos_islands: "🇹🇨",
+  chad: "🇹🇩",
+  french_southern_territories: "🇹🇫",
+  togo: "🇹🇬",
+  thailand: "🇹🇭",
+  tajikistan: "🇹🇯",
+  tokelau: "🇹🇰",
+  timor_leste: "🇹🇱",
+  turkmenistan: "🇹🇲",
+  tunisia: "🇹🇳",
+  tonga: "🇹🇴",
+  tr: "🇹🇷",
+  trinidad_tobago: "🇹🇹",
+  tuvalu: "🇹🇻",
+  taiwan: "🇹🇼",
+  tanzania: "🇹🇿",
+  ukraine: "🇺🇦",
+  uganda: "🇺🇬",
+  us_outlying_islands: "🇺🇲",
+  united_nations: "🇺🇳",
+  us: "🇺🇸",
+  uruguay: "🇺🇾",
+  uzbekistan: "🇺🇿",
+  vatican_city: "🇻🇦",
+  st_vincent_grenadines: "🇻🇨",
+  venezuela: "🇻🇪",
+  british_virgin_islands: "🇻🇬",
+  us_virgin_islands: "🇻🇮",
+  vietnam: "🇻🇳",
+  vanuatu: "🇻🇺",
+  wallis_futuna: "🇼🇫",
+  samoa: "🇼🇸",
+  kosovo: "🇽🇰",
+  yemen: "🇾🇪",
+  mayotte: "🇾🇹",
+  south_africa: "🇿🇦",
+  zambia: "🇿🇲",
+  zimbabwe: "🇿🇼",
+  england: "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+  scotland: "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+  wales: "🏴󠁧󠁢󠁷󠁬󠁳󠁿",
+  hundred_points_symbol: "💯",
+  input_symbol_for_numbers: "🔢",
+  "#": "#️⃣",
+  keycap_star: "*️⃣",
+  "*": "*️⃣",
+  mahjong_tile_red_dragon: "🀄",
+  playing_card_black_joker: "🃏",
+  "a_button_(blood_type)": "🅰️",
+  "b_button_(blood_type)": "🅱️",
+  "o_button_(blood_type)": "🅾️",
+  negative_squared_ab: "🆎",
+  "ab_button_(blood_type)": "🆎",
+  squared_cl: "🆑",
+  squared_cool: "🆒",
+  squared_free: "🆓",
+  squared_id: "🆔",
+  squared_new: "🆕",
+  squared_ng: "🆖",
+  squared_ok: "🆗",
+  squared_sos: "🆘",
+  squared_up_with_exclamation_mark: "🆙",
+  "up!_button": "🆙",
+  squared_vs: "🆚",
+  "flag-ac": "🇦🇨",
+  "flag-ad": "🇦🇩",
+  ad: "🇦🇩",
+  "flag-ae": "🇦🇪",
+  ae: "🇦🇪",
+  "flag-af": "🇦🇫",
+  af: "🇦🇫",
+  "flag-ag": "🇦🇬",
+  ag: "🇦🇬",
+  "antigua_&_barbuda": "🇦🇬",
+  "flag-ai": "🇦🇮",
+  ai: "🇦🇮",
+  "flag-al": "🇦🇱",
+  al: "🇦🇱",
+  "flag-am": "🇦🇲",
+  am: "🇦🇲",
+  "flag-ao": "🇦🇴",
+  ao: "🇦🇴",
+  "flag-aq": "🇦🇶",
+  "flag-ar": "🇦🇷",
+  ar: "🇦🇷",
+  "flag-as": "🇦🇸",
+  as: "🇦🇸",
+  "flag-at": "🇦🇹",
+  at: "🇦🇹",
+  "flag-au": "🇦🇺",
+  au: "🇦🇺",
+  "flag-aw": "🇦🇼",
+  aw: "🇦🇼",
+  "flag-ax": "🇦🇽",
+  åland_islands: "🇦🇽",
+  "flag-az": "🇦🇿",
+  az: "🇦🇿",
+  "flag-ba": "🇧🇦",
+  ba: "🇧🇦",
+  "bosnia_&_herzegovina": "🇧🇦",
+  "flag-bb": "🇧🇧",
+  bb: "🇧🇧",
+  "flag-bd": "🇧🇩",
+  bd: "🇧🇩",
+  "flag-be": "🇧🇪",
+  be: "🇧🇪",
+  "flag-bf": "🇧🇫",
+  bf: "🇧🇫",
+  "flag-bg": "🇧🇬",
+  bg: "🇧🇬",
+  "flag-bh": "🇧🇭",
+  bh: "🇧🇭",
+  "flag-bi": "🇧🇮",
+  bi: "🇧🇮",
+  "flag-bj": "🇧🇯",
+  bj: "🇧🇯",
+  "flag-bl": "🇧🇱",
+  "flag-bm": "🇧🇲",
+  bm: "🇧🇲",
+  "flag-bn": "🇧🇳",
+  bn: "🇧🇳",
+  "flag-bo": "🇧🇴",
+  bo: "🇧🇴",
+  "flag-bq": "🇧🇶",
+  "flag-br": "🇧🇷",
+  br: "🇧🇷",
+  "flag-bs": "🇧🇸",
+  bs: "🇧🇸",
+  "flag-bt": "🇧🇹",
+  bt: "🇧🇹",
+  "flag-bv": "🇧🇻",
+  "flag-bw": "🇧🇼",
+  bw: "🇧🇼",
+  "flag-by": "🇧🇾",
+  by: "🇧🇾",
+  "flag-bz": "🇧🇿",
+  bz: "🇧🇿",
+  "flag-ca": "🇨🇦",
+  ca: "🇨🇦",
+  "flag-cc": "🇨🇨",
+  "cocos_(keeling)_islands": "🇨🇨",
+  "flag-cd": "🇨🇩",
+  cd_flag: "🇨🇩",
+  "congo_-_kinshasa": "🇨🇩",
+  "flag-cf": "🇨🇫",
+  cf: "🇨🇫",
+  "flag-cg": "🇨🇬",
+  cg: "🇨🇬",
+  "congo_-_brazzaville": "🇨🇬",
+  "flag-ch": "🇨🇭",
+  ch: "🇨🇭",
+  "flag-ci": "🇨🇮",
+  ci: "🇨🇮",
+  "côte_d’ivoire": "🇨🇮",
+  "flag-ck": "🇨🇰",
+  ck: "🇨🇰",
+  "flag-cl": "🇨🇱",
+  cl_flag: "🇨🇱",
+  "flag-cm": "🇨🇲",
+  cm: "🇨🇲",
+  "flag-cn": "🇨🇳",
+  china: "🇨🇳",
+  "flag-co": "🇨🇴",
+  co: "🇨🇴",
+  "flag-cp": "🇨🇵",
+  "flag-cr": "🇨🇷",
+  cr: "🇨🇷",
+  "flag-cu": "🇨🇺",
+  cu: "🇨🇺",
+  "flag-cv": "🇨🇻",
+  cv: "🇨🇻",
+  "flag-cw": "🇨🇼",
+  cw: "🇨🇼",
+  curaçao: "🇨🇼",
+  "flag-cx": "🇨🇽",
+  "flag-cy": "🇨🇾",
+  cy: "🇨🇾",
+  "flag-cz": "🇨🇿",
+  cz: "🇨🇿",
+  czechia: "🇨🇿",
+  "flag-de": "🇩🇪",
+  germany: "🇩🇪",
+  "flag-dg": "🇩🇬",
+  "flag-dj": "🇩🇯",
+  dj: "🇩🇯",
+  "flag-dk": "🇩🇰",
+  dk: "🇩🇰",
+  "flag-dm": "🇩🇲",
+  dm: "🇩🇲",
+  "flag-do": "🇩🇴",
+  do: "🇩🇴",
+  "flag-dz": "🇩🇿",
+  dz: "🇩🇿",
+  "flag-ea": "🇪🇦",
+  "ceuta_&_melilla": "🇪🇦",
+  "flag-ec": "🇪🇨",
+  ec: "🇪🇨",
+  "flag-ee": "🇪🇪",
+  ee: "🇪🇪",
+  "flag-eg": "🇪🇬",
+  eg: "🇪🇬",
+  "flag-eh": "🇪🇭",
+  "flag-er": "🇪🇷",
+  er: "🇪🇷",
+  "flag-es": "🇪🇸",
+  spain: "🇪🇸",
+  "flag-et": "🇪🇹",
+  et: "🇪🇹",
+  "flag-eu": "🇪🇺",
+  "flag-fi": "🇫🇮",
+  fi: "🇫🇮",
+  "flag-fj": "🇫🇯",
+  fj: "🇫🇯",
+  "flag-fk": "🇫🇰",
+  "flag-fm": "🇫🇲",
+  "flag-fo": "🇫🇴",
+  fo: "🇫🇴",
+  "flag-fr": "🇫🇷",
+  france: "🇫🇷",
+  "flag-ga": "🇬🇦",
+  ga: "🇬🇦",
+  "flag-gb": "🇬🇧",
+  united_kingdom: "🇬🇧",
+  "flag-gd": "🇬🇩",
+  gd: "🇬🇩",
+  "flag-ge": "🇬🇪",
+  ge: "🇬🇪",
+  "flag-gf": "🇬🇫",
+  gf: "🇬🇫",
+  "flag-gg": "🇬🇬",
+  "flag-gh": "🇬🇭",
+  gh: "🇬🇭",
+  "flag-gi": "🇬🇮",
+  gi: "🇬🇮",
+  "flag-gl": "🇬🇱",
+  "flag-gm": "🇬🇲",
+  gm: "🇬🇲",
+  "flag-gn": "🇬🇳",
+  gn: "🇬🇳",
+  "flag-gp": "🇬🇵",
+  gp: "🇬🇵",
+  "flag-gq": "🇬🇶",
+  gq: "🇬🇶",
+  "flag-gr": "🇬🇷",
+  gr: "🇬🇷",
+  "flag-gs": "🇬🇸",
+  "south_georgia_&_south_sandwich_islands": "🇬🇸",
+  "flag-gt": "🇬🇹",
+  gt: "🇬🇹",
+  "flag-gu": "🇬🇺",
+  gu: "🇬🇺",
+  "flag-gw": "🇬🇼",
+  gw: "🇬🇼",
+  "guinea-bissau": "🇬🇼",
+  "flag-gy": "🇬🇾",
+  gy: "🇬🇾",
+  "flag-hk": "🇭🇰",
+  hk: "🇭🇰",
+  hong_kong_sar_china: "🇭🇰",
+  "flag-hm": "🇭🇲",
+  "heard_&_mcdonald_islands": "🇭🇲",
+  "flag-hn": "🇭🇳",
+  hn: "🇭🇳",
+  "flag-hr": "🇭🇷",
+  hr: "🇭🇷",
+  "flag-ht": "🇭🇹",
+  ht: "🇭🇹",
+  "flag-hu": "🇭🇺",
+  hu: "🇭🇺",
+  "flag-ic": "🇮🇨",
+  "flag-id": "🇮🇩",
+  id_flag: "🇮🇩",
+  "flag-ie": "🇮🇪",
+  ie: "🇮🇪",
+  "flag-il": "🇮🇱",
+  il: "🇮🇱",
+  "flag-im": "🇮🇲",
+  "flag-in": "🇮🇳",
+  in: "🇮🇳",
+  "flag-io": "🇮🇴",
+  "flag-iq": "🇮🇶",
+  iq: "🇮🇶",
+  "flag-ir": "🇮🇷",
+  ir: "🇮🇷",
+  "flag-is": "🇮🇸",
+  is: "🇮🇸",
+  "flag-it": "🇮🇹",
+  italy: "🇮🇹",
+  "flag-je": "🇯🇪",
+  "flag-jm": "🇯🇲",
+  jm: "🇯🇲",
+  "flag-jo": "🇯🇴",
+  jo: "🇯🇴",
+  "flag-jp": "🇯🇵",
+  "flag-ke": "🇰🇪",
+  ke: "🇰🇪",
+  "flag-kg": "🇰🇬",
+  kg: "🇰🇬",
+  "flag-kh": "🇰🇭",
+  kh: "🇰🇭",
+  "flag-ki": "🇰🇮",
+  ki: "🇰🇮",
+  "flag-km": "🇰🇲",
+  km: "🇰🇲",
+  "flag-kn": "🇰🇳",
+  "flag-kp": "🇰🇵",
+  kp: "🇰🇵",
+  "flag-kr": "🇰🇷",
+  south_korea: "🇰🇷",
+  "flag-kw": "🇰🇼",
+  kw: "🇰🇼",
+  "flag-ky": "🇰🇾",
+  ky: "🇰🇾",
+  "flag-kz": "🇰🇿",
+  kz: "🇰🇿",
+  "flag-la": "🇱🇦",
+  la: "🇱🇦",
+  "flag-lb": "🇱🇧",
+  lb: "🇱🇧",
+  "flag-lc": "🇱🇨",
+  "flag-li": "🇱🇮",
+  li: "🇱🇮",
+  "flag-lk": "🇱🇰",
+  lk: "🇱🇰",
+  "flag-lr": "🇱🇷",
+  lr: "🇱🇷",
+  "flag-ls": "🇱🇸",
+  ls: "🇱🇸",
+  "flag-lt": "🇱🇹",
+  lt: "🇱🇹",
+  "flag-lu": "🇱🇺",
+  lu: "🇱🇺",
+  "flag-lv": "🇱🇻",
+  lv: "🇱🇻",
+  "flag-ly": "🇱🇾",
+  ly: "🇱🇾",
+  "flag-ma": "🇲🇦",
+  ma: "🇲🇦",
+  "flag-mc": "🇲🇨",
+  "flag-md": "🇲🇩",
+  md: "🇲🇩",
+  "flag-me": "🇲🇪",
+  me: "🇲🇪",
+  "flag-mf": "🇲🇫",
+  "flag-mg": "🇲🇬",
+  mg: "🇲🇬",
+  "flag-mh": "🇲🇭",
+  "flag-mk": "🇲🇰",
+  mk: "🇲🇰",
+  "flag-ml": "🇲🇱",
+  ml: "🇲🇱",
+  "flag-mm": "🇲🇲",
+  mm: "🇲🇲",
+  "myanmar_(burma)": "🇲🇲",
+  "flag-mn": "🇲🇳",
+  mn: "🇲🇳",
+  "flag-mo": "🇲🇴",
+  mo: "🇲🇴",
+  macao_sar_china: "🇲🇴",
+  "flag-mp": "🇲🇵",
+  mp: "🇲🇵",
+  "flag-mq": "🇲🇶",
+  mq: "🇲🇶",
+  "flag-mr": "🇲🇷",
+  mr: "🇲🇷",
+  "flag-ms": "🇲🇸",
+  ms: "🇲🇸",
+  "flag-mt": "🇲🇹",
+  mt: "🇲🇹",
+  "flag-mu": "🇲🇺",
+  "flag-mv": "🇲🇻",
+  mv: "🇲🇻",
+  "flag-mw": "🇲🇼",
+  mw: "🇲🇼",
+  "flag-mx": "🇲🇽",
+  mx: "🇲🇽",
+  "flag-my": "🇲🇾",
+  my: "🇲🇾",
+  "flag-mz": "🇲🇿",
+  mz: "🇲🇿",
+  "flag-na": "🇳🇦",
+  na: "🇳🇦",
+  "flag-nc": "🇳🇨",
+  nc: "🇳🇨",
+  "flag-ne": "🇳🇪",
+  ne: "🇳🇪",
+  "flag-nf": "🇳🇫",
+  "flag-ng": "🇳🇬",
+  "flag-ni": "🇳🇮",
+  ni: "🇳🇮",
+  "flag-nl": "🇳🇱",
+  nl: "🇳🇱",
+  "flag-no": "🇳🇴",
+  no: "🇳🇴",
+  "flag-np": "🇳🇵",
+  np: "🇳🇵",
+  "flag-nr": "🇳🇷",
+  "flag-nu": "🇳🇺",
+  nu: "🇳🇺",
+  "flag-nz": "🇳🇿",
+  nz: "🇳🇿",
+  "flag-om": "🇴🇲",
+  "flag-pa": "🇵🇦",
+  pa: "🇵🇦",
+  "flag-pe": "🇵🇪",
+  pe: "🇵🇪",
+  "flag-pf": "🇵🇫",
+  "flag-pg": "🇵🇬",
+  pg: "🇵🇬",
+  "flag-ph": "🇵🇭",
+  ph: "🇵🇭",
+  "flag-pk": "🇵🇰",
+  pk: "🇵🇰",
+  "flag-pl": "🇵🇱",
+  pl: "🇵🇱",
+  "flag-pm": "🇵🇲",
+  "flag-pn": "🇵🇳",
+  "flag-pr": "🇵🇷",
+  pr: "🇵🇷",
+  "flag-ps": "🇵🇸",
+  ps: "🇵🇸",
+  "flag-pt": "🇵🇹",
+  pt: "🇵🇹",
+  "flag-pw": "🇵🇼",
+  pw: "🇵🇼",
+  "flag-py": "🇵🇾",
+  py: "🇵🇾",
+  "flag-qa": "🇶🇦",
+  qa: "🇶🇦",
+  "flag-re": "🇷🇪",
+  re: "🇷🇪",
+  réunion: "🇷🇪",
+  "flag-ro": "🇷🇴",
+  ro: "🇷🇴",
+  "flag-rs": "🇷🇸",
+  rs: "🇷🇸",
+  "flag-ru": "🇷🇺",
+  russia: "🇷🇺",
+  "flag-rw": "🇷🇼",
+  rw: "🇷🇼",
+  "flag-sa": "🇸🇦",
+  sa_flag: "🇸🇦",
+  "flag-sb": "🇸🇧",
+  sb: "🇸🇧",
+  "flag-sc": "🇸🇨",
+  sc: "🇸🇨",
+  "flag-sd": "🇸🇩",
+  sd: "🇸🇩",
+  "flag-se": "🇸🇪",
+  se: "🇸🇪",
+  "flag-sg": "🇸🇬",
+  sg: "🇸🇬",
+  "flag-sh": "🇸🇭",
+  "flag-si": "🇸🇮",
+  si: "🇸🇮",
+  "flag-sj": "🇸🇯",
+  "svalbard_&_jan_mayen": "🇸🇯",
+  "flag-sk": "🇸🇰",
+  sk: "🇸🇰",
+  "flag-sl": "🇸🇱",
+  sl: "🇸🇱",
+  "flag-sm": "🇸🇲",
+  sm: "🇸🇲",
+  "flag-sn": "🇸🇳",
+  sn: "🇸🇳",
+  "flag-so": "🇸🇴",
+  so: "🇸🇴",
+  "flag-sr": "🇸🇷",
+  sr: "🇸🇷",
+  "flag-ss": "🇸🇸",
+  ss: "🇸🇸",
+  "flag-st": "🇸🇹",
+  st: "🇸🇹",
+  "são_tomé_&_príncipe": "🇸🇹",
+  "flag-sv": "🇸🇻",
+  sv: "🇸🇻",
+  "flag-sx": "🇸🇽",
+  "flag-sy": "🇸🇾",
+  sy: "🇸🇾",
+  "flag-sz": "🇸🇿",
+  sz: "🇸🇿",
+  eswatini: "🇸🇿",
+  "flag-ta": "🇹🇦",
+  "flag-tc": "🇹🇨",
+  tc: "🇹🇨",
+  "turks_&_caicos_islands": "🇹🇨",
+  "flag-td": "🇹🇩",
+  "flag-tf": "🇹🇫",
+  tf: "🇹🇫",
+  "flag-tg": "🇹🇬",
+  tg: "🇹🇬",
+  "flag-th": "🇹🇭",
+  th: "🇹🇭",
+  "flag-tj": "🇹🇯",
+  tj: "🇹🇯",
+  "flag-tk": "🇹🇰",
+  "flag-tl": "🇹🇱",
+  tl: "🇹🇱",
+  "timor-leste": "🇹🇱",
+  "flag-tm": "🇹🇲",
+  tm_flag: "🇹🇲",
+  "flag-tn": "🇹🇳",
+  tn: "🇹🇳",
+  "flag-to": "🇹🇴",
+  to: "🇹🇴",
+  "flag-tr": "🇹🇷",
+  "flag-tt": "🇹🇹",
+  tt: "🇹🇹",
+  "trinidad_&_tobago": "🇹🇹",
+  "flag-tv": "🇹🇻",
+  tv_flag: "🇹🇻",
+  "flag-tw": "🇹🇼",
+  "flag-tz": "🇹🇿",
+  tz: "🇹🇿",
+  "flag-ua": "🇺🇦",
+  ua: "🇺🇦",
+  "flag-ug": "🇺🇬",
+  ug: "🇺🇬",
+  "flag-um": "🇺🇲",
+  "flag-un": "🇺🇳",
+  "flag-us": "🇺🇸",
+  united_states: "🇺🇸",
+  "flag-uy": "🇺🇾",
+  uy: "🇺🇾",
+  "flag-uz": "🇺🇿",
+  uz: "🇺🇿",
+  "flag-va": "🇻🇦",
+  "flag-vc": "🇻🇨",
+  vc: "🇻🇨",
+  "flag-ve": "🇻🇪",
+  ve: "🇻🇪",
+  "flag-vg": "🇻🇬",
+  vg: "🇻🇬",
+  "flag-vi": "🇻🇮",
+  vi: "🇻🇮",
+  "flag-vn": "🇻🇳",
+  vn: "🇻🇳",
+  "flag-vu": "🇻🇺",
+  vu: "🇻🇺",
+  "flag-wf": "🇼🇫",
+  "wallis_&_futuna": "🇼🇫",
+  "flag-ws": "🇼🇸",
+  ws: "🇼🇸",
+  "flag-xk": "🇽🇰",
+  "flag-ye": "🇾🇪",
+  ye: "🇾🇪",
+  "flag-yt": "🇾🇹",
+  "flag-za": "🇿🇦",
+  za: "🇿🇦",
+  "flag-zm": "🇿🇲",
+  zm: "🇿🇲",
+  "flag-zw": "🇿🇼",
+  zw: "🇿🇼",
+  squared_katakana_koko: "🈁",
+  "japanese_“here”_button": "🈁",
+  "japanese_“service_charge”_button": "🈂️",
+  "squared_cjk_unified_ideograph-7121": "🈚",
+  "japanese_“free_of_charge”_button": "🈚",
+  "squared_cjk_unified_ideograph-6307": "🈯",
+  "japanese_“reserved”_button": "🈯",
+  "squared_cjk_unified_ideograph-7981": "🈲",
+  "japanese_“prohibited”_button": "🈲",
+  "squared_cjk_unified_ideograph-7a7a": "🈳",
+  "japanese_“vacancy”_button": "🈳",
+  "squared_cjk_unified_ideograph-5408": "🈴",
+  "japanese_“passing_grade”_button": "🈴",
+  "squared_cjk_unified_ideograph-6e80": "🈵",
+  "japanese_“no_vacancy”_button": "🈵",
+  "squared_cjk_unified_ideograph-6709": "🈶",
+  "japanese_“not_free_of_charge”_button": "🈶",
+  "japanese_“monthly_amount”_button": "🈷️",
+  "squared_cjk_unified_ideograph-7533": "🈸",
+  "japanese_“application”_button": "🈸",
+  "squared_cjk_unified_ideograph-5272": "🈹",
+  "japanese_“discount”_button": "🈹",
+  "squared_cjk_unified_ideograph-55b6": "🈺",
+  "japanese_“open_for_business”_button": "🈺",
+  circled_ideograph_advantage: "🉐",
+  "japanese_“bargain”_button": "🉐",
+  circled_ideograph_accept: "🉑",
+  "japanese_“acceptable”_button": "🉑",
+  sunset_over_buildings: "🌇",
+  "earth_globe_europe-africa": "🌍",
+  "globe_showing_europe-africa": "🌍",
+  earth_globe_americas: "🌎",
+  "earth_globe_asia-australia": "🌏",
+  "globe_showing_asia-australia": "🌏",
+  new_moon_symbol: "🌑",
+  waxing_crescent_moon_symbol: "🌒",
+  first_quarter_moon_symbol: "🌓",
+  waxing_gibbous_moon_symbol: "🌔",
+  full_moon_symbol: "🌕",
+  waning_gibbous_moon_symbol: "🌖",
+  last_quarter_moon_symbol: "🌗",
+  waning_crescent_moon_symbol: "🌘",
+  mostly_sunny: "🌤️",
+  barely_sunny: "🌥️",
+  partly_sunny_rain: "🌦️",
+  rain_cloud: "🌧️",
+  snow_cloud: "🌨️",
+  lightning: "🌩️",
+  wind_blowing_face: "🌬️",
+  wrap: "🌯",
+  ear_of_maize: "🌽",
+  aubergine: "🍆",
+  slice_of_pizza: "🍕",
+  curry_and_rice: "🍛",
+  fish_cake_with_swirl_design: "🍥",
+  sake_bottle_and_cup: "🍶",
+  knife_fork_plate: "🍽️",
+  sparkling_wine: "🍾",
+  wrapped_present: "🎁",
+  "jack-o-lantern": "🎃",
+  father_christmas: "🎅",
+  firework_sparkler: "🎇",
+  medal: "🎖️",
+  billiards: "🎱",
+  multiple_musical_notes: "🎶",
+  tennis_racquet_and_ball: "🎾",
+  ski_and_ski_boot: "🎿",
+  basketball_and_hoop: "🏀",
+  "woman-running": "🏃‍♀️",
+  "man-running": "🏃‍♂️",
+  "woman-surfing": "🏄‍♀️",
+  "man-surfing": "🏄‍♂️",
+  sports_decoration: "🏅",
+  "woman-swimming": "🏊‍♀️",
+  "man-swimming": "🏊‍♂️",
+  "woman-lifting-weights": "🏋️‍♀️",
+  "man-lifting-weights": "🏋️‍♂️",
+  weight_lifter: "🏋️",
+  "woman-golfing": "🏌️‍♀️",
+  "man-golfing": "🏌️‍♂️",
+  golfer: "🏌️",
+  racing_motorcycle: "🏍️",
+  cricket_bat_and_ball: "🏏",
+  field_hockey_stick_and_ball: "🏑",
+  ice_hockey_stick_and_puck: "🏒",
+  table_tennis_paddle_and_ball: "🏓",
+  table_tennis: "🏓",
+  house_buildings: "🏘️",
+  derelict_house_building: "🏚️",
+  house_building: "🏠",
+  automated_teller_machine: "🏧",
+  "rainbow-flag": "🏳️‍🌈",
+  waving_white_flag: "🏳️",
+  "flag-england": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+  "flag-scotland": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+  "flag-wales": "🏴󠁧󠁢󠁷󠁬󠁳󠁿",
+  waving_black_flag: "🏴",
+  badminton_racquet_and_shuttlecock: "🏸",
+  badminton_racket_and_shuttlecock: "🏸",
+  bow_arrow: "🏹",
+  archery: "🏹",
+  jar: "🏺",
+  vase: "🏺",
+  "skin-tone-2": "🏻",
+  "skin-tone-3": "🏼",
+  "skin-tone-4": "🏽",
+  "skin-tone-5": "🏾",
+  "skin-tone-6": "🏿",
+  "front-facing_baby_chick": "🐥",
+  bactrian_camel: "🐫",
+  "two-hump_camel": "🐫",
+  frog_face: "🐸",
+  hamster_face: "🐹",
+  wolf_face: "🐺",
+  bear_face: "🐻",
+  "eye-in-speech-bubble": "👁️‍🗨️",
+  white_up_pointing_backhand_index: "👆",
+  white_down_pointing_backhand_index: "👇",
+  white_left_pointing_backhand_index: "👈",
+  white_right_pointing_backhand_index: "👉",
+  fisted_hand_sign: "👊",
+  waving_hand_sign: "👋",
+  ok_hand_sign: "👌",
+  thumbs_up_sign: "👍",
+  thumbs_down_sign: "👎",
+  clapping_hands_sign: "👏",
+  open_hands_sign: "👐",
+  "woman’s_hat": "👒",
+  "t-shirt": "👕",
+  "woman’s_clothes": "👚",
+  "man’s_shoe": "👞",
+  "high-heeled_shoe": "👠",
+  womans_sandal: "👡",
+  "woman’s_sandal": "👡",
+  womans_boots: "👢",
+  "woman’s_boot": "👢",
+  "male-farmer": "👨‍🌾",
+  male_farmer: "👨‍🌾",
+  "male-cook": "👨‍🍳",
+  male_cook: "👨‍🍳",
+  "male-student": "👨‍🎓",
+  male_student: "👨‍🎓",
+  "male-singer": "👨‍🎤",
+  male_singer: "👨‍🎤",
+  "male-artist": "👨‍🎨",
+  male_artist: "👨‍🎨",
+  "male-teacher": "👨‍🏫",
+  male_teacher: "👨‍🏫",
+  "male-factory-worker": "👨‍🏭",
+  male_factory_worker: "👨‍🏭",
+  "man-boy-boy": "👨‍👦‍👦",
+  "man,_boy,_boy": "👨‍👦‍👦",
+  "man-boy": "👨‍👦",
+  "man,_boy": "👨‍👦",
+  "man-girl-boy": "👨‍👧‍👦",
+  "man,_girl,_boy": "👨‍👧‍👦",
+  "man-girl-girl": "👨‍👧‍👧",
+  "man,_girl,_girl": "👨‍👧‍👧",
+  "man-girl": "👨‍👧",
+  "man,_girl": "👨‍👧",
+  "man-man-boy": "👨‍👨‍👦",
+  "family_(man,_man,_boy)": "👨‍👨‍👦",
+  "man,_man,_boy": "👨‍👨‍👦",
+  "man-man-boy-boy": "👨‍👨‍👦‍👦",
+  "family_(man,_man,_boy,_boy)": "👨‍👨‍👦‍👦",
+  "man,_man,_boy,_boy": "👨‍👨‍👦‍👦",
+  "man-man-girl": "👨‍👨‍👧",
+  "family_(man,_man,_girl)": "👨‍👨‍👧",
+  "man,_man,_girl": "👨‍👨‍👧",
+  "man-man-girl-boy": "👨‍👨‍👧‍👦",
+  "family_(man,_man,_girl,_boy)": "👨‍👨‍👧‍👦",
+  "man,_man,_girl,_boy": "👨‍👨‍👧‍👦",
+  "man-man-girl-girl": "👨‍👨‍👧‍👧",
+  "family_(man,_man,_girl,_girl)": "👨‍👨‍👧‍👧",
+  "man,_man,_girl,_girl": "👨‍👨‍👧‍👧",
+  "man-woman-boy": "👨‍👩‍👦",
+  "family_(man,_woman,_boy)": "👨‍👩‍👦",
+  "man,_woman,_boy": "👨‍👩‍👦",
+  "man-woman-boy-boy": "👨‍👩‍👦‍👦",
+  "family_(man,_woman,_boy,_boy)": "👨‍👩‍👦‍👦",
+  "man,_woman,_boy,_boy": "👨‍👩‍👦‍👦",
+  "man-woman-girl": "👨‍👩‍👧",
+  "family_(man,_woman,_girl)": "👨‍👩‍👧",
+  "man,_woman,_girl": "👨‍👩‍👧",
+  "man-woman-girl-boy": "👨‍👩‍👧‍👦",
+  "family_(man,_woman,_girl,_boy)": "👨‍👩‍👧‍👦",
+  "man,_woman,_girl,_boy": "👨‍👩‍👧‍👦",
+  "man-woman-girl-girl": "👨‍👩‍👧‍👧",
+  "family_(man,_woman,_girl,_girl)": "👨‍👩‍👧‍👧",
+  "man,_woman,_girl,_girl": "👨‍👩‍👧‍👧",
+  "male-technologist": "👨‍💻",
+  male_technologist: "👨‍💻",
+  "male-office-worker": "👨‍💼",
+  male_office_worker: "👨‍💼",
+  "male-mechanic": "👨‍🔧",
+  male_mechanic: "👨‍🔧",
+  "male-scientist": "👨‍🔬",
+  male_scientist: "👨‍🔬",
+  "male-astronaut": "👨‍🚀",
+  male_astronaut: "👨‍🚀",
+  "male-firefighter": "👨‍🚒",
+  male_firefighter: "👨‍🚒",
+  "male-doctor": "👨‍⚕️",
+  male_health_worker: "👨‍⚕️",
+  "male-judge": "👨‍⚖️",
+  male_judge: "👨‍⚖️",
+  "male-pilot": "👨‍✈️",
+  male_pilot: "👨‍✈️",
+  "man-heart-man": "👨‍❤️‍👨",
+  "man-kiss-man": "👨‍❤️‍💋‍👨",
+  "man,_man": "👨‍❤️‍💋‍👨",
+  "female-farmer": "👩‍🌾",
+  female_farmer: "👩‍🌾",
+  woman_famer: "👩‍🌾",
+  "female-cook": "👩‍🍳",
+  female_cook: "👩‍🍳",
+  "female-student": "👩‍🎓",
+  female_student: "👩‍🎓",
+  "female-singer": "👩‍🎤",
+  female_singer: "👩‍🎤",
+  "female-artist": "👩‍🎨",
+  female_artist: "👩‍🎨",
+  "female-teacher": "👩‍🏫",
+  female_teacher: "👩‍🏫",
+  "female-factory-worker": "👩‍🏭",
+  female_factory_worker: "👩‍🏭",
+  "woman-boy-boy": "👩‍👦‍👦",
+  "woman,_boy,_boy": "👩‍👦‍👦",
+  "woman-boy": "👩‍👦",
+  "woman,_boy": "👩‍👦",
+  "woman-girl-boy": "👩‍👧‍👦",
+  "woman,_girl,_boy": "👩‍👧‍👦",
+  "woman-girl-girl": "👩‍👧‍👧",
+  "woman,_girl,_girl": "👩‍👧‍👧",
+  "woman-girl": "👩‍👧",
+  "woman,_girl": "👩‍👧",
+  "woman-woman-boy": "👩‍👩‍👦",
+  "family_(woman,_woman,_boy)": "👩‍👩‍👦",
+  "woman,_woman,_boy": "👩‍👩‍👦",
+  "woman-woman-boy-boy": "👩‍👩‍👦‍👦",
+  "family_(woman,_woman,_boy,_boy)": "👩‍👩‍👦‍👦",
+  "woman,_woman,_boy,_boy": "👩‍👩‍👦‍👦",
+  "woman-woman-girl": "👩‍👩‍👧",
+  "family_(woman,_woman,_girl)": "👩‍👩‍👧",
+  "woman,_woman,_girl": "👩‍👩‍👧",
+  "woman-woman-girl-boy": "👩‍👩‍👧‍👦",
+  "family_(woman,_woman,_girl,_boy)": "👩‍👩‍👧‍👦",
+  "woman,_woman,_girl,_boy": "👩‍👩‍👧‍👦",
+  "woman-woman-girl-girl": "👩‍👩‍👧‍👧",
+  "family_(woman,_woman,_girl,_girl)": "👩‍👩‍👧‍👧",
+  "woman,_woman,_girl,_girl": "👩‍👩‍👧‍👧",
+  "female-technologist": "👩‍💻",
+  female_technologist: "👩‍💻",
+  "female-office-worker": "👩‍💼",
+  female_office_worker: "👩‍💼",
+  "female-mechanic": "👩‍🔧",
+  female_mechanic: "👩‍🔧",
+  "female-scientist": "👩‍🔬",
+  female_scientist: "👩‍🔬",
+  "female-astronaut": "👩‍🚀",
+  female_astronaut: "👩‍🚀",
+  "female-firefighter": "👩‍🚒",
+  female_firefighter: "👩‍🚒",
+  "female-doctor": "👩‍⚕️",
+  female_health_worker: "👩‍⚕️",
+  "female-judge": "👩‍⚖️",
+  female_judge: "👩‍⚖️",
+  "female-pilot": "👩‍✈️",
+  female_pilot: "👩‍✈️",
+  "woman-heart-man": "👩‍❤️‍👨",
+  "woman-heart-woman": "👩‍❤️‍👩",
+  "woman-kiss-man": "👩‍❤️‍💋‍👨",
+  "woman,_man": "👩‍❤️‍💋‍👨",
+  "woman-kiss-woman": "👩‍❤️‍💋‍👩",
+  "kiss_(woman,_woman)": "👩‍❤️‍💋‍👩",
+  "woman,_woman": "👩‍❤️‍💋‍👩",
+  man_and_woman_holding_hands: "👫",
+  "female-police-officer": "👮‍♀️",
+  "male-police-officer": "👮‍♂️",
+  "woman-with-bunny-ears-partying": "👯‍♀️",
+  "man-with-bunny-ears-partying": "👯‍♂️",
+  woman_with_bunny_ears: "👯",
+  "blond-haired-woman": "👱‍♀️",
+  "blond-haired-man": "👱‍♂️",
+  person_with_blond_hair: "👱",
+  blond_hair: "👱",
+  man_with_chinese_cap: "👲",
+  "woman-wearing-turban": "👳‍♀️",
+  "man-wearing-turban": "👳‍♂️",
+  "female-construction-worker": "👷‍♀️",
+  "male-construction-worker": "👷‍♂️",
+  extraterrestrial_alien: "👽",
+  "woman-tipping-hand": "💁‍♀️",
+  "man-tipping-hand": "💁‍♂️",
+  "female-guard": "💂‍♀️",
+  "male-guard": "💂‍♂️",
+  "woman-getting-massage": "💆‍♀️",
+  "man-getting-massage": "💆‍♂️",
+  face_massage: "💆",
+  "woman-getting-haircut": "💇‍♀️",
+  "man-getting-haircut": "💇‍♂️",
+  electric_light_bulb: "💡",
+  sleeping_symbol: "💤",
+  collision_symbol: "💥",
+  splashing_sweat_symbol: "💦",
+  dash_symbol: "💨",
+  dizzy_symbol: "💫",
+  banknote_with_yen_sign: "💴",
+  banknote_with_dollar_sign: "💵",
+  banknote_with_euro_sign: "💶",
+  banknote_with_pound_sign: "💷",
+  chart_with_upwards_trend_and_yen_sign: "💹",
+  personal_computer: "💻",
+  laptop_computer: "💻",
+  optical_disc: "💿",
+  "tear-off_calendar": "📆",
+  public_address_loudspeaker: "📢",
+  cheering_megaphone: "📣",
+  "e-mail_symbol": "📧",
+  envelope_with_downwards_arrow_above: "📩",
+  mobile_phone_with_rightwards_arrow_at_left: "📲",
+  antenna_with_bars: "📶",
+  dhikr_beads: "📿",
+  rosary_beads: "📿",
+  clockwise_rightwards_and_leftwards_open_circle_arrows: "🔁",
+  clockwise_rightwards_and_leftwards_open_circle_arrows_with_circled_one_overlay:
+    "🔂",
+  clockwise_downwards_and_upwards_open_circle_arrows: "🔃",
+  anticlockwise_downwards_and_upwards_open_circle_arrows: "🔄",
+  low_brightness_symbol: "🔅",
+  high_brightness_symbol: "🔆",
+  speaker_with_cancellation_stroke: "🔇",
+  speaker_with_one_sound_wave: "🔉",
+  speaker_with_three_sound_waves: "🔊",
+  "left-pointing_magnifying_glass": "🔍",
+  "right-pointing_magnifying_glass": "🔎",
+  open_lock: "🔓",
+  bell_with_cancellation_stroke: "🔕",
+  link_symbol: "🔗",
+  back_with_leftwards_arrow_above: "🔙",
+  end_with_leftwards_arrow_above: "🔚",
+  on_with_exclamation_mark_with_left_right_arrow_above: "🔛",
+  "on!_arrow": "🔛",
+  soon_with_rightwards_arrow_above: "🔜",
+  top_with_upwards_arrow_above: "🔝",
+  no_one_under_eighteen_symbol: "🔞",
+  input_symbol_for_latin_capital_letters: "🔠",
+  input_symbol_for_latin_small_letters: "🔡",
+  input_symbol_for_symbols: "🔣",
+  input_symbol_for_latin_letters: "🔤",
+  electric_torch: "🔦",
+  six_pointed_star_with_middle_dot: "🔯",
+  "dotted_six-pointed_star": "🔯",
+  large_red_circle: "🔴",
+  "up-pointing_red_triangle": "🔺",
+  "down-pointing_red_triangle": "🔻",
+  "up-pointing_small_red_triangle": "🔼",
+  "down-pointing_small_red_triangle": "🔽",
+  om_symbol: "🕉️",
+  dove_of_peace: "🕊️",
+  mecca: "🕋",
+  minaret: "🕌",
+  domed_roof: "🕌",
+  mosque_with_domed_roof_and_minaret: "🕌",
+  temple: "🕍",
+  jewish: "🕍",
+  synagogue_with_star_of_david: "🕍",
+  menorah_with_nine_branches: "🕎",
+  candelabrum: "🕎",
+  chanukiah: "🕎",
+  clock_face_one_oclock: "🕐",
+  "one_o’clock": "🕐",
+  clock_face_two_oclock: "🕑",
+  "two_o’clock": "🕑",
+  clock_face_three_oclock: "🕒",
+  "three_o’clock": "🕒",
+  clock_face_four_oclock: "🕓",
+  "four_o’clock": "🕓",
+  clock_face_five_oclock: "🕔",
+  "five_o’clock": "🕔",
+  clock_face_six_oclock: "🕕",
+  "six_o’clock": "🕕",
+  clock_face_seven_oclock: "🕖",
+  "seven_o’clock": "🕖",
+  clock_face_eight_oclock: "🕗",
+  "eight_o’clock": "🕗",
+  clock_face_nine_oclock: "🕘",
+  "nine_o’clock": "🕘",
+  clock_face_ten_oclock: "🕙",
+  "ten_o’clock": "🕙",
+  clock_face_eleven_oclock: "🕚",
+  "eleven_o’clock": "🕚",
+  clock_face_twelve_oclock: "🕛",
+  "twelve_o’clock": "🕛",
+  "clock_face_one-thirty": "🕜",
+  "one-thirty": "🕜",
+  "clock_face_two-thirty": "🕝",
+  "two-thirty": "🕝",
+  "clock_face_three-thirty": "🕞",
+  "three-thirty": "🕞",
+  "clock_face_four-thirty": "🕟",
+  "four-thirty": "🕟",
+  "clock_face_five-thirty": "🕠",
+  "five-thirty": "🕠",
+  "clock_face_six-thirty": "🕡",
+  "six-thirty": "🕡",
+  "clock_face_seven-thirty": "🕢",
+  "seven-thirty": "🕢",
+  "clock_face_eight-thirty": "🕣",
+  "eight-thirty": "🕣",
+  "clock_face_nine-thirty": "🕤",
+  "nine-thirty": "🕤",
+  "clock_face_ten-thirty": "🕥",
+  "ten-thirty": "🕥",
+  "clock_face_eleven-thirty": "🕦",
+  "eleven-thirty": "🕦",
+  "clock_face_twelve-thirty": "🕧",
+  "twelve-thirty": "🕧",
+  man_in_business_suit_levitating: "🕴️",
+  "female-detective": "🕵️‍♀️",
+  "male-detective": "🕵️‍♂️",
+  sleuth_or_spy: "🕵️",
+  lower_left_ballpoint_pen: "🖊️",
+  lower_left_fountain_pen: "🖋️",
+  lower_left_paintbrush: "🖌️",
+  lower_left_crayon: "🖍️",
+  reversed_hand_with_middle_finger_extended: "🖕",
+  "spock-hand": "🖖",
+  raised_hand_with_part_between_middle_and_ring_fingers: "🖖",
+  three_button_mouse: "🖱️",
+  frame_with_picture: "🖼️",
+  spiral_note_pad: "🗒️",
+  spiral_calendar_pad: "🗓️",
+  compression: "🗜️",
+  dagger_knife: "🗡️",
+  speaking_head_in_silhouette: "🗣️",
+  silhouette_of_japan: "🗾",
+  smiling_face_with_open_mouth: "😃",
+  smiling_face_with_open_mouth_and_smiling_eyes: "😄",
+  smiling_face_with_open_mouth_and_cold_sweat: "😅",
+  "smiling_face_with_open_mouth_and_tightly-closed_eyes": "😆",
+  face_savouring_delicious_food: "😋",
+  "smiling_face_with_heart-shaped_eyes": "😍",
+  "smiling_face_with_heart-eyes": "😍",
+  face_with_cold_sweat: "😓",
+  face_throwing_a_kiss: "😘",
+  "face_with_stuck-out_tongue": "😛",
+  "face_with_stuck-out_tongue_and_winking_eye": "😜",
+  "face_with_stuck-out_tongue_and_tightly-closed_eyes": "😝",
+  face_with_look_of_triumph: "😤",
+  disappointed_but_relieved_face: "😥",
+  face_with_open_mouth_and_cold_sweat: "😰",
+  grinning_cat_face_with_smiling_eyes: "😸",
+  cat_face_with_tears_of_joy: "😹",
+  smiling_cat_face_with_open_mouth: "😺",
+  "smiling_cat_face_with_heart-shaped_eyes": "😻",
+  "smiling_cat_with_heart-eyes": "😻",
+  cat_face_with_wry_smile: "😼",
+  kissing_cat_face_with_closed_eyes: "😽",
+  pouting_cat_face: "😾",
+  weary_cat_face: "🙀",
+  slightly_frowning: "🙁",
+  slightly_smiling: "🙂",
+  slight_smile: "🙂",
+  upside_down: "🙃",
+  flipped_face: "🙃",
+  "upside-down_face": "🙃",
+  eye_roll: "🙄",
+  rolling_eyes: "🙄",
+  "woman-gesturing-no": "🙅‍♀️",
+  "man-gesturing-no": "🙅‍♂️",
+  face_with_no_good_gesture: "🙅",
+  "woman-gesturing-ok": "🙆‍♀️",
+  "man-gesturing-ok": "🙆‍♂️",
+  face_with_ok_gesture: "🙆",
+  "woman-bowing": "🙇‍♀️",
+  woman_bow: "🙇‍♀️",
+  female_bow: "🙇‍♀️",
+  woman_bowing_deeply: "🙇‍♀️",
+  "man-bowing": "🙇‍♂️",
+  man_bow: "🙇‍♂️",
+  male_bow: "🙇‍♂️",
+  man_bowing_deeply: "🙇‍♂️",
+  person_bowing_deeply: "🙇",
+  "see-no-evil_monkey": "🙈",
+  "hear-no-evil_monkey": "🙉",
+  "speak-no-evil_monkey": "🙊",
+  "woman-raising-hand": "🙋‍♀️",
+  "man-raising-hand": "🙋‍♂️",
+  happy_person_raising_one_hand: "🙋",
+  person_raising_both_hands_in_celebration: "🙌",
+  "woman-frowning": "🙍‍♀️",
+  "man-frowning": "🙍‍♂️",
+  "woman-pouting": "🙎‍♀️",
+  "man-pouting": "🙎‍♂️",
+  person_with_pouting_face: "🙎",
+  person_with_folded_hands: "🙏",
+  "high-speed_train": "🚄",
+  "high-speed_train_with_bullet_nose": "🚅",
+  recreational_vehicle: "🚙",
+  "woman-rowing-boat": "🚣‍♀️",
+  "man-rowing-boat": "🚣‍♂️",
+  construction_sign: "🚧",
+  police_cars_revolving_light: "🚨",
+  smoking_symbol: "🚬",
+  no_smoking_symbol: "🚭",
+  put_litter_in_its_place_symbol: "🚮",
+  do_not_litter_symbol: "🚯",
+  potable_water_symbol: "🚰",
+  "non-potable_water_symbol": "🚱",
+  "woman-biking": "🚴‍♀️",
+  "man-biking": "🚴‍♂️",
+  "woman-mountain-biking": "🚵‍♀️",
+  "man-mountain-biking": "🚵‍♂️",
+  "woman-walking": "🚶‍♀️",
+  "man-walking": "🚶‍♂️",
+  pedestrian: "🚶",
+  mens_symbol: "🚹",
+  "men’s_room": "🚹",
+  womens_symbol: "🚺",
+  "women’s_room": "🚺",
+  sleeping_accommodation: "🛌",
+  worship_building: "🛐",
+  worship_place: "🛐",
+  religious_building: "🛐",
+  religious_place: "🛐",
+  octagonal_sign: "🛑",
+  shopping_trolley: "🛒",
+  take_off: "🛫",
+  airplane_arriving: "🛬",
+  landing: "🛬",
+  scooter: "🛴",
+  zipper_mouth: "🤐",
+  zip_it: "🤐",
+  sealed_lips: "🤐",
+  lips_sealed: "🤐",
+  "zipper-mouth_face": "🤐",
+  money_mouth: "🤑",
+  money_face: "🤑",
+  "money-mouth_face": "🤑",
+  sick: "🤒",
+  ill: "🤒",
+  thermometer_face: "🤒",
+  nerd: "🤓",
+  nerdy: "🤓",
+  think: "🤔",
+  thinker: "🤔",
+  injured: "🤕",
+  head_bandage: "🤕",
+  head_bandaged: "🤕",
+  bandaged: "🤕",
+  "face_with_head-bandage": "🤕",
+  robot_face: "🤖",
+  bot_face: "🤖",
+  hugging: "🤗",
+  hug: "🤗",
+  the_horns: "🤘",
+  horns_sign: "🤘",
+  rock_on: "🤘",
+  heavy_metal: "🤘",
+  devil_fingers: "🤘",
+  "left-facing_fist": "🤛",
+  "right-facing_fist": "🤜",
+  hand_with_index_and_middle_fingers_crossed: "🤞",
+  i_love_you_hand_sign: "🤟",
+  "love-you_gesture": "🤟",
+  face_with_cowboy_hat: "🤠",
+  cowboy: "🤠",
+  clown: "🤡",
+  "woman-facepalming": "🤦‍♀️",
+  female_facepalm: "🤦‍♀️",
+  woman_facepalm: "🤦‍♀️",
+  "man-facepalming": "🤦‍♂️",
+  face_palm: "🤦",
+  "star-struck": "🤩",
+  "breast-feeding": "🤱",
+  mother_christmas: "🤶",
+  "woman-shrugging": "🤷‍♀️",
+  female_shrug: "🤷‍♀️",
+  woman_shrug: "🤷‍♀️",
+  "man-shrugging": "🤷‍♂️",
+  male_shrug: "🤷‍♂️",
+  man_shrug: "🤷‍♂️",
+  "woman-cartwheeling": "🤸‍♀️",
+  woman_doing_cartwheel: "🤸‍♀️",
+  female_doing_cartwheel: "🤸‍♀️",
+  "man-cartwheeling": "🤸‍♂️",
+  man_doing_cartwheel: "🤸‍♂️",
+  male_doing_cartwheel: "🤸‍♂️",
+  person_doing_cartwheel: "🤸",
+  "woman-juggling": "🤹‍♀️",
+  female_juggling: "🤹‍♀️",
+  "man-juggling": "🤹‍♂️",
+  male_juggling: "🤹‍♂️",
+  juggling: "🤹",
+  fencer: "🤺",
+  "woman-wrestling": "🤼‍♀️",
+  woman_wrestlers: "🤼‍♀️",
+  female_wrestlers: "🤼‍♀️",
+  "man-wrestling": "🤼‍♂️",
+  man_wrestlers: "🤼‍♂️",
+  male_wrestlers: "🤼‍♂️",
+  wrestlers: "🤼",
+  "woman-playing-water-polo": "🤽‍♀️",
+  woman_water_polo: "🤽‍♀️",
+  female_water_polo: "🤽‍♀️",
+  "man-playing-water-polo": "🤽‍♂️",
+  man_water_polo: "🤽‍♂️",
+  male_water_polo: "🤽‍♂️",
+  "woman-playing-handball": "🤾‍♀️",
+  woman_handball: "🤾‍♀️",
+  female_handball: "🤾‍♀️",
+  "man-playing-handball": "🤾‍♂️",
+  man_handball: "🤾‍♂️",
+  male_handball: "🤾‍♂️",
+  handball: "🤾",
+  drum_with_drumsticks: "🥁",
+  first_place_medal: "🥇",
+  second_place_medal: "🥈",
+  third_place_medal: "🥉",
+  kiwifruit: "🥝",
+  red_crab: "🦀",
+  lion_face: "🦁",
+  cute_lion: "🦁",
+  timid_lion: "🦁",
+  unicorn_face: "🦄",
+  giraffe_face: "🦒",
+  zebra_face: "🦓",
+  beard: "🧔",
+  person_with_headscarf: "🧕",
+  female_mage: "🧙‍♀️",
+  male_mage: "🧙‍♂️",
+  female_fairy: "🧚‍♀️",
+  male_fairy: "🧚‍♂️",
+  female_vampire: "🧛‍♀️",
+  male_vampire: "🧛‍♂️",
+  female_elf: "🧝‍♀️",
+  male_elf: "🧝‍♂️",
+  female_genie: "🧞‍♀️",
+  male_genie: "🧞‍♂️",
+  female_zombie: "🧟‍♀️",
+  male_zombie: "🧟‍♂️",
+  "left-right_arrow": "↔️",
+  "up-down_arrow": "↕️",
+  "up-left_arrow": "↖️",
+  "up-right_arrow": "↗️",
+  "down-right_arrow": "↘️",
+  "down-left_arrow": "↙️",
+  eject: "⏏️",
+  "black_right-pointing_double_triangle": "⏩",
+  "fast-forward_button": "⏩",
+  "black_left-pointing_double_triangle": "⏪",
+  "black_up-pointing_double_triangle": "⏫",
+  "black_down-pointing_double_triangle": "⏬",
+  black_right_pointing_double_triangle_with_vertical_bar: "⏭️",
+  black_left_pointing_double_triangle_with_vertical_bar: "⏮️",
+  black_right_pointing_triangle_with_double_vertical_bar: "⏯️",
+  hourglass_with_flowing_sand: "⏳",
+  double_vertical_bar: "⏸️",
+  black_square_for_stop: "⏹️",
+  black_circle_for_record: "⏺️",
+  "white_medium-small_square": "◽",
+  "black_medium-small_square": "◾",
+  radioactive_sign: "☢️",
+  biohazard_sign: "☣️",
+  white_frowning_face: "☹️",
+  staff_of_aesculapius: "⚕️",
+  scales: "⚖️",
+  high_voltage_sign: "⚡",
+  medium_white_circle: "⚪",
+  medium_black_circle: "⚫",
+  thunder_cloud_and_rain: "⛈️",
+  helmet_with_white_cross: "⛑️",
+  "woman-bouncing-ball": "⛹️‍♀️",
+  "man-bouncing-ball": "⛹️‍♂️",
+  person_with_ball: "⛹️",
+  white_heavy_check_mark: "✅",
+  "eight-spoked_asterisk": "✳️",
+  "eight-pointed_star": "✴️",
+  black_question_mark_ornament: "❓",
+  white_question_mark_ornament: "❔",
+  white_exclamation_mark_ornament: "❕",
+  heavy_exclamation_mark_symbol: "❗",
+  heavy_heart_exclamation_mark_ornament: "❣️",
+  white_medium_star: "⭐",
+  heavy_large_circle: "⭕",
+  "japanese_“congratulations”_button": "㊗️",
+  "japanese_“secret”_button": "㊙️",
+  white_smiling_face: "☺",
+  white_up_pointing_index: "☝",
+  heavy_black_heart: "❤",
+  black_sun_with_rays: "☀",
+  black_telephone: "☎",
+  black_scissors: "✂",
+  warning_sign: "⚠",
+  upwards_black_arrow: "⬆",
+  downwards_black_arrow: "⬇",
+  leftwards_black_arrow: "⬅",
+  black_rightwards_arrow: "➡",
+  north_east_arrow: "↗",
+  north_west_arrow: "↖",
+  south_east_arrow: "↘",
+  south_west_arrow: "↙",
+  "black_left-pointing_triangle": "◀",
+  "black_right-pointing_triangle": "▶",
+  rightwards_arrow_with_hook: "↪",
+  arrow_pointing_rightwards_then_curving_downwards: "⤵",
+  arrow_pointing_rightwards_then_curving_upwards: "⤴",
+  negative_squared_latin_capital_letter_p: "🅿",
+  "squared_cjk_unified_ideograph-6708": "🈷",
+  squared_katakana_sa: "🈂",
+  circled_latin_capital_letter_m: "Ⓜ",
+  circled_ideograph_secret: "㊙",
+  circled_ideograph_congratulation: "㊗",
+  negative_squared_latin_capital_letter_a: "🅰",
+  negative_squared_latin_capital_letter_b: "🅱",
+  negative_squared_latin_capital_letter_o: "🅾",
+  black_universal_recycling_symbol: "♻",
+  copyright_sign: "©",
+  registered_sign: "®",
+  trade_mark_sign: "™",
+  black_spade_suit: "♠",
+  black_heart_suit: "♥",
+  black_club_suit: "♣",
+  black_diamond_suit: "♦",
+  regional_indicator_symbol_a: "🇦",
+  regional_indicator_symbol_letter_a: "🇦",
+  regional_indicator_symbol_b: "🇧",
+  regional_indicator_symbol_letter_b: "🇧",
+  regional_indicator_symbol_c: "🇨",
+  regional_indicator_symbol_letter_c: "🇨",
+  regional_indicator_symbol_d: "🇩",
+  regional_indicator_symbol_letter_d: "🇩",
+  regional_indicator_symbol_e: "🇪",
+  regional_indicator_symbol_letter_e: "🇪",
+  regional_indicator_symbol_f: "🇫",
+  regional_indicator_symbol_letter_f: "🇫",
+  regional_indicator_symbol_g: "🇬",
+  regional_indicator_symbol_letter_g: "🇬",
+  regional_indicator_symbol_h: "🇭",
+  regional_indicator_symbol_letter_h: "🇭",
+  regional_indicator_symbol_i: "🇮",
+  regional_indicator_symbol_letter_i: "🇮",
+  regional_indicator_symbol_j: "🇯",
+  regional_indicator_symbol_letter_j: "🇯",
+  regional_indicator_symbol_k: "🇰",
+  regional_indicator_symbol_letter_k: "🇰",
+  regional_indicator_symbol_l: "🇱",
+  regional_indicator_symbol_letter_l: "🇱",
+  regional_indicator_symbol_m: "🇲",
+  regional_indicator_symbol_letter_m: "🇲",
+  regional_indicator_symbol_n: "🇳",
+  regional_indicator_symbol_letter_n: "🇳",
+  regional_indicator_symbol_o: "🇴",
+  regional_indicator_symbol_letter_o: "🇴",
+  regional_indicator_symbol_p: "🇵",
+  regional_indicator_symbol_letter_p: "🇵",
+  regional_indicator_symbol_q: "🇶",
+  regional_indicator_symbol_letter_q: "🇶",
+  regional_indicator_symbol_r: "🇷",
+  regional_indicator_symbol_letter_r: "🇷",
+  regional_indicator_symbol_s: "🇸",
+  regional_indicator_symbol_letter_s: "🇸",
+  regional_indicator_symbol_t: "🇹",
+  regional_indicator_symbol_letter_t: "🇹",
+  regional_indicator_symbol_u: "🇺",
+  regional_indicator_symbol_letter_u: "🇺",
+  regional_indicator_symbol_v: "🇻",
+  regional_indicator_symbol_letter_v: "🇻",
+  regional_indicator_symbol_w: "🇼",
+  regional_indicator_symbol_letter_w: "🇼",
+  regional_indicator_symbol_x: "🇽",
+  regional_indicator_symbol_letter_x: "🇽",
+  regional_indicator_symbol_y: "🇾",
+  regional_indicator_symbol_letter_y: "🇾",
+  regional_indicator_symbol_z: "🇿",
+  regional_indicator_symbol_letter_z: "🇿",
+  "couple_with_heart_(woman,_woman)": "👩‍❤‍👩",
+  "couple_with_heart_(man,_man)": "👨‍❤‍👨",
+  "kiss_(man,_man)": "‍👨❤️💋‍👨",
+  helmet_white_cross: "⛑",
+  helmet_with_white_crosse: "⛑",
+  "rescue_worker’s_helmet": "⛑",
+  sleuth: "🕵",
+  private_eye: "🕵",
+  spy: "🕵",
+  hovering_man: "🕴",
+  levitating_man: "🕴",
+  splayed_hand: "🖐",
+  raised_hand_with_five_fingers_splayed: "🖐",
+  writing: "✍",
+  exclamation_heart: "❣",
+  zig_zag_bubble: "🗯",
+  skull_crossbones: "☠",
+  squirrel: "🐿",
+  dove_peace: "🕊",
+  "dove_of_peace,_carrying_an_olive_branch": "🕊",
+  black_spider_with_eight_legs: "🕷",
+  cobweb: "🕸",
+  spider_web_in_orb_form: "🕸",
+  st_patrick: "☘",
+  chili_pepper: "🌶",
+  spice: "🌶",
+  spicy: "🌶",
+  fork_knife_plate: "🍽",
+  mont_fuji: "🏔",
+  "snow-capped_mountain": "🏔",
+  campsite: "🏕",
+  camping_with_tent_and_tree: "🏕",
+  breach: "🏖",
+  desert_with_cactus: "🏜",
+  desert_island_with_palm_tree: "🏝",
+  crane: "🏗",
+  building_in_construction_with_crane: "🏗",
+  multiple_houses: "🏘",
+  old_house: "🏚",
+  abandoned_house: "🏚",
+  picture_frame: "🖼",
+  painting: "🖼",
+  gallery: "🖼",
+  frame_with_picture_or_painting: "🖼",
+  highway: "🛣",
+  road: "🛣",
+  interstate: "🛣",
+  freeway: "🛣",
+  bedroom: "🛏",
+  bed_or_bedroom: "🛏",
+  couch_lamp: "🛋",
+  couch: "🛋",
+  sofa: "🛋",
+  lounge: "🛋",
+  hot_weather: "🌡",
+  temperature: "🌡",
+  thunder_cloud_rain: "⛈",
+  white_sun_small_cloud: "🌤",
+  white_sun_with_small_cloud: "🌤",
+  white_sun_behind_cloud: "🌥",
+  white_sun_behind_cloud_rain: "🌦",
+  white_sun_behind_cloud_with_rain: "🌦",
+  cloud_rain: "🌧",
+  cloud_snow: "🌨",
+  cloud_lightning: "🌩",
+  cloud_tornado: "🌪",
+  cloud_with_tornado: "🌪",
+  mother_nature: "🌬",
+  blowing_wind: "🌬",
+  planted_umbrella: "⛱",
+  umbrella_planted_on_the_ground: "⛱",
+  snowing_snowman: "☃",
+  light_beam: "☄",
+  blue_beam: "☄",
+  military_decoration: "🎖",
+  military_medal_with_ribbon: "🎖",
+  awareness_ribbon: "🎗",
+  admission_ticket: "🎟",
+  golf_club: "🏌",
+  golfer_swinging_a_golf_club: "🏌",
+  man_golfer: "🏌♂️",
+  male_golfer: "🏌♂️",
+  male_golfing: "🏌♂️",
+  woman_golfer: "🏌‍♀️",
+  female_golfer: "🏌‍♀️",
+  female_golfing: "🏌‍♀️",
+  ice_skating: "⛸",
+  single_ice_skate: "⛸",
+  formula_one: "🏎",
+  f1: "🏎",
+  motorbike: "🏍",
+  "black_right-pointing_double_triangle_with_vertical_bar": "⏭",
+  "black_right-pointing_triangle_with_double_vertical_bar": "⏯",
+  "black_left-pointing_double_triangle_with_vertical_bar": "⏮",
+  keycap_asterisk: "*⃣",
+  star_keycap: "*⃣",
+  pc_tower: "🖥",
+  imac: "🖥",
+  candle_burning: "🕯",
+  newspaper_delivery: "🗞",
+  newspaper_rolled_up_for_delivery: "🗞",
+  "rolled-up_newspaper": "🗞",
+  ballot: "🗳",
+  ballot_bow_with_ballot: "🗳",
+  multiple_paperclips_linked_together: "🖇",
+  an_ornate_old_key: "🗝",
+  scales_of_justice: "⚖",
+  knife_weapon: "🗡",
+  funeral: "⚰",
+  casket: "⚰",
+  scouts: "⚜",
+  "fleur-de-lis": "⚜",
+  atom: "⚛",
+  pranava: "🕉",
+  aumkara: "🕉",
+  omkara: "🕉",
+  christian_cross: "✝",
+  kami_no_michi: "⛩",
+  star_crescent: "☪",
+  peace_sign: "☮",
+  radioactive_symbol: "☢",
+  biohazard_symbol: "☣",
+  i_am_a_witness: "👁‍🗨",
+  red_hair: "👨‍🦰",
+  curly_hair: "👨‍🦱",
+  white_hair: "👨‍🦳",
+  bald: "👨‍🦲",
+  "yo-yo": "🪀",
+  "one-piece_swimsuit": "🩱",
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/react-emoji-render/data/asciiAliases.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/react-emoji-render/data/asciiAliases.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+  angry: [">:(", ">:-("],
+  blush: [':")', ':-")'],
+  broken_heart: ["</3", "<\\3"],
+  confused: [":/", ":-/"],
+  cry: [":'(", ":'-(", ":,(", ":,-("],
+  frowning: [":(", ":-("],
+  heart: ["<3"],
+  imp: ["]:(", "]:-("],
+  innocent: ["o:)", "O:)", "o:-)", "O:-)", "0:)", "0:-)"],
+  joy: [":')", ":'-)", ":,)", ":,-)", ":'D", ":'-D", ":,D", ":,-D"],
+  kissing: [":*", ":-*"],
+  laughing: ["x-)", "X-)"],
+  neutral_face: [":|", ":-|"],
+  open_mouth: [":o", ":-o", ":O", ":-O"],
+  rage: [":@", ":-@"],
+  smile: [":D", ":-D"],
+  smiley: [":)", ":-)"],
+  smiling_imp: ["]:)", "]:-)"],
+  sob: [":,'(", ":,'-(", ";(", ";-("],
+  stuck_out_tongue: [":P", ":-P", ":p", ":-p"],
+  sunglasses: ["8-)", "B-)"],
+  sweat: [",:(", ",:-("],
+  sweat_smile: [",:)", ",:-)"],
+  unamused: [":s", ":-S", ":z", ":-Z", ":$", ":-$"],
+  wink: [";)", ";-)"],
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/react-emoji-render/lib/aliasRegex.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/react-emoji-render/lib/aliasRegex.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var allowedAliasCharacters = exports.allowedAliasCharacters = "\\w\\-\\_\\+\\*\\(\\)\\!#&åô’çéãí“”,";
+var startOfURL = exports.startOfURL = "https?\\S*";
+
+function getAliasesRegex() {
+  return new RegExp("(" + startOfURL + ")?:([" + allowedAliasCharacters + "]+):", "g");
+}
+
+exports.default = getAliasesRegex;
+
+/***/ }),
+
+/***/ "./node_modules/react-emoji-render/lib/asciiRegex.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/react-emoji-render/lib/asciiRegex.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = function () {
+  return new RegExp("(" + edgeCases + ")?(" + names + ")([" + _aliasRegex.allowedAliasCharacters + "]*:)?", "g");
+};
+
+var _asciiAliases = __webpack_require__(/*! ../data/asciiAliases */ "./node_modules/react-emoji-render/data/asciiAliases.js");
+
+var _asciiAliases2 = _interopRequireDefault(_asciiAliases);
+
+var _lodash = __webpack_require__(/*! lodash.flatten */ "./node_modules/lodash.flatten/index.js");
+
+var _lodash2 = _interopRequireDefault(_lodash);
+
+var _aliasRegex = __webpack_require__(/*! ./aliasRegex */ "./node_modules/react-emoji-render/lib/aliasRegex.js");
+
+var _utils = __webpack_require__(/*! ./utils */ "./node_modules/react-emoji-render/lib/utils.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var names = (0, _lodash2.default)(Object.keys(_asciiAliases2.default).map(function (name) {
+  return _asciiAliases2.default[name].map(_utils.escapeStringToBeUsedInRegExp);
+})).join("|");
+
+var edgeCases = [_aliasRegex.startOfURL].join("|");
+
+// Regex reads as following:
+//
+// Match ascii aliases with optional edge cases before it (to know if parsing is needed)
+// Additionally, after the ascii alias:
+//    - Forbid edge cases
+//    - Allow characters included in normal aliases (to check later cases like :s and :smile:)
+
+/***/ }),
+
+/***/ "./node_modules/react-emoji-render/lib/index.js":
+/*!******************************************************!*\
+  !*** ./node_modules/react-emoji-render/lib/index.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.toArray = undefined;
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _renderer = __webpack_require__(/*! ./renderer */ "./node_modules/react-emoji-render/lib/renderer.js");
+
+Object.defineProperty(exports, "toArray", {
+  enumerable: true,
+  get: function get() {
+    return _renderer.toArray;
+  }
+});
+exports.Twemoji = Twemoji;
+exports.Emojione = Emojione;
+exports.EmojioneV4 = EmojioneV4;
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _renderer2 = _interopRequireDefault(_renderer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var protocol = "https";
+
+if (typeof location !== "undefined" && location.protocol === "http:") {
+  protocol = "http";
+}
+
+exports.default = _renderer2.default;
+function Twemoji(_ref) {
+  var svg = _ref.svg,
+      options = _ref.options,
+      rest = _objectWithoutProperties(_ref, ["svg", "options"]);
+
+  var size = svg ? "" : "72x72";
+  var ext = svg ? "svg" : "png";
+
+  options = _extends({
+    protocol: protocol,
+    baseUrl: "//twemoji.maxcdn.com/2/" + (svg ? "svg/" : ""),
+    size: size,
+    ext: ext
+  }, options);
+
+  return _react2.default.createElement(_renderer2.default, _extends({ options: options }, rest));
+}
+
+Twemoji.propTypes = {
+  text: _propTypes2.default.string,
+  options: _propTypes2.default.object,
+  svg: _propTypes2.default.bool
+};
+
+function Emojione(_ref2) {
+  var svg = _ref2.svg,
+      options = _ref2.options,
+      rest = _objectWithoutProperties(_ref2, ["svg", "options"]);
+
+  var ext = svg ? "svg" : "png";
+
+  options = _extends({
+    protocol: protocol,
+    baseUrl: "//cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/" + ext + "/",
+    size: "",
+    ext: ext,
+    emojione: true
+  }, options);
+
+  return _react2.default.createElement(_renderer2.default, _extends({ options: options }, rest));
+}
+
+Emojione.propTypes = {
+  text: _propTypes2.default.string,
+  options: _propTypes2.default.object,
+  svg: _propTypes2.default.bool
+};
+
+function EmojioneV4(_ref3) {
+  var size = _ref3.size,
+      options = _ref3.options,
+      rest = _objectWithoutProperties(_ref3, ["size", "options"]);
+
+  var ext = "png";
+
+  options = _extends({
+    protocol: protocol,
+    baseUrl: "//cdn.jsdelivr.net/emojione/assets/4.0/" + ext + "/",
+    size: size,
+    ext: ext,
+    emojione: true
+  }, options);
+
+  return _react2.default.createElement(_renderer2.default, _extends({ options: options }, rest));
+}
+
+EmojioneV4.propTypes = {
+  text: _propTypes2.default.string,
+  options: _propTypes2.default.object,
+  size: _propTypes2.default.oneOf([32, 64, 128])
+};
+EmojioneV4.defaultProps = {
+  size: 64
+};
+
+/***/ }),
+
+/***/ "./node_modules/react-emoji-render/lib/normalizeProtocol.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/react-emoji-render/lib/normalizeProtocol.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = normalizeProtocol;
+// ensure protocol has trailing : if missing
+function normalizeProtocol(protocol) {
+  if (protocol && !protocol.endsWith(":")) return protocol + ":";
+  return protocol;
+}
+
+/***/ }),
+
+/***/ "./node_modules/react-emoji-render/lib/renderer.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/react-emoji-render/lib/renderer.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.toArray = toArray;
+exports.default = Emoji;
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _classnames2 = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+
+var _classnames3 = _interopRequireDefault(_classnames2);
+
+var _stringReplaceToArray = __webpack_require__(/*! string-replace-to-array */ "./node_modules/string-replace-to-array/string-replace-to-array.js");
+
+var _stringReplaceToArray2 = _interopRequireDefault(_stringReplaceToArray);
+
+var _emojiRegex = __webpack_require__(/*! emoji-regex */ "./node_modules/react-emoji-render/node_modules/emoji-regex/index.js");
+
+var _emojiRegex2 = _interopRequireDefault(_emojiRegex);
+
+var _asciiRegex = __webpack_require__(/*! ./asciiRegex */ "./node_modules/react-emoji-render/lib/asciiRegex.js");
+
+var _asciiRegex2 = _interopRequireDefault(_asciiRegex);
+
+var _aliasRegex = __webpack_require__(/*! ./aliasRegex */ "./node_modules/react-emoji-render/lib/aliasRegex.js");
+
+var _aliasRegex2 = _interopRequireDefault(_aliasRegex);
+
+var _normalizeProtocol = __webpack_require__(/*! ./normalizeProtocol */ "./node_modules/react-emoji-render/lib/normalizeProtocol.js");
+
+var _normalizeProtocol2 = _interopRequireDefault(_normalizeProtocol);
+
+var _unicodeToCodepoint = __webpack_require__(/*! ./unicodeToCodepoint */ "./node_modules/react-emoji-render/lib/unicodeToCodepoint.js");
+
+var _unicodeToCodepoint2 = _interopRequireDefault(_unicodeToCodepoint);
+
+var _aliases = __webpack_require__(/*! ../data/aliases */ "./node_modules/react-emoji-render/data/aliases.js");
+
+var _aliases2 = _interopRequireDefault(_aliases);
+
+var _asciiAliases = __webpack_require__(/*! ../data/asciiAliases */ "./node_modules/react-emoji-render/data/asciiAliases.js");
+
+var _asciiAliases2 = _interopRequireDefault(_asciiAliases);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var asciiAliasesRegex = (0, _asciiRegex2.default)();
+var aliasesRegex = (0, _aliasRegex2.default)();
+var unicodeEmojiRegex = (0, _emojiRegex2.default)();
+
+// using em's we can ensure size matches surrounding font
+var style = {
+  width: "1em",
+  height: "1em",
+  margin: "0 .05em 0 .1em",
+  verticalAlign: "-0.1em"
+};
+
+function toArray(text) {
+  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+  var protocol = (0, _normalizeProtocol2.default)(options.protocol);
+
+  function replaceUnicodeEmoji(match, i) {
+    if (!options.baseUrl) {
+      return _react2.default.createElement(
+        "span",
+        { key: i, style: style, className: options.className },
+        match
+      );
+    }
+
+    var codepoint = (0, _unicodeToCodepoint2.default)(match, removeHelperCharacters);
+
+    // if Emojione we don't want to add helper characters in the URL
+    var removeHelperCharacters = options.emojione;
+    if (removeHelperCharacters) {
+      codepoint = codepoint.replace(/-200d/g, "").replace(/-fe0f/g, "");
+    }
+
+    var separator = options.size ? "/" : "";
+    var src = "" + protocol + options.baseUrl + options.size + separator + codepoint + "." + options.ext;
+
+    return _react2.default.createElement("img", _extends({
+      key: i,
+      alt: match,
+      src: src,
+      style: style,
+      className: options.className
+    }, options.props));
+  }
+
+  function replaceAsciiAliases() {
+    var asciiAliasKeys = Object.keys(_asciiAliases2.default);
+
+    var fullMatch = arguments.length <= 0 ? undefined : arguments[0];
+    var edgeCase = arguments.length <= 1 ? undefined : arguments[1];
+    var asciiAlias = arguments.length <= 2 ? undefined : arguments[2];
+    var maybeBiggerAliasCharacters = arguments.length <= 3 ? undefined : arguments[3];
+
+    for (var i in asciiAliasKeys) {
+      var alias = asciiAliasKeys[i];
+      var data = _asciiAliases2.default[alias];
+
+      if (data.includes(asciiAlias)) {
+        var isEdgeCase = edgeCase !== undefined;
+
+        if (isEdgeCase) {
+          return fullMatch; // do nothing
+        }
+
+        var isMaybePartOfBiggerAlias = maybeBiggerAliasCharacters !== undefined;
+
+        if (!isMaybePartOfBiggerAlias) {
+          return _aliases2.default[alias]; // replace with unicode
+        } else if (fullMatch[0] === ":") {
+          var fullMatchContent = fullMatch.slice(1, -1); // remove ":" at the beginning and end
+          var isPartOfBiggerAlias = _aliases2.default[fullMatchContent] !== undefined; // ":" + fullMatchContent + ":" alias doesn't exist
+
+          if (isPartOfBiggerAlias) {
+            return fullMatch; // do nothing
+          }
+        }
+
+        return "" + _aliases2.default[alias] + maybeBiggerAliasCharacters; // also return matched characters afterwards to handle them in next iteration
+      }
+    }
+  }
+
+  function replaceAliases() {
+    var fullMatch = arguments.length <= 0 ? undefined : arguments[0];
+    var edgeCase = arguments.length <= 1 ? undefined : arguments[1];
+    var alias = arguments.length <= 2 ? undefined : arguments[2];
+
+    if (edgeCase) {
+      return fullMatch;
+    }
+
+    var aliasEmoji = _aliases2.default[alias];
+
+    return aliasEmoji || fullMatch;
+  }
+
+  // We need to execute several times `string.replace` for cases for such as ":):)"
+  // As we are forced to match ":):" to check if it's a normal alias, the second colon is consumed and cannot match again
+  function replaceAllAsciiAliases(textWithAsciiAliases) {
+    var previousTextWithoutAsciiAliases = null;
+    var textWithoutAsciiAliases = textWithAsciiAliases;
+
+    while (previousTextWithoutAsciiAliases !== textWithoutAsciiAliases) {
+      previousTextWithoutAsciiAliases = textWithoutAsciiAliases;
+      textWithoutAsciiAliases = textWithoutAsciiAliases.replace(asciiAliasesRegex, replaceAsciiAliases);
+    }
+
+    return textWithoutAsciiAliases;
+  }
+
+  var replacedText = text;
+  replacedText = replacedText.replace(aliasesRegex, replaceAliases);
+  replacedText = replaceAllAsciiAliases(replacedText);
+  replacedText = replacedText.replace(aliasesRegex, replaceAliases);
+  return (0, _stringReplaceToArray2.default)(replacedText, unicodeEmojiRegex, replaceUnicodeEmoji);
+}
+
+function Emoji(_ref) {
+  var text = _ref.text,
+      onlyEmojiClassName = _ref.onlyEmojiClassName,
+      _ref$options = _ref.options,
+      options = _ref$options === undefined ? {} : _ref$options,
+      className = _ref.className,
+      rest = _objectWithoutProperties(_ref, ["text", "onlyEmojiClassName", "options", "className"]);
+
+  function isOnlyEmoji(output) {
+    if (output.length > 3) return false;
+
+    for (var i = 0; i < output.length; i++) {
+      if (typeof output[i] === "string") return false;
+    }
+
+    return true;
+  }
+
+  var output = toArray(text, options);
+  var classes = (0, _classnames3.default)(className, _defineProperty({}, onlyEmojiClassName, isOnlyEmoji(output)));
+
+  return _react2.default.createElement(
+    "span",
+    _extends({}, rest, { className: classes }),
+    output
+  );
+}
+
+Emoji.propTypes = {
+  text: _propTypes2.default.string,
+  props: _propTypes2.default.object,
+  onlyEmojiClassName: _propTypes2.default.string,
+  options: _propTypes2.default.shape({
+    baseUrl: _propTypes2.default.string,
+    size: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.string]),
+    ext: _propTypes2.default.string,
+    className: _propTypes2.default.string
+  })
+};
+
+/***/ }),
+
+/***/ "./node_modules/react-emoji-render/lib/unicodeToCodepoint.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/react-emoji-render/lib/unicodeToCodepoint.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = unicodeToCodepoint;
+// avoid runtime RegExp creation for not so smart,
+// not JIT based, and old browsers / engines
+// https://github.com/twitter/twemoji/blob/gh-pages/2/twemoji.js#L232
+var UFE0Fg = /\uFE0F/g;
+
+// \u200D is a zero-width joiner character
+// https://github.com/twitter/twemoji/blob/gh-pages/2/twemoji.js#L235
+var U200D = String.fromCharCode(0x200d);
+
+// convert utf16 into code points
+function toCodePoint(input) {
+  var separator = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "-";
+
+  var codePoints = [];
+  var _iteratorNormalCompletion = true;
+  var _didIteratorError = false;
+  var _iteratorError = undefined;
+
+  try {
+    for (var _iterator = input[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+      var codePoint = _step.value;
+
+      codePoints.push(codePoint.codePointAt(0).toString(16));
+    }
+  } catch (err) {
+    _didIteratorError = true;
+    _iteratorError = err;
+  } finally {
+    try {
+      if (!_iteratorNormalCompletion && _iterator.return) {
+        _iterator.return();
+      }
+    } finally {
+      if (_didIteratorError) {
+        throw _iteratorError;
+      }
+    }
+  }
+
+  return codePoints.join(separator);
+}
+
+function unicodeToCodepoint(input) {
+  return toCodePoint(input.indexOf(U200D) < 0 ? input.replace(UFE0Fg, "") : input);
+}
+
+/***/ }),
+
+/***/ "./node_modules/react-emoji-render/lib/utils.js":
+/*!******************************************************!*\
+  !*** ./node_modules/react-emoji-render/lib/utils.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.escapeStringToBeUsedInRegExp = escapeStringToBeUsedInRegExp;
+function escapeStringToBeUsedInRegExp(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); // $& means the whole matched string
+}
+
+/***/ }),
+
+/***/ "./node_modules/react-emoji-render/node_modules/emoji-regex/index.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/react-emoji-render/node_modules/emoji-regex/index.js ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = function () {
+	// https://mathiasbynens.be/notes/es-unicode-property-escapes#emoji
+	return (/\uD83C\uDFF4\uDB40\uDC67\uDB40\uDC62(?:\uDB40\uDC65\uDB40\uDC6E\uDB40\uDC67|\uDB40\uDC77\uDB40\uDC6C\uDB40\uDC73|\uDB40\uDC73\uDB40\uDC63\uDB40\uDC74)\uDB40\uDC7F|\uD83D\uDC69\u200D\uD83D\uDC69\u200D(?:\uD83D\uDC66\u200D\uD83D\uDC66|\uD83D\uDC67\u200D(?:\uD83D[\uDC66\uDC67]))|\uD83D\uDC68(?:\u200D(?:\u2764\uFE0F\u200D(?:\uD83D\uDC8B\u200D)?\uD83D\uDC68|(?:\uD83D[\uDC68\uDC69])\u200D(?:\uD83D\uDC66\u200D\uD83D\uDC66|\uD83D\uDC67\u200D(?:\uD83D[\uDC66\uDC67]))|\uD83D\uDC66\u200D\uD83D\uDC66|\uD83D\uDC67\u200D(?:\uD83D[\uDC66\uDC67])|[\u2695\u2696\u2708]\uFE0F|\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92])|(?:\uD83C[\uDFFB-\uDFFF])\u200D[\u2695\u2696\u2708]\uFE0F|(?:\uD83C[\uDFFB-\uDFFF])\u200D(?:\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]))|\uD83D\uDC69\u200D(?:\u2764\uFE0F\u200D(?:\uD83D\uDC8B\u200D(?:\uD83D[\uDC68\uDC69])|\uD83D[\uDC68\uDC69])|\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92])|\uD83D\uDC69\u200D\uD83D\uDC66\u200D\uD83D\uDC66|(?:\uD83D\uDC41\uFE0F\u200D\uD83D\uDDE8|\uD83D\uDC69(?:\uD83C[\uDFFB-\uDFFF])\u200D[\u2695\u2696\u2708]|(?:(?:\u26F9|\uD83C[\uDFCB\uDFCC]|\uD83D\uDD75)\uFE0F|\uD83D\uDC6F|\uD83E[\uDD3C\uDDDE\uDDDF])\u200D[\u2640\u2642]|(?:\u26F9|\uD83C[\uDFCB\uDFCC]|\uD83D\uDD75)(?:\uD83C[\uDFFB-\uDFFF])\u200D[\u2640\u2642]|(?:\uD83C[\uDFC3\uDFC4\uDFCA]|\uD83D[\uDC6E\uDC71\uDC73\uDC77\uDC81\uDC82\uDC86\uDC87\uDE45-\uDE47\uDE4B\uDE4D\uDE4E\uDEA3\uDEB4-\uDEB6]|\uD83E[\uDD26\uDD37-\uDD39\uDD3D\uDD3E\uDDD6-\uDDDD])(?:(?:\uD83C[\uDFFB-\uDFFF])\u200D[\u2640\u2642]|\u200D[\u2640\u2642])|\uD83D\uDC69\u200D[\u2695\u2696\u2708])\uFE0F|\uD83D\uDC69\u200D\uD83D\uDC67\u200D(?:\uD83D[\uDC66\uDC67])|\uD83D\uDC69\u200D\uD83D\uDC69\u200D(?:\uD83D[\uDC66\uDC67])|\uD83D\uDC68(?:\u200D(?:(?:\uD83D[\uDC68\uDC69])\u200D(?:\uD83D[\uDC66\uDC67])|\uD83D[\uDC66\uDC67])|\uD83C[\uDFFB-\uDFFF])|\uD83C\uDFF3\uFE0F\u200D\uD83C\uDF08|\uD83D\uDC69\u200D\uD83D\uDC67|\uD83D\uDC69(?:\uD83C[\uDFFB-\uDFFF])\u200D(?:\uD83C[\uDF3E\uDF73\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92])|\uD83D\uDC69\u200D\uD83D\uDC66|\uD83C\uDDF4\uD83C\uDDF2|\uD83C\uDDFD\uD83C\uDDF0|\uD83C\uDDF6\uD83C\uDDE6|\uD83D\uDC69(?:\uD83C[\uDFFB-\uDFFF])|\uD83C\uDDFC(?:\uD83C[\uDDEB\uDDF8])|\uD83C\uDDEB(?:\uD83C[\uDDEE-\uDDF0\uDDF2\uDDF4\uDDF7])|\uD83C\uDDE9(?:\uD83C[\uDDEA\uDDEC\uDDEF\uDDF0\uDDF2\uDDF4\uDDFF])|\uD83C\uDDE7(?:\uD83C[\uDDE6\uDDE7\uDDE9-\uDDEF\uDDF1-\uDDF4\uDDF6-\uDDF9\uDDFB\uDDFC\uDDFE\uDDFF])|\uD83C\uDDF1(?:\uD83C[\uDDE6-\uDDE8\uDDEE\uDDF0\uDDF7-\uDDFB\uDDFE])|\uD83C\uDDFE(?:\uD83C[\uDDEA\uDDF9])|\uD83C\uDDF9(?:\uD83C[\uDDE6\uDDE8\uDDE9\uDDEB-\uDDED\uDDEF-\uDDF4\uDDF7\uDDF9\uDDFB\uDDFC\uDDFF])|\uD83C\uDDF5(?:\uD83C[\uDDE6\uDDEA-\uDDED\uDDF0-\uDDF3\uDDF7-\uDDF9\uDDFC\uDDFE])|\uD83C\uDDEF(?:\uD83C[\uDDEA\uDDF2\uDDF4\uDDF5])|\uD83C\uDDED(?:\uD83C[\uDDF0\uDDF2\uDDF3\uDDF7\uDDF9\uDDFA])|\uD83C\uDDEE(?:\uD83C[\uDDE8-\uDDEA\uDDF1-\uDDF4\uDDF6-\uDDF9])|\uD83C\uDDFB(?:\uD83C[\uDDE6\uDDE8\uDDEA\uDDEC\uDDEE\uDDF3\uDDFA])|\uD83C\uDDEC(?:\uD83C[\uDDE6\uDDE7\uDDE9-\uDDEE\uDDF1-\uDDF3\uDDF5-\uDDFA\uDDFC\uDDFE])|\uD83C\uDDF7(?:\uD83C[\uDDEA\uDDF4\uDDF8\uDDFA\uDDFC])|\uD83C\uDDEA(?:\uD83C[\uDDE6\uDDE8\uDDEA\uDDEC\uDDED\uDDF7-\uDDFA])|\uD83C\uDDFA(?:\uD83C[\uDDE6\uDDEC\uDDF2\uDDF3\uDDF8\uDDFE\uDDFF])|\uD83C\uDDE8(?:\uD83C[\uDDE6\uDDE8\uDDE9\uDDEB-\uDDEE\uDDF0-\uDDF5\uDDF7\uDDFA-\uDDFF])|\uD83C\uDDE6(?:\uD83C[\uDDE8-\uDDEC\uDDEE\uDDF1\uDDF2\uDDF4\uDDF6-\uDDFA\uDDFC\uDDFD\uDDFF])|[#\*0-9]\uFE0F\u20E3|\uD83C\uDDF8(?:\uD83C[\uDDE6-\uDDEA\uDDEC-\uDDF4\uDDF7-\uDDF9\uDDFB\uDDFD-\uDDFF])|\uD83C\uDDFF(?:\uD83C[\uDDE6\uDDF2\uDDFC])|\uD83C\uDDF0(?:\uD83C[\uDDEA\uDDEC-\uDDEE\uDDF2\uDDF3\uDDF5\uDDF7\uDDFC\uDDFE\uDDFF])|\uD83C\uDDF3(?:\uD83C[\uDDE6\uDDE8\uDDEA-\uDDEC\uDDEE\uDDF1\uDDF4\uDDF5\uDDF7\uDDFA\uDDFF])|\uD83C\uDDF2(?:\uD83C[\uDDE6\uDDE8-\uDDED\uDDF0-\uDDFF])|(?:\uD83C[\uDFC3\uDFC4\uDFCA]|\uD83D[\uDC6E\uDC71\uDC73\uDC77\uDC81\uDC82\uDC86\uDC87\uDE45-\uDE47\uDE4B\uDE4D\uDE4E\uDEA3\uDEB4-\uDEB6]|\uD83E[\uDD26\uDD37-\uDD39\uDD3D\uDD3E\uDDD6-\uDDDD])(?:\uD83C[\uDFFB-\uDFFF])|(?:\u26F9|\uD83C[\uDFCB\uDFCC]|\uD83D\uDD75)(?:\uD83C[\uDFFB-\uDFFF])|(?:[\u261D\u270A-\u270D]|\uD83C[\uDF85\uDFC2\uDFC7]|\uD83D[\uDC42\uDC43\uDC46-\uDC50\uDC66\uDC67\uDC70\uDC72\uDC74-\uDC76\uDC78\uDC7C\uDC83\uDC85\uDCAA\uDD74\uDD7A\uDD90\uDD95\uDD96\uDE4C\uDE4F\uDEC0\uDECC]|\uD83E[\uDD18-\uDD1C\uDD1E\uDD1F\uDD30-\uDD36\uDDD1-\uDDD5])(?:\uD83C[\uDFFB-\uDFFF])|(?:[\u261D\u26F9\u270A-\u270D]|\uD83C[\uDF85\uDFC2-\uDFC4\uDFC7\uDFCA-\uDFCC]|\uD83D[\uDC42\uDC43\uDC46-\uDC50\uDC66-\uDC69\uDC6E\uDC70-\uDC78\uDC7C\uDC81-\uDC83\uDC85-\uDC87\uDCAA\uDD74\uDD75\uDD7A\uDD90\uDD95\uDD96\uDE45-\uDE47\uDE4B-\uDE4F\uDEA3\uDEB4-\uDEB6\uDEC0\uDECC]|\uD83E[\uDD18-\uDD1C\uDD1E\uDD1F\uDD26\uDD30-\uDD39\uDD3D\uDD3E\uDDD1-\uDDDD])(?:\uD83C[\uDFFB-\uDFFF])?|(?:[\u231A\u231B\u23E9-\u23EC\u23F0\u23F3\u25FD\u25FE\u2614\u2615\u2648-\u2653\u267F\u2693\u26A1\u26AA\u26AB\u26BD\u26BE\u26C4\u26C5\u26CE\u26D4\u26EA\u26F2\u26F3\u26F5\u26FA\u26FD\u2705\u270A\u270B\u2728\u274C\u274E\u2753-\u2755\u2757\u2795-\u2797\u27B0\u27BF\u2B1B\u2B1C\u2B50\u2B55]|\uD83C[\uDC04\uDCCF\uDD8E\uDD91-\uDD9A\uDDE6-\uDDFF\uDE01\uDE1A\uDE2F\uDE32-\uDE36\uDE38-\uDE3A\uDE50\uDE51\uDF00-\uDF20\uDF2D-\uDF35\uDF37-\uDF7C\uDF7E-\uDF93\uDFA0-\uDFCA\uDFCF-\uDFD3\uDFE0-\uDFF0\uDFF4\uDFF8-\uDFFF]|\uD83D[\uDC00-\uDC3E\uDC40\uDC42-\uDCFC\uDCFF-\uDD3D\uDD4B-\uDD4E\uDD50-\uDD67\uDD7A\uDD95\uDD96\uDDA4\uDDFB-\uDE4F\uDE80-\uDEC5\uDECC\uDED0-\uDED2\uDEEB\uDEEC\uDEF4-\uDEF8]|\uD83E[\uDD10-\uDD3A\uDD3C-\uDD3E\uDD40-\uDD45\uDD47-\uDD4C\uDD50-\uDD6B\uDD80-\uDD97\uDDC0\uDDD0-\uDDE6])|(?:[#\*0-9\xA9\xAE\u203C\u2049\u2122\u2139\u2194-\u2199\u21A9\u21AA\u231A\u231B\u2328\u23CF\u23E9-\u23F3\u23F8-\u23FA\u24C2\u25AA\u25AB\u25B6\u25C0\u25FB-\u25FE\u2600-\u2604\u260E\u2611\u2614\u2615\u2618\u261D\u2620\u2622\u2623\u2626\u262A\u262E\u262F\u2638-\u263A\u2640\u2642\u2648-\u2653\u2660\u2663\u2665\u2666\u2668\u267B\u267F\u2692-\u2697\u2699\u269B\u269C\u26A0\u26A1\u26AA\u26AB\u26B0\u26B1\u26BD\u26BE\u26C4\u26C5\u26C8\u26CE\u26CF\u26D1\u26D3\u26D4\u26E9\u26EA\u26F0-\u26F5\u26F7-\u26FA\u26FD\u2702\u2705\u2708-\u270D\u270F\u2712\u2714\u2716\u271D\u2721\u2728\u2733\u2734\u2744\u2747\u274C\u274E\u2753-\u2755\u2757\u2763\u2764\u2795-\u2797\u27A1\u27B0\u27BF\u2934\u2935\u2B05-\u2B07\u2B1B\u2B1C\u2B50\u2B55\u3030\u303D\u3297\u3299]|\uD83C[\uDC04\uDCCF\uDD70\uDD71\uDD7E\uDD7F\uDD8E\uDD91-\uDD9A\uDDE6-\uDDFF\uDE01\uDE02\uDE1A\uDE2F\uDE32-\uDE3A\uDE50\uDE51\uDF00-\uDF21\uDF24-\uDF93\uDF96\uDF97\uDF99-\uDF9B\uDF9E-\uDFF0\uDFF3-\uDFF5\uDFF7-\uDFFF]|\uD83D[\uDC00-\uDCFD\uDCFF-\uDD3D\uDD49-\uDD4E\uDD50-\uDD67\uDD6F\uDD70\uDD73-\uDD7A\uDD87\uDD8A-\uDD8D\uDD90\uDD95\uDD96\uDDA4\uDDA5\uDDA8\uDDB1\uDDB2\uDDBC\uDDC2-\uDDC4\uDDD1-\uDDD3\uDDDC-\uDDDE\uDDE1\uDDE3\uDDE8\uDDEF\uDDF3\uDDFA-\uDE4F\uDE80-\uDEC5\uDECB-\uDED2\uDEE0-\uDEE5\uDEE9\uDEEB\uDEEC\uDEF0\uDEF3-\uDEF8]|\uD83E[\uDD10-\uDD3A\uDD3C-\uDD3E\uDD40-\uDD45\uDD47-\uDD4C\uDD50-\uDD6B\uDD80-\uDD97\uDDC0\uDDD0-\uDDE6])\uFE0F/g
+	);
+};
+
+
+/***/ }),
+
 /***/ "./node_modules/react-is/cjs/react-is.development.js":
 /*!***********************************************************!*\
   !*** ./node_modules/react-is/cjs/react-is.development.js ***!
@@ -63677,6 +69109,119 @@ if (false) {} else {
   module.exports = __webpack_require__(/*! ./cjs/scheduler-tracing.development.js */ "./node_modules/scheduler/cjs/scheduler-tracing.development.js");
 }
 
+
+/***/ }),
+
+/***/ "./node_modules/string-replace-to-array/string-replace-to-array.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/string-replace-to-array/string-replace-to-array.js ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Inspiration: https://github.com/facebook/react/issues/3386
+
+var invariant = __webpack_require__(/*! invariant */ "./node_modules/invariant/browser.js"),
+	isString = __webpack_require__(/*! lodash.isstring */ "./node_modules/lodash.isstring/index.js"),
+	flatten = __webpack_require__(/*! lodash.flatten */ "./node_modules/lodash.flatten/index.js")
+
+function replace (string, regexpOrSubstr, newValueOrFn) {
+	invariant(typeof string === 'string', 'First param must be a string')
+	invariant(typeof regexpOrSubstr === 'string' || regexpOrSubstr instanceof RegExp, 'Second param must be a string pattern or a regular expression')
+
+	var fn = (typeof regexpOrSubstr === 'string') ? replaceUsingString : replaceUsingRegexp
+
+	return fn(string, regexpOrSubstr, newValueOrFn)
+}
+
+function replaceUsingString (string, patternString, newValueOrFn) {
+	var index = string.indexOf(patternString)
+
+	if (index >= 0) {
+		var arr = []
+		var endIndex = index + patternString.length
+
+		if (index > 0) {
+			arr.push(string.substring(0, index))
+		}
+
+		arr.push(
+			(typeof newValueOrFn === 'function') ?
+				newValueOrFn(
+					string.substring(index, endIndex),
+					index,
+					string
+				) :
+				newValueOrFn
+		)
+
+		if (endIndex < string.length) {
+			arr.push(string.substring(endIndex))
+		}
+
+		return arr
+	} else {
+		return [string]
+	}
+}
+
+function replaceUsingRegexp (string, regexp, newValueOrFn) {
+	var output = []
+
+	var replacerIsFn = (typeof newValueOrFn === 'function')
+
+	var storedLastIndex = regexp.lastIndex
+	regexp.lastIndex = 0
+
+	var result
+	var lastIndex = 0
+	while (result = regexp.exec(string)) {
+		var index = result.index
+
+		if (result[0] === '') {
+			// When the regexp is an empty string
+			// we still want to advance our cursor to the next item.
+			// This is the behavior of String.replace.
+			regexp.lastIndex++
+		}
+
+		if (index !== lastIndex) {
+			output.push(string.substring(lastIndex, index))
+		}
+
+		var match = result[0]
+		lastIndex = index + match.length
+		
+		var out = replacerIsFn ?
+			newValueOrFn.apply(this, result.concat(index, result.input)) :
+			newValueOrFn
+		output.push(out)
+
+		if (!regexp.global) {
+			break
+		}
+	}
+
+	if (lastIndex < string.length) {
+		output.push(string.substring(lastIndex))
+	}
+
+	regexp.lastIndex = storedLastIndex
+	return output
+}
+
+module.exports = function stringReplaceToArray (string, regexpOrSubstr, newSubStrOrFn) {
+	if (isString(string)) {
+		return replace(string, regexpOrSubstr, newSubStrOrFn)
+	} else if (!Array.isArray(string) || !string[0]) {
+		throw new TypeError('First argument must be an array or non-empty string');
+	} else {
+		return flatten(string.map(function (string) {
+			if (!isString(string)) return string
+			return replace(string, regexpOrSubstr, newSubStrOrFn)
+		}))
+	}
+}
 
 /***/ }),
 

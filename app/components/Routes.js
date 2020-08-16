@@ -8,6 +8,9 @@ import {
   Signup,
   Journal,
   Welcome,
+  Friends,
+  LossInfo,
+  ActivitiesForm,
 } from './index.js'
 
 const Routes = () => {
@@ -16,8 +19,11 @@ const Routes = () => {
       <Route exact path="/" component={Homepage} />
       <Route exact path="/resources" component={Resources} />
       <Route exact path="/signup" component={Signup} />
+      <Route exact path="/signup/loss-info" component={LossInfo} />
+      <Route exact path="/signup/activities" component={ActivitiesForm} />
       <Route exact path="/journal" component={Journal} />
       <Route exact path="/welcome" component={Welcome} />
+      <Route exact path="/friends" component={Friends} />
     </div>
   )
 }

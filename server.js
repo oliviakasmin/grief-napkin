@@ -7,8 +7,6 @@ const db = require('./db.js')
 const routes = require('./routes')
 const PORT = process.env.PORT || 3000
 module.exports = app
-// require db connection
-// require('./db.js')
 
 // logging middleware
 app.use(morgan('dev'))

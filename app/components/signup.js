@@ -1,5 +1,5 @@
 import React from 'react'
-import SignupForm from './forms/signup-form'
+import BasicInfo from './forms/signup-form-basic'
 import {Container} from 'react-bootstrap'
 
 const Signup = () => {
@@ -8,7 +8,7 @@ const Signup = () => {
       <main>
         <h4>please answer some questions to get your profile set up</h4>
       </main>
-      <SignupForm />
+      <BasicInfo />
     </Container>
   )
 }
