@@ -1,5 +1,5 @@
 import React from 'react'
-import {Form, Button} from 'react-bootstrap'
+import {Form, Button, Row, Col} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 
 export default function BasicInfo(props) {
@@ -32,12 +32,30 @@ export default function BasicInfo(props) {
         <Form.Control type="password" size="sm" placeholder="enter password" />
       </Form.Group>
       <p>(these fields are required)</p>
-      <br />
+
+      <Form.Group as={Row}>
+        <Col sm={10}>
+          <Form.Check
+            type="radio"
+            label="did you lose someone?"
+            name="formHorizontalRadios"
+            id="formHorizontalRadios1"
+          />
+          <Form.Check
+            type="radio"
+            label="are you here to support a loved one?"
+            name="formHorizontalRadios"
+            id="formHorizontalRadios2"
+          />
+        </Col>
+      </Form.Group>
+
       <Link to="/signup/loss-info">
         <Button variant="outline-info" type="submit" className="btn">
           Next
         </Button>
       </Link>
+      <br />
       <br />
       <p>
         p.s. the next part includes 4 quick questions that might be hard... you

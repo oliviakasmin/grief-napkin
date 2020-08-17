@@ -1,6 +1,6 @@
 import React from 'react'
 import BasicInfo from './forms/signup-form-basic'
-import {Container, Button} from 'react-bootstrap'
+import {Container, Button, Form, Col, Row} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 
 const Signup = () => {
@@ -8,6 +8,7 @@ const Signup = () => {
     <Container>
       <h4>please answer some questions to get your profile set up</h4>
       <br />
+      <Form></Form>
       <BasicInfo />
     </Container>
   )

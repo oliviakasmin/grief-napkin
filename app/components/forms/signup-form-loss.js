@@ -10,10 +10,6 @@ export default function LossInfo(props) {
           <Form.Label row="true" sm={2}>
             <h5>I lost my...</h5>
           </Form.Label>
-          <p>
-            (select as many as applicable, dealing with multiple losses is
-            f***ing real)
-          </p>
 
           <Form.Check type="checkbox" label="partner" />
           <Form.Check type="checkbox" label="friend" />
@@ -26,6 +22,10 @@ export default function LossInfo(props) {
           <Form.Check type="checkbox" label="prefer not to answer" />
         </Form.Group>
         <br />
+        <p>
+          (select as many as applicable, dealing with multiple losses is f***ing
+          real)
+        </p>
         <br />
         <Link to="/signup/">
           <Button variant="outline-info" type="submit" className="btn">

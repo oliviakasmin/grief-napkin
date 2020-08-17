@@ -8,7 +8,10 @@ export {default as Friends} from './friends.js'
 export {default as Login} from './login.js'
 export {default as Need} from './need.js'
 export {default as Stuck} from './stuck.js'
-export {default as UserProfile} from './profile.js'
+export {default as Profile} from './profile.js'
+export {default as Help} from './help.js'
+export {default as SelfCare} from './selfcare.js'
+export {default as Activities} from './activities.js'
 
 // signup form components
 export {default as LossInfo} from './forms/signup-form-loss'

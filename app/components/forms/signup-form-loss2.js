@@ -11,8 +11,16 @@ export default function LossInfo2(props) {
             <h5>their name is...</h5>
           </Form.Label>
           <Form.Control name="lost-name" type="text" placeholder="enter name" />
+          <br />
+          <br />
+          <br />
+          <Button variant="light" type="submit" className="btn">
+            add another name
+          </Button>
         </Form.Group>
+
         <br />
+
         <br />
         <br />
         <Link to="/signup/loss-info">

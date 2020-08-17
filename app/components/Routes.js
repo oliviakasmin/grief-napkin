@@ -14,16 +14,18 @@ import {
   LossInfo4,
   ActivitiesForm,
   Login,
-  Need,
-  UserProfile,
+  Profile,
   Stuck,
+  Need,
+  Help,
+  Activities,
+  SelfCare,
 } from './index.js'
 
 const Routes = () => {
   return (
     <div>
       <div>
-        <Route exact path="/:username" component={UserProfile} />
         <Route exact path="/" component={Homepage} />
         {/* <Route exact path="/modal" component={ModalTest} /> */}
         <Route exact path="/resources" component={Resources} />
@@ -39,6 +41,10 @@ const Routes = () => {
         <Route exact path="/login" component={Login} />
         <Route exact path="/need" component={Need} />
         <Route exact path="/stuck" component={Stuck} />
+        <Route exact path="/help" component={Help} />
+        <Route exact path="/activities" component={Activities} />
+        <Route exact path="/selfcare" component={SelfCare} />
+        <Route exact path="/username:oliviak" component={Profile} />
       </div>
     </div>
   )

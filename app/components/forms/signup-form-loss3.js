@@ -21,6 +21,7 @@ export default function LossInfo3(props) {
           <Form.Check type="checkbox" label="prefer not to answer" />
         </Form.Group>
         <br />
+        <p>(select as many as applicable)</p>
         <br />
         <Link to="/signup/loss-info2">
           <Button variant="outline-info" type="submit" className="btn">
