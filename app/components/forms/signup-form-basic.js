@@ -32,6 +32,17 @@ export default function BasicInfo(props) {
         <Form.Control type="password" size="sm" placeholder="enter password" />
       </Form.Group>
       <p>(these fields are required)</p>
+      <br />
+      <Link to="/signup/loss-info">
+        <Button variant="outline-info" type="submit" className="btn">
+          Next
+        </Button>
+      </Link>
+      <br />
+      <p>
+        p.s. the next part includes 4 quick questions that might be hard... you
+        can skip as many as you want and finish your profile later
+      </p>
     </Form>
   )
 }

@@ -12,5 +12,8 @@ export {default as UserProfile} from './profile.js'
 
 // signup form components
 export {default as LossInfo} from './forms/signup-form-loss'
+export {default as LossInfo2} from './forms/signup-form-loss2'
+export {default as LossInfo3} from './forms/signup-form-loss3'
+export {default as LossInfo4} from './forms/signup-form-loss4'
 export {default as ActivitiesForm} from './forms/signup-form-activities.js'
 export {default as DailyCheckForm} from './forms/daily-check-form'

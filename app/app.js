@@ -4,7 +4,7 @@ import HomeNavbar from './components/navbar'
 
 const App = () => {
   return (
-    <div className="content">
+    <div>
       <HomeNavbar />
       <Routes />
     </div>

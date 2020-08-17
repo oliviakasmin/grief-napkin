@@ -3,22 +3,23 @@ import {connect} from 'react-redux'
 import {fetchGetUser} from '../redux/users.js'
 
 class UserProfile extends Component {
-  // constructor (props) {
-  //   super(props)
-  // }
-
   componentDidMount() {
     const username = this.props.match.params.username
     this.props.getUser(username)
   }
-
   render() {
-    return <div></div>
+    console.log(this.props)
+
+    return (
+      <div>
+        <p>hey</p>
+      </div>
+    )
   }
 }
 
 const mapState = (state) => ({
-  user: state.userReducer,
+  user: state.user,
 })
 
 const mapDispatch = (dispatch) => ({
