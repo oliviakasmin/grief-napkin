@@ -18,14 +18,14 @@ import {
   UserProfile,
   Stuck,
 } from './index.js'
-// import UserProfile from './profile'
 
 const Routes = () => {
   return (
     <div>
       <div>
-        {/* <Route exact path="/:username" component={UserProfile} /> */}
+        <Route exact path="/:username" component={UserProfile} />
         <Route exact path="/" component={Homepage} />
+        {/* <Route exact path="/modal" component={ModalTest} /> */}
         <Route exact path="/resources" component={Resources} />
         <Route exact path="/signup" component={Signup} />
         <Route exact path="/signup/loss-info" component={LossInfo} />
